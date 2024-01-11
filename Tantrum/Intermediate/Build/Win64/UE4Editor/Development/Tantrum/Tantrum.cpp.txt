@@ -1,0 +1,2 @@
+C:\CG Spectrum\CG Spectrum\Unreal\Tantrum\Intermediate\Build\Win64\UE4Editor\Development\Tantrum\Definitions.Tantrum.h
+C:\CG Spectrum\CG Spectrum\Unreal\Tantrum\Source\Tantrum\Tantrum.h

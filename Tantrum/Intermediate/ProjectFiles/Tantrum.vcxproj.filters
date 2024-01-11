@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <None Include="..\..\Tantrum.uproject" />
+    <Filter Include="Source">
+      <UniqueIdentifier>{6EFA3182-58BB-4682-A298-0058285CD651}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\Tantrum.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <None Include="..\..\Source\TantrumEditor.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <Filter Include="Config">
+      <UniqueIdentifier>{4841F5E6-9911-41D0-8200-F5EB8F6CFC60}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Config\DefaultEditor.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultEngine.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultGame.ini">
+      <Filter>Config</Filter>
+    </None>
+    <Filter Include="Source\Tantrum">
+      <UniqueIdentifier>{982D3A10-A092-4F2B-B3F1-90E0AC3E40CA}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\Tantrum\Tantrum.Build.cs">
+      <Filter>Source\Tantrum</Filter>
+    </None>
+    <ClCompile Include="..\..\Source\Tantrum\Tantrum.cpp">
+      <Filter>Source\Tantrum</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Tantrum\Tantrum.h">
+      <Filter>Source\Tantrum</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\Tantrum\TantrumGameModeBase.cpp">
+      <Filter>Source\Tantrum</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Tantrum\TantrumGameModeBase.h">
+      <Filter>Source\Tantrum</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
