@@ -18,6 +18,8 @@ void ATantrumPlayerController::BeginPlay()
 
 		//Bind Actions
 		InputComponent->BindAction(TEXT("Jump"), IE_Pressed, this, &ATantrumPlayerController::JumpAction);
+		InputComponent->BindAction(TEXT("Sprint"), IE_Pressed, this, &ATantrumPlayerController::SprintAction);
+		InputComponent->BindAction(TEXT("Crouch"), IE_Pressed, this, &ATantrumPlayerController::CrouchAction);
 	}
 }
 
@@ -65,3 +67,14 @@ void ATantrumPlayerController::JumpAction()
 		GetCharacter()->Jump();
 	}
 }
+
+void ATantrumPlayerController::SprintAction()
+{
+
+}
+
+void ATantrumPlayerController::CrouchAction()
+{
+
+}
+
