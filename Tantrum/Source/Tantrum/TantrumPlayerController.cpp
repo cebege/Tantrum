@@ -51,6 +51,9 @@ void ATantrumPlayerController::RequestMoveForward(float AxisValue)
 	//FVector DeltaLocation = FVector::ZeroVector;
 	//DeltaLocation.X = AxisValue * Speed * UGameplayStatics::GetWorldDeltaSeconds(this);
 	//GetCharacter()->AddActorLocalOffset(DeltaLocation, true);
+
+
+
 }
 
 void ATantrumPlayerController::RequestTurn(float AxisValue)
