@@ -4,6 +4,7 @@
 #include "TantrumPlayerController.h"
 #include "Kismet/GameplayStatics.h"
 #include "GameFramework/Character.h"
+#include "GameFramework/CharacterMovementComponent.h"
 
 void ATantrumPlayerController::BeginPlay()
 {
@@ -11,15 +12,28 @@ void ATantrumPlayerController::BeginPlay()
 	if (InputComponent)
 	{
 		//Bind Axis
+
+		//Move
 		InputComponent->BindAxis(TEXT("MoveForward"), this, &ATantrumPlayerController::RequestMoveForward);
-		InputComponent->BindAxis(TEXT("Turn"), this, &ATantrumPlayerController::RequestTurn);
+		InputComponent->BindAxis(TEXT("MoveRight"), this, &ATantrumPlayerController::RequestMoveRight);
+		
+		//Look
 		InputComponent->BindAxis(TEXT("LookUp"), this, &ATantrumPlayerController::RequestLookUp);
 		InputComponent->BindAxis(TEXT("LookRight"), this, &ATantrumPlayerController::RequestLookRight);
 
 		//Bind Actions
-		InputComponent->BindAction(TEXT("Jump"), IE_Pressed, this, &ATantrumPlayerController::JumpAction);
-		InputComponent->BindAction(TEXT("Sprint"), IE_Pressed, this, &ATantrumPlayerController::SprintAction);
-		InputComponent->BindAction(TEXT("Crouch"), IE_Pressed, this, &ATantrumPlayerController::CrouchAction);
+
+		// Jump
+		InputComponent->BindAction(TEXT("Jump"), IE_Pressed, this, &ATantrumPlayerController::RequestJump);
+		InputComponent->BindAction(TEXT("Jump"), IE_Released, this, &ATantrumPlayerController::RequestStopJump);
+
+		//Sprint
+		InputComponent->BindAction(TEXT("Sprint"), IE_Pressed, this, &ATantrumPlayerController::RequestSprintStart);
+		InputComponent->BindAction(TEXT("Sprint"), IE_Released, this, &ATantrumPlayerController::RequestSprintEnd);
+		
+		//Crouch
+		InputComponent->BindAction(TEXT("Crouch"), IE_Pressed, this, &ATantrumPlayerController::RequestCrouchStart);
+		InputComponent->BindAction(TEXT("Crouch"), IE_Released, this, &ATantrumPlayerController::RequestCrouchEnd);
 
 		//Bind Right Mouse Button
 		InputComponent->BindAction(TEXT("AlignToController"), IE_Pressed, this, &ATantrumPlayerController::RequestAlignCharacterToController);
@@ -56,7 +70,7 @@ void ATantrumPlayerController::RequestMoveForward(float AxisValue)
 
 }
 
-void ATantrumPlayerController::RequestTurn(float AxisValue)
+void ATantrumPlayerController::RequestMoveRight(float AxisValue)
 {
 	if (AxisValue != 0.0f)
 	{
@@ -80,7 +94,7 @@ void ATantrumPlayerController::RequestLookRight(float AxisValue)
 	AddYawInput(AxisValue * BaseLookRightRate * GetWorld()->GetDeltaSeconds());
 }
 
-void ATantrumPlayerController::JumpAction()
+void ATantrumPlayerController::RequestJump()
 {
 	if (GetCharacter())
 	{
@@ -88,14 +102,45 @@ void ATantrumPlayerController::JumpAction()
 	}
 }
 
-void ATantrumPlayerController::SprintAction()
+void ATantrumPlayerController::RequestStopJump()
 {
-	// tbc
+	if (GetCharacter())
+	{
+		GetCharacter()->StopJumping();
+	}
 }
 
-void ATantrumPlayerController::CrouchAction()
+void ATantrumPlayerController::RequestCrouchStart()
 {
-	// tbc
+	if (!GetCharacter()->GetCharacterMovement()->IsMovingOnGround()) { return; } // avoid clashes with jump function.
+	if (GetCharacter())
+	{
+		GetCharacter()->Crouch();
+	}
+}
+
+void ATantrumPlayerController::RequestCrouchEnd()
+{
+	if (GetCharacter())
+	{
+		GetCharacter()->UnCrouch();
+	}
+}
+
+void ATantrumPlayerController::RequestSprintStart()
+{
+	if (GetCharacter())
+	{
+		GetCharacter()->GetCharacterMovement()->MaxWalkSpeed += SprintSpeed;
+	}
+}
+
+void ATantrumPlayerController::RequestSprintEnd()
+{
+	if (GetCharacter())
+	{
+		GetCharacter()->GetCharacterMovement()->MaxWalkSpeed -= SprintSpeed;
+	}
 }
 
 void ATantrumPlayerController::AlignCharacterToController()

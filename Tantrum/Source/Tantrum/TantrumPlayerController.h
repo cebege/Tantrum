@@ -23,32 +23,50 @@ protected:
 	virtual void BeginPlay() override;
 
 	UPROPERTY(EditAnywhere, Category = "Movement")
-		float Speed = 1000.0f;
+		float MaxWalkSpeed = 400.0f;
+
+	UPROPERTY(EditAnywhere, Category = "Movement")
+		float SprintSpeed = 1000.0f;
 
 	//UPROPERTY(EditAnywhere, Category = "Movement")
 	//	float TurnSpeed = 450.0f;
 
-	UPROPERTY(EditAnywhere, Category = "Movement")
+	UPROPERTY(EditAnywhere, Category = "Look")
 		float BaseLookUpRate = 50.f;
 
-	UPROPERTY(EditAnywhere, Category = "Movement")
+	UPROPERTY(EditAnywhere, Category = "Look")
 		float BaseLookRightRate = 50.f;
 
 public:
 
 	virtual void Tick(float DeltaTime) override;
 
+protected:
+
 	//Bind Axis
+
+	//Move
 	void RequestMoveForward(float AxisValue);
-	void RequestTurn(float AxisValue);
+	void RequestMoveRight(float AxisValue);
+
+	//Look
 	void RequestLookUp(float AxisValue);
 	void RequestLookRight(float AxisValue);
 
 
 	//Bind Actions
-	void JumpAction();
-	void SprintAction();
-	void CrouchAction();
+
+	//Jump
+	void RequestJump();
+	void RequestStopJump();
+
+	//Sprint
+	void RequestSprintStart();
+	void RequestSprintEnd();
+
+	//Crouch
+	void RequestCrouchStart();
+	void RequestCrouchEnd();
 
 	// Bind Right Mouse Button
 	void AlignCharacterToController();
