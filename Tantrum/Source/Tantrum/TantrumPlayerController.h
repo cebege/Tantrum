@@ -14,12 +14,16 @@ class TANTRUM_API ATantrumPlayerController : public APlayerController
 {
 	GENERATED_BODY()
 
+private:
+
+	bool bIsAligningCharacter;
+
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
 
-	//UPROPERTY(EditAnywhere, Category = "Movement")
-	//	float Speed = 1000.0f;
+	UPROPERTY(EditAnywhere, Category = "Movement")
+		float Speed = 1000.0f;
 
 	//UPROPERTY(EditAnywhere, Category = "Movement")
 	//	float TurnSpeed = 450.0f;
@@ -32,6 +36,8 @@ protected:
 
 public:
 
+	virtual void Tick(float DeltaTime) override;
+
 	//Bind Axis
 	void RequestMoveForward(float AxisValue);
 	void RequestTurn(float AxisValue);
@@ -41,6 +47,14 @@ public:
 
 	//Bind Actions
 	void JumpAction();
+	void SprintAction();
+	void CrouchAction();
+
+	// Bind Right Mouse Button
+	void AlignCharacterToController();
+	void RequestAlignCharacterToController();
+	void RequestStopAligningCharacterToController();
+
 
 	
 };
