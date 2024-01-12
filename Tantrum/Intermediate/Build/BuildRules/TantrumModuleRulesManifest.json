@@ -1,8 +1,8 @@
 {
 	"SourceFiles": [
-		"C:\\CG Spectrum\\CG Spectrum\\Unreal\\Tantrum\\Source\\Tantrum\\Tantrum.Build.cs",
-		"C:\\CG Spectrum\\CG Spectrum\\Unreal\\Tantrum\\Source\\Tantrum.Target.cs",
-		"C:\\CG Spectrum\\CG Spectrum\\Unreal\\Tantrum\\Source\\TantrumEditor.Target.cs"
+		"C:\\CG Spectrum\\GameProgramming\\Tantrum\\Tantrum\\Source\\Tantrum\\Tantrum.Build.cs",
+		"C:\\CG Spectrum\\GameProgramming\\Tantrum\\Tantrum\\Source\\Tantrum.Target.cs",
+		"C:\\CG Spectrum\\GameProgramming\\Tantrum\\Tantrum\\Source\\TantrumEditor.Target.cs"
 	],
 	"EngineVersion": "4.26.2"
 }

@@ -2,12 +2,12 @@
 	"Targets": [
 		{
 			"Name": "Tantrum",
-			"Path": "C:\\CG Spectrum\\CG Spectrum\\Unreal\\Tantrum\\Source\\Tantrum.Target.cs",
+			"Path": "C:\\CG Spectrum\\GameProgramming\\Tantrum\\Tantrum\\Source\\Tantrum.Target.cs",
 			"Type": "Game"
 		},
 		{
 			"Name": "TantrumEditor",
-			"Path": "C:\\CG Spectrum\\CG Spectrum\\Unreal\\Tantrum\\Source\\TantrumEditor.Target.cs",
+			"Path": "C:\\CG Spectrum\\GameProgramming\\Tantrum\\Tantrum\\Source\\TantrumEditor.Target.cs",
 			"Type": "Editor"
 		}
 	]
