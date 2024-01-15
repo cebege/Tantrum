@@ -2,6 +2,8 @@
 
 
 #include "TantrumCharacterBase.h"
+#include "GameFramework/Character.h"
+#include "GameFramework/CharacterMovementComponent.h"
 //#include "Kismet/GameplayStatics.h"
 
 // Sets default values
@@ -16,6 +18,11 @@ ATantrumCharacterBase::ATantrumCharacterBase()
 void ATantrumCharacterBase::BeginPlay()
 {
 	Super::BeginPlay();
+
+	if (GetCharacterMovement())
+	{
+		GetMovementComponent()->GetNavAgentPropertiesRef().bCanCrouch = true;
+	}
 	
 }
 

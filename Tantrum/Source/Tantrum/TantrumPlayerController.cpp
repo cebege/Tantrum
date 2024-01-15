@@ -49,6 +49,7 @@ void ATantrumPlayerController::Tick(float DeltaTime)
 	{
 		AlignCharacterToController();
 	}
+
 }
 
 
@@ -65,8 +66,6 @@ void ATantrumPlayerController::RequestMoveForward(float AxisValue)
 	//FVector DeltaLocation = FVector::ZeroVector;
 	//DeltaLocation.X = AxisValue * Speed * UGameplayStatics::GetWorldDeltaSeconds(this);
 	//GetCharacter()->AddActorLocalOffset(DeltaLocation, true);
-
-
 
 }
 
@@ -104,7 +103,7 @@ void ATantrumPlayerController::RequestJump()
 
 void ATantrumPlayerController::RequestStopJump()
 {
-	if (GetCharacter())
+	if (GetCharacter()) // allows a jump hold propoerty in editor
 	{
 		GetCharacter()->StopJumping();
 	}
@@ -163,4 +162,3 @@ void ATantrumPlayerController::RequestStopAligningCharacterToController()
 {
 	bIsAligningCharacter = false;
 }
-
