@@ -70,9 +70,9 @@ protected:
 	void ToggleCrouch();
 
 	// Bind Right Mouse Button
-	void AlignCharacterToController();
-	void RequestAlignCharacterToController();
-	void RequestStopAligningCharacterToController();
+	//void AlignCharacterToController();
+	//void RequestAlignCharacterToController();
+	//void RequestStopAligningCharacterToController();
 
 
 	

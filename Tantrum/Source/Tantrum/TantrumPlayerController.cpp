@@ -37,8 +37,8 @@ void ATantrumPlayerController::BeginPlay()
 		InputComponent->BindAction(TEXT("ToggleCrouch"), IE_Pressed, this, &ATantrumPlayerController::ToggleCrouch);
 
 		//Bind Right Mouse Button
-		InputComponent->BindAction(TEXT("AlignToController"), IE_Pressed, this, &ATantrumPlayerController::RequestAlignCharacterToController);
-		InputComponent->BindAction(TEXT("AlignToController"), IE_Released, this, &ATantrumPlayerController::RequestStopAligningCharacterToController);
+		/*InputComponent->BindAction(TEXT("AlignToController"), IE_Pressed, this, &ATantrumPlayerController::RequestAlignCharacterToController);
+		InputComponent->BindAction(TEXT("AlignToController"), IE_Released, this, &ATantrumPlayerController::RequestStopAligningCharacterToController);*/
 	}
 }
 
@@ -46,10 +46,10 @@ void ATantrumPlayerController::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
 
-	if (bIsAligningCharacter)
-	{
-		AlignCharacterToController();
-	}
+	//if (bIsAligningCharacter)
+	//{
+	//	AlignCharacterToController();
+	//}
 
 }
 
@@ -166,23 +166,23 @@ void ATantrumPlayerController::RequestSprintEnd()
 	}
 }
 
-void ATantrumPlayerController::AlignCharacterToController()
-{
-	if (GetCharacter())
-	{
-		FRotator ControllerRot = GetControlRotation();
-		ControllerRot.Pitch = 0;
-		GetCharacter()->SetActorRotation(ControllerRot);
-	}
-
-}
-
-void ATantrumPlayerController::RequestAlignCharacterToController()
-{
-	bIsAligningCharacter = true;
-}
-
-void ATantrumPlayerController::RequestStopAligningCharacterToController()
-{
-	bIsAligningCharacter = false;
-}
+//void ATantrumPlayerController::AlignCharacterToController()
+//{
+//	if (GetCharacter())
+//	{
+//		FRotator ControllerRot = GetControlRotation();
+//		ControllerRot.Pitch = 0;
+//		GetCharacter()->SetActorRotation(ControllerRot);
+//	}
+//
+//}
+//
+//void ATantrumPlayerController::RequestAlignCharacterToController()
+//{
+//	bIsAligningCharacter = true;
+//}
+//
+//void ATantrumPlayerController::RequestStopAligningCharacterToController()
+//{
+//	bIsAligningCharacter = false;
+//}
