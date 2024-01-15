@@ -67,6 +67,7 @@ protected:
 	//Crouch
 	void RequestCrouchStart();
 	void RequestCrouchEnd();
+	void ToggleCrouch();
 
 	// Bind Right Mouse Button
 	void AlignCharacterToController();

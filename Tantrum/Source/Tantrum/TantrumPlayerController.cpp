@@ -34,6 +34,7 @@ void ATantrumPlayerController::BeginPlay()
 		//Crouch
 		InputComponent->BindAction(TEXT("Crouch"), IE_Pressed, this, &ATantrumPlayerController::RequestCrouchStart);
 		InputComponent->BindAction(TEXT("Crouch"), IE_Released, this, &ATantrumPlayerController::RequestCrouchEnd);
+		InputComponent->BindAction(TEXT("ToggleCrouch"), IE_Pressed, this, &ATantrumPlayerController::ToggleCrouch);
 
 		//Bind Right Mouse Button
 		InputComponent->BindAction(TEXT("AlignToController"), IE_Pressed, this, &ATantrumPlayerController::RequestAlignCharacterToController);
@@ -109,9 +110,32 @@ void ATantrumPlayerController::RequestStopJump()
 	}
 }
 
+// Toggle Crouch and Uncrouch
+
+void ATantrumPlayerController::ToggleCrouch()
+{
+	if (GetCharacter())
+	{
+		if (!GetCharacter()->GetCharacterMovement()->IsMovingOnGround())
+		{
+			return; // avoid clashes with jump function.
+		}
+
+		if (GetCharacter()->bIsCrouched)
+		{
+			GetCharacter()->UnCrouch();
+		}
+		else
+		{
+			GetCharacter()->Crouch();
+		}
+	}
+}
+
 void ATantrumPlayerController::RequestCrouchStart()
 {
 	if (!GetCharacter()->GetCharacterMovement()->IsMovingOnGround()) { return; } // avoid clashes with jump function.
+	
 	if (GetCharacter())
 	{
 		GetCharacter()->Crouch();
