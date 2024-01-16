@@ -32,6 +32,18 @@ void EmptyLinkFunctionForGeneratedCodeTantrumPlayerController() {}
 		static const UE4CodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
 #endif
 #if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_ZoomRate_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_ZoomRate;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_MinZoomFOV_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_MinZoomFOV;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_MaxZoomFOV_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_MaxZoomFOV;
+#if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_MaxWalkSpeed_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_MaxWalkSpeed;
@@ -68,9 +80,34 @@ void EmptyLinkFunctionForGeneratedCodeTantrumPlayerController() {}
 	};
 #endif
 #if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ATantrumPlayerController_Statics::NewProp_ZoomRate_MetaData[] = {
+		{ "Category", "Camera" },
+		{ "Comment", "// Mouse Properties:\n" },
+		{ "ModuleRelativePath", "TantrumPlayerController.h" },
+		{ "ToolTip", "Mouse Properties:" },
+	};
+#endif
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_ATantrumPlayerController_Statics::NewProp_ZoomRate = { "ZoomRate", nullptr, (EPropertyFlags)0x0040000000000001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ATantrumPlayerController, ZoomRate), METADATA_PARAMS(Z_Construct_UClass_ATantrumPlayerController_Statics::NewProp_ZoomRate_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ATantrumPlayerController_Statics::NewProp_ZoomRate_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ATantrumPlayerController_Statics::NewProp_MinZoomFOV_MetaData[] = {
+		{ "Category", "Camera" },
+		{ "ModuleRelativePath", "TantrumPlayerController.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_ATantrumPlayerController_Statics::NewProp_MinZoomFOV = { "MinZoomFOV", nullptr, (EPropertyFlags)0x0040000000000001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ATantrumPlayerController, MinZoomFOV), METADATA_PARAMS(Z_Construct_UClass_ATantrumPlayerController_Statics::NewProp_MinZoomFOV_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ATantrumPlayerController_Statics::NewProp_MinZoomFOV_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ATantrumPlayerController_Statics::NewProp_MaxZoomFOV_MetaData[] = {
+		{ "Category", "Camera" },
+		{ "ModuleRelativePath", "TantrumPlayerController.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_ATantrumPlayerController_Statics::NewProp_MaxZoomFOV = { "MaxZoomFOV", nullptr, (EPropertyFlags)0x0040000000000001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ATantrumPlayerController, MaxZoomFOV), METADATA_PARAMS(Z_Construct_UClass_ATantrumPlayerController_Statics::NewProp_MaxZoomFOV_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ATantrumPlayerController_Statics::NewProp_MaxZoomFOV_MetaData)) };
+#if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ATantrumPlayerController_Statics::NewProp_MaxWalkSpeed_MetaData[] = {
 		{ "Category", "Movement" },
+		{ "Comment", "// Movement:\n" },
 		{ "ModuleRelativePath", "TantrumPlayerController.h" },
+		{ "ToolTip", "Movement:" },
 	};
 #endif
 	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_ATantrumPlayerController_Statics::NewProp_MaxWalkSpeed = { "MaxWalkSpeed", nullptr, (EPropertyFlags)0x0020080000000001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ATantrumPlayerController, MaxWalkSpeed), METADATA_PARAMS(Z_Construct_UClass_ATantrumPlayerController_Statics::NewProp_MaxWalkSpeed_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ATantrumPlayerController_Statics::NewProp_MaxWalkSpeed_MetaData)) };
@@ -84,9 +121,9 @@ void EmptyLinkFunctionForGeneratedCodeTantrumPlayerController() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ATantrumPlayerController_Statics::NewProp_BaseLookUpRate_MetaData[] = {
 		{ "Category", "Look" },
-		{ "Comment", "//UPROPERTY(EditAnywhere, Category = \"Movement\")\n//\x09""float TurnSpeed = 450.0f;\n" },
+		{ "Comment", "// Look:\n" },
 		{ "ModuleRelativePath", "TantrumPlayerController.h" },
-		{ "ToolTip", "UPROPERTY(EditAnywhere, Category = \"Movement\")\n       float TurnSpeed = 450.0f;" },
+		{ "ToolTip", "Look:" },
 	};
 #endif
 	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_ATantrumPlayerController_Statics::NewProp_BaseLookUpRate = { "BaseLookUpRate", nullptr, (EPropertyFlags)0x0020080000000001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ATantrumPlayerController, BaseLookUpRate), METADATA_PARAMS(Z_Construct_UClass_ATantrumPlayerController_Statics::NewProp_BaseLookUpRate_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ATantrumPlayerController_Statics::NewProp_BaseLookUpRate_MetaData)) };
@@ -105,6 +142,9 @@ void EmptyLinkFunctionForGeneratedCodeTantrumPlayerController() {}
 #endif
 	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_ATantrumPlayerController_Statics::NewProp_BaseTurnRate = { "BaseTurnRate", nullptr, (EPropertyFlags)0x0020080000000001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ATantrumPlayerController, BaseTurnRate), METADATA_PARAMS(Z_Construct_UClass_ATantrumPlayerController_Statics::NewProp_BaseTurnRate_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ATantrumPlayerController_Statics::NewProp_BaseTurnRate_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_ATantrumPlayerController_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ATantrumPlayerController_Statics::NewProp_ZoomRate,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ATantrumPlayerController_Statics::NewProp_MinZoomFOV,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ATantrumPlayerController_Statics::NewProp_MaxZoomFOV,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ATantrumPlayerController_Statics::NewProp_MaxWalkSpeed,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ATantrumPlayerController_Statics::NewProp_SprintSpeed,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ATantrumPlayerController_Statics::NewProp_BaseLookUpRate,
@@ -138,7 +178,7 @@ void EmptyLinkFunctionForGeneratedCodeTantrumPlayerController() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(ATantrumPlayerController, 1239989066);
+	IMPLEMENT_CLASS(ATantrumPlayerController, 1772210918);
 	template<> TANTRUM_API UClass* StaticClass<ATantrumPlayerController>()
 	{
 		return ATantrumPlayerController::StaticClass();

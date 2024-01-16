@@ -61,6 +61,9 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(ATantrumPlayerController); \
 
 
 #define Tantrum_Source_Tantrum_TantrumPlayerController_h_15_PRIVATE_PROPERTY_OFFSET \
+	FORCEINLINE static uint32 __PPO__ZoomRate() { return STRUCT_OFFSET(ATantrumPlayerController, ZoomRate); } \
+	FORCEINLINE static uint32 __PPO__MinZoomFOV() { return STRUCT_OFFSET(ATantrumPlayerController, MinZoomFOV); } \
+	FORCEINLINE static uint32 __PPO__MaxZoomFOV() { return STRUCT_OFFSET(ATantrumPlayerController, MaxZoomFOV); } \
 	FORCEINLINE static uint32 __PPO__MaxWalkSpeed() { return STRUCT_OFFSET(ATantrumPlayerController, MaxWalkSpeed); } \
 	FORCEINLINE static uint32 __PPO__SprintSpeed() { return STRUCT_OFFSET(ATantrumPlayerController, SprintSpeed); } \
 	FORCEINLINE static uint32 __PPO__BaseLookUpRate() { return STRUCT_OFFSET(ATantrumPlayerController, BaseLookUpRate); } \

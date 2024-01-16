@@ -5,6 +5,7 @@
 #include "Kismet/GameplayStatics.h"
 #include "GameFramework/Character.h"
 #include "GameFramework/CharacterMovementComponent.h"
+#include "Camera/CameraComponent.h"
 
 void ATantrumPlayerController::BeginPlay()
 {
@@ -24,6 +25,9 @@ void ATantrumPlayerController::BeginPlay()
 		//Turn
 		InputComponent->BindAxis(TEXT("Turn"), this, &ATantrumPlayerController::RequestTurn);
 
+		// Mouse Wheel Zoom In / Zoom Out
+		InputComponent->BindAxis(TEXT("MouseWheelAxis"), this, &ATantrumPlayerController::HandleCameraZoom);
+
 		//Bind Actions
 
 		// Jump
@@ -42,6 +46,7 @@ void ATantrumPlayerController::BeginPlay()
 		//Bind Right Mouse Button
 		InputComponent->BindAction(TEXT("AlignToController"), IE_Pressed, this, &ATantrumPlayerController::RequestAlignCharacterToController);
 		InputComponent->BindAction(TEXT("AlignToController"), IE_Released, this, &ATantrumPlayerController::RequestStopAligningCharacterToController);
+		
 	}
 }
 
@@ -56,21 +61,29 @@ void ATantrumPlayerController::Tick(float DeltaTime)
 
 }
 
-
 void ATantrumPlayerController::RequestMoveForward(float AxisValue)
 {
-	//Input Option 1:
 	if (AxisValue != 0.0f)
 	{
 		FRotator const ControlSpaceRot = GetControlRotation();
 		GetPawn()->AddMovementInput(FRotationMatrix(ControlSpaceRot).GetScaledAxis(EAxis::X), AxisValue);
 	}
+}
 
-	//Input Option 2 (along a straight line):
-	//FVector DeltaLocation = FVector::ZeroVector;
-	//DeltaLocation.X = AxisValue * Speed * UGameplayStatics::GetWorldDeltaSeconds(this);
-	//GetCharacter()->AddActorLocalOffset(DeltaLocation, true);
-
+void ATantrumPlayerController::HandleCameraZoom(float AxisValue)
+{
+	if (AxisValue != 0.0f)
+	{
+		if (GetCharacter())
+		{
+			UCameraComponent* Camera = GetCharacter()->FindComponentByClass<UCameraComponent>();
+			if (Camera)
+			{
+				float NewFOV = FMath::Clamp(Camera->FieldOfView + AxisValue * ZoomRate, MinZoomFOV, MaxZoomFOV);
+				Camera->SetFieldOfView(NewFOV);
+			}
+		}
+	}
 }
 
 //void ATantrumPlayerController::RequestMoveRight(float AxisValue)
@@ -80,12 +93,7 @@ void ATantrumPlayerController::RequestMoveForward(float AxisValue)
 //		FRotator const ControlSpaceRot = GetControlRotation();
 //		GetPawn()->AddMovementInput(FRotationMatrix(ControlSpaceRot).GetScaledAxis(EAxis::Y), AxisValue);
 //	}
-
-	//Input Option 2:
-	//FRotator DeltaRotation = FRotator::ZeroRotator;
-	//DeltaRotation.Yaw = AxisValue * TurnSpeed * UGameplayStatics::GetWorldDeltaSeconds(this);
-	//GetCharacter()->AddActorLocalRotation(DeltaRotation, true);
-// }
+//}
 
 void ATantrumPlayerController::RequestTurn(float AxisValue)
 {

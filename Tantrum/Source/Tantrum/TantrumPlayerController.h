@@ -18,9 +18,22 @@ private:
 
 	bool bIsAligningCharacter;
 
+	// Mouse Properties:
+
+	UPROPERTY(EditAnywhere, Category = "Camera")
+		float ZoomRate = 5.0f;
+
+	UPROPERTY(EditAnywhere, Category = "Camera")
+		float MinZoomFOV = 60.0f;
+
+	UPROPERTY(EditAnywhere, Category = "Camera")
+		float MaxZoomFOV = 200.0f;
+
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
+
+	// Movement:
 
 	UPROPERTY(EditAnywhere, Category = "Movement")
 		float MaxWalkSpeed = 400.0f;
@@ -30,6 +43,8 @@ protected:
 
 	//UPROPERTY(EditAnywhere, Category = "Movement")
 	//	float TurnSpeed = 450.0f;
+
+	// Look:
 
 	UPROPERTY(EditAnywhere, Category = "Look")
 		float BaseLookUpRate = 50.f;
@@ -59,6 +74,8 @@ protected:
 	void RequestLookUp(float AxisValue);
 	void RequestLookRight(float AxisValue);
 
+	//Zoom In and Zoom Out
+	void HandleCameraZoom(float AxisValue);
 
 	//Bind Actions
 
@@ -80,6 +97,4 @@ protected:
 	void RequestAlignCharacterToController();
 	void RequestStopAligningCharacterToController();
 
-
-	
 };
