@@ -15,11 +15,14 @@ void ATantrumPlayerController::BeginPlay()
 
 		//Move
 		InputComponent->BindAxis(TEXT("MoveForward"), this, &ATantrumPlayerController::RequestMoveForward);
-		InputComponent->BindAxis(TEXT("MoveRight"), this, &ATantrumPlayerController::RequestMoveRight);
+		/*InputComponent->BindAxis(TEXT("MoveRight"), this, &ATantrumPlayerController::RequestMoveRight);*/
 		
 		//Look
 		InputComponent->BindAxis(TEXT("LookUp"), this, &ATantrumPlayerController::RequestLookUp);
 		InputComponent->BindAxis(TEXT("LookRight"), this, &ATantrumPlayerController::RequestLookRight);
+
+		//Turn
+		InputComponent->BindAxis(TEXT("Turn"), this, &ATantrumPlayerController::RequestTurn);
 
 		//Bind Actions
 
@@ -37,8 +40,8 @@ void ATantrumPlayerController::BeginPlay()
 		InputComponent->BindAction(TEXT("ToggleCrouch"), IE_Pressed, this, &ATantrumPlayerController::ToggleCrouch);
 
 		//Bind Right Mouse Button
-		/*InputComponent->BindAction(TEXT("AlignToController"), IE_Pressed, this, &ATantrumPlayerController::RequestAlignCharacterToController);
-		InputComponent->BindAction(TEXT("AlignToController"), IE_Released, this, &ATantrumPlayerController::RequestStopAligningCharacterToController);*/
+		InputComponent->BindAction(TEXT("AlignToController"), IE_Pressed, this, &ATantrumPlayerController::RequestAlignCharacterToController);
+		InputComponent->BindAction(TEXT("AlignToController"), IE_Released, this, &ATantrumPlayerController::RequestStopAligningCharacterToController);
 	}
 }
 
@@ -46,10 +49,10 @@ void ATantrumPlayerController::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
 
-	//if (bIsAligningCharacter)
-	//{
-	//	AlignCharacterToController();
-	//}
+	if (bIsAligningCharacter)
+	{
+		AlignCharacterToController();
+	}
 
 }
 
@@ -70,28 +73,42 @@ void ATantrumPlayerController::RequestMoveForward(float AxisValue)
 
 }
 
-void ATantrumPlayerController::RequestMoveRight(float AxisValue)
-{
-	if (AxisValue != 0.0f)
-	{
-		FRotator const ControlSpaceRot = GetControlRotation();
-		GetPawn()->AddMovementInput(FRotationMatrix(ControlSpaceRot).GetScaledAxis(EAxis::Y), AxisValue);
-	}
+//void ATantrumPlayerController::RequestMoveRight(float AxisValue)
+//{
+//	if (AxisValue != 0.0f)
+//	{
+//		FRotator const ControlSpaceRot = GetControlRotation();
+//		GetPawn()->AddMovementInput(FRotationMatrix(ControlSpaceRot).GetScaledAxis(EAxis::Y), AxisValue);
+//	}
 
 	//Input Option 2:
 	//FRotator DeltaRotation = FRotator::ZeroRotator;
 	//DeltaRotation.Yaw = AxisValue * TurnSpeed * UGameplayStatics::GetWorldDeltaSeconds(this);
 	//GetCharacter()->AddActorLocalRotation(DeltaRotation, true);
+// }
+
+void ATantrumPlayerController::RequestTurn(float AxisValue)
+{
+	if (AxisValue != 0.0f)
+	{
+		AddYawInput(AxisValue * BaseTurnRate * GetWorld()->GetDeltaSeconds());
+	}
 }
 
 void ATantrumPlayerController::RequestLookUp(float AxisValue)
 {
-	AddPitchInput(AxisValue * BaseLookUpRate * GetWorld()->GetDeltaSeconds());
+	if (bIsAligningCharacter && AxisValue != 0.0f)
+	{
+		AddPitchInput(AxisValue * BaseLookUpRate * GetWorld()->GetDeltaSeconds());
+	}
 }
 
 void ATantrumPlayerController::RequestLookRight(float AxisValue)
 {
-	AddYawInput(AxisValue * BaseLookRightRate * GetWorld()->GetDeltaSeconds());
+	if (bIsAligningCharacter && AxisValue != 0.0f)
+	{
+		AddYawInput(AxisValue * BaseLookRightRate * GetWorld()->GetDeltaSeconds());
+	}
 }
 
 void ATantrumPlayerController::RequestJump()
@@ -166,23 +183,23 @@ void ATantrumPlayerController::RequestSprintEnd()
 	}
 }
 
-//void ATantrumPlayerController::AlignCharacterToController()
-//{
-//	if (GetCharacter())
-//	{
-//		FRotator ControllerRot = GetControlRotation();
-//		ControllerRot.Pitch = 0;
-//		GetCharacter()->SetActorRotation(ControllerRot);
-//	}
-//
-//}
-//
-//void ATantrumPlayerController::RequestAlignCharacterToController()
-//{
-//	bIsAligningCharacter = true;
-//}
-//
-//void ATantrumPlayerController::RequestStopAligningCharacterToController()
-//{
-//	bIsAligningCharacter = false;
-//}
+void ATantrumPlayerController::AlignCharacterToController()
+{
+	if (GetCharacter())
+	{
+		FRotator ControllerRot = GetControlRotation();
+		ControllerRot.Pitch = 0;
+		GetCharacter()->SetActorRotation(ControllerRot);
+	}
+
+}
+
+void ATantrumPlayerController::RequestAlignCharacterToController()
+{
+	bIsAligningCharacter = true;
+}
+
+void ATantrumPlayerController::RequestStopAligningCharacterToController()
+{
+	bIsAligningCharacter = false;
+}

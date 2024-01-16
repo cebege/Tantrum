@@ -37,6 +37,9 @@ protected:
 	UPROPERTY(EditAnywhere, Category = "Look")
 		float BaseLookRightRate = 50.f;
 
+	UPROPERTY(EditAnywhere, Category = "Look")
+		float BaseTurnRate = 50.f;
+
 public:
 
 	virtual void Tick(float DeltaTime) override;
@@ -47,7 +50,10 @@ protected:
 
 	//Move
 	void RequestMoveForward(float AxisValue);
-	void RequestMoveRight(float AxisValue);
+	//void RequestMoveRight(float AxisValue);
+
+	//Turn
+	void RequestTurn(float AxisValue);
 
 	//Look
 	void RequestLookUp(float AxisValue);
@@ -70,9 +76,9 @@ protected:
 	void ToggleCrouch();
 
 	// Bind Right Mouse Button
-	//void AlignCharacterToController();
-	//void RequestAlignCharacterToController();
-	//void RequestStopAligningCharacterToController();
+	void AlignCharacterToController();
+	void RequestAlignCharacterToController();
+	void RequestStopAligningCharacterToController();
 
 
 	
