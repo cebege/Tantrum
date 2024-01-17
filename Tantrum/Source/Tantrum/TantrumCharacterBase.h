@@ -19,6 +19,14 @@ protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
 
+	//Impact Attributes:
+
+	UPROPERTY(EditAnywhere, Category = "Fall Impact")
+		float MinImpactSpeed = 100.0f;
+
+	UPROPERTY(EditAnywhere, Category = "Fall Impact")
+		float MaxImpactSpeed = 500.0f;
+
 
 public:	
 	// Called every frame
@@ -27,7 +35,8 @@ public:
 	// Called to bind functionality to input
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
 
-	// Function to get current velocity
+	// Custom Landing Code
 
+	void Landed(const FHitResult& Hit);
 
 };

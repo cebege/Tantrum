@@ -21,7 +21,7 @@ void EmptyLinkFunctionForGeneratedCodeTantrum_init() {}
 				nullptr,
 				0,
 				PKG_CompiledIn | 0x00000000,
-				0xF54E9765,
+				0x3EFAF626,
 				0x58B15747,
 				METADATA_PARAMS(nullptr, 0)
 			};

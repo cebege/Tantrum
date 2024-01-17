@@ -58,7 +58,11 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(ATantrumCharacterBase); \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(ATantrumCharacterBase)
 
 
-#define Tantrum_Source_Tantrum_TantrumCharacterBase_h_12_PRIVATE_PROPERTY_OFFSET
+#define Tantrum_Source_Tantrum_TantrumCharacterBase_h_12_PRIVATE_PROPERTY_OFFSET \
+	FORCEINLINE static uint32 __PPO__MinImpactSpeed() { return STRUCT_OFFSET(ATantrumCharacterBase, MinImpactSpeed); } \
+	FORCEINLINE static uint32 __PPO__MaxImpactSpeed() { return STRUCT_OFFSET(ATantrumCharacterBase, MaxImpactSpeed); }
+
+
 #define Tantrum_Source_Tantrum_TantrumCharacterBase_h_9_PROLOG
 #define Tantrum_Source_Tantrum_TantrumCharacterBase_h_12_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
