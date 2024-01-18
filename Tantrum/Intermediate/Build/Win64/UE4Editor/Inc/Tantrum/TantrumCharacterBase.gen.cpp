@@ -39,6 +39,22 @@ void EmptyLinkFunctionForGeneratedCodeTantrumCharacterBase() {}
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_MaxImpactSpeed_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_MaxImpactSpeed;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_MinStunTime_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_MinStunTime;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_MaxStunTime_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_MaxStunTime;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_MaxWalkSpeed_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_MaxWalkSpeed;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_MaxSprintSpeed_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_MaxSprintSpeed;
 		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UE4CodeGen_Private::FClassParams ClassParams;
@@ -70,9 +86,45 @@ void EmptyLinkFunctionForGeneratedCodeTantrumCharacterBase() {}
 	};
 #endif
 	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_ATantrumCharacterBase_Statics::NewProp_MaxImpactSpeed = { "MaxImpactSpeed", nullptr, (EPropertyFlags)0x0020080000000001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ATantrumCharacterBase, MaxImpactSpeed), METADATA_PARAMS(Z_Construct_UClass_ATantrumCharacterBase_Statics::NewProp_MaxImpactSpeed_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ATantrumCharacterBase_Statics::NewProp_MaxImpactSpeed_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ATantrumCharacterBase_Statics::NewProp_MinStunTime_MetaData[] = {
+		{ "Category", "Fall Impact" },
+		{ "Comment", "// Stun Attributes\n" },
+		{ "ModuleRelativePath", "TantrumCharacterBase.h" },
+		{ "ToolTip", "Stun Attributes" },
+	};
+#endif
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_ATantrumCharacterBase_Statics::NewProp_MinStunTime = { "MinStunTime", nullptr, (EPropertyFlags)0x0020080000000001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ATantrumCharacterBase, MinStunTime), METADATA_PARAMS(Z_Construct_UClass_ATantrumCharacterBase_Statics::NewProp_MinStunTime_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ATantrumCharacterBase_Statics::NewProp_MinStunTime_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ATantrumCharacterBase_Statics::NewProp_MaxStunTime_MetaData[] = {
+		{ "Category", "Fall Impact" },
+		{ "ModuleRelativePath", "TantrumCharacterBase.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_ATantrumCharacterBase_Statics::NewProp_MaxStunTime = { "MaxStunTime", nullptr, (EPropertyFlags)0x0020080000000001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ATantrumCharacterBase, MaxStunTime), METADATA_PARAMS(Z_Construct_UClass_ATantrumCharacterBase_Statics::NewProp_MaxStunTime_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ATantrumCharacterBase_Statics::NewProp_MaxStunTime_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ATantrumCharacterBase_Statics::NewProp_MaxWalkSpeed_MetaData[] = {
+		{ "Category", "Movement" },
+		{ "Comment", "// Movement Attributes:\n" },
+		{ "ModuleRelativePath", "TantrumCharacterBase.h" },
+		{ "ToolTip", "Movement Attributes:" },
+	};
+#endif
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_ATantrumCharacterBase_Statics::NewProp_MaxWalkSpeed = { "MaxWalkSpeed", nullptr, (EPropertyFlags)0x0020080000000001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ATantrumCharacterBase, MaxWalkSpeed), METADATA_PARAMS(Z_Construct_UClass_ATantrumCharacterBase_Statics::NewProp_MaxWalkSpeed_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ATantrumCharacterBase_Statics::NewProp_MaxWalkSpeed_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ATantrumCharacterBase_Statics::NewProp_MaxSprintSpeed_MetaData[] = {
+		{ "Category", "Movement" },
+		{ "ModuleRelativePath", "TantrumCharacterBase.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_ATantrumCharacterBase_Statics::NewProp_MaxSprintSpeed = { "MaxSprintSpeed", nullptr, (EPropertyFlags)0x0020080000000001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ATantrumCharacterBase, MaxSprintSpeed), METADATA_PARAMS(Z_Construct_UClass_ATantrumCharacterBase_Statics::NewProp_MaxSprintSpeed_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ATantrumCharacterBase_Statics::NewProp_MaxSprintSpeed_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_ATantrumCharacterBase_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ATantrumCharacterBase_Statics::NewProp_MinImpactSpeed,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ATantrumCharacterBase_Statics::NewProp_MaxImpactSpeed,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ATantrumCharacterBase_Statics::NewProp_MinStunTime,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ATantrumCharacterBase_Statics::NewProp_MaxStunTime,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ATantrumCharacterBase_Statics::NewProp_MaxWalkSpeed,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ATantrumCharacterBase_Statics::NewProp_MaxSprintSpeed,
 	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_ATantrumCharacterBase_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<ATantrumCharacterBase>::IsAbstract,
@@ -101,7 +153,7 @@ void EmptyLinkFunctionForGeneratedCodeTantrumCharacterBase() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(ATantrumCharacterBase, 857720873);
+	IMPLEMENT_CLASS(ATantrumCharacterBase, 296144602);
 	template<> TANTRUM_API UClass* StaticClass<ATantrumCharacterBase>()
 	{
 		return ATantrumCharacterBase::StaticClass();

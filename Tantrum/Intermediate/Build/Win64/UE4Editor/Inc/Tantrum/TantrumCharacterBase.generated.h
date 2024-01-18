@@ -13,10 +13,10 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #endif
 #define TANTRUM_TantrumCharacterBase_generated_h
 
-#define Tantrum_Source_Tantrum_TantrumCharacterBase_h_12_SPARSE_DATA
-#define Tantrum_Source_Tantrum_TantrumCharacterBase_h_12_RPC_WRAPPERS
-#define Tantrum_Source_Tantrum_TantrumCharacterBase_h_12_RPC_WRAPPERS_NO_PURE_DECLS
-#define Tantrum_Source_Tantrum_TantrumCharacterBase_h_12_INCLASS_NO_PURE_DECLS \
+#define Tantrum_Source_Tantrum_TantrumCharacterBase_h_14_SPARSE_DATA
+#define Tantrum_Source_Tantrum_TantrumCharacterBase_h_14_RPC_WRAPPERS
+#define Tantrum_Source_Tantrum_TantrumCharacterBase_h_14_RPC_WRAPPERS_NO_PURE_DECLS
+#define Tantrum_Source_Tantrum_TantrumCharacterBase_h_14_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesATantrumCharacterBase(); \
 	friend struct Z_Construct_UClass_ATantrumCharacterBase_Statics; \
@@ -25,7 +25,7 @@ public: \
 	DECLARE_SERIALIZER(ATantrumCharacterBase)
 
 
-#define Tantrum_Source_Tantrum_TantrumCharacterBase_h_12_INCLASS \
+#define Tantrum_Source_Tantrum_TantrumCharacterBase_h_14_INCLASS \
 private: \
 	static void StaticRegisterNativesATantrumCharacterBase(); \
 	friend struct Z_Construct_UClass_ATantrumCharacterBase_Statics; \
@@ -34,7 +34,7 @@ public: \
 	DECLARE_SERIALIZER(ATantrumCharacterBase)
 
 
-#define Tantrum_Source_Tantrum_TantrumCharacterBase_h_12_STANDARD_CONSTRUCTORS \
+#define Tantrum_Source_Tantrum_TantrumCharacterBase_h_14_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API ATantrumCharacterBase(const FObjectInitializer& ObjectInitializer); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(ATantrumCharacterBase) \
@@ -47,7 +47,7 @@ private: \
 public:
 
 
-#define Tantrum_Source_Tantrum_TantrumCharacterBase_h_12_ENHANCED_CONSTRUCTORS \
+#define Tantrum_Source_Tantrum_TantrumCharacterBase_h_14_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API ATantrumCharacterBase(ATantrumCharacterBase&&); \
@@ -58,32 +58,36 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(ATantrumCharacterBase); \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(ATantrumCharacterBase)
 
 
-#define Tantrum_Source_Tantrum_TantrumCharacterBase_h_12_PRIVATE_PROPERTY_OFFSET \
+#define Tantrum_Source_Tantrum_TantrumCharacterBase_h_14_PRIVATE_PROPERTY_OFFSET \
 	FORCEINLINE static uint32 __PPO__MinImpactSpeed() { return STRUCT_OFFSET(ATantrumCharacterBase, MinImpactSpeed); } \
-	FORCEINLINE static uint32 __PPO__MaxImpactSpeed() { return STRUCT_OFFSET(ATantrumCharacterBase, MaxImpactSpeed); }
+	FORCEINLINE static uint32 __PPO__MaxImpactSpeed() { return STRUCT_OFFSET(ATantrumCharacterBase, MaxImpactSpeed); } \
+	FORCEINLINE static uint32 __PPO__MinStunTime() { return STRUCT_OFFSET(ATantrumCharacterBase, MinStunTime); } \
+	FORCEINLINE static uint32 __PPO__MaxStunTime() { return STRUCT_OFFSET(ATantrumCharacterBase, MaxStunTime); } \
+	FORCEINLINE static uint32 __PPO__MaxWalkSpeed() { return STRUCT_OFFSET(ATantrumCharacterBase, MaxWalkSpeed); } \
+	FORCEINLINE static uint32 __PPO__MaxSprintSpeed() { return STRUCT_OFFSET(ATantrumCharacterBase, MaxSprintSpeed); }
 
 
-#define Tantrum_Source_Tantrum_TantrumCharacterBase_h_9_PROLOG
-#define Tantrum_Source_Tantrum_TantrumCharacterBase_h_12_GENERATED_BODY_LEGACY \
+#define Tantrum_Source_Tantrum_TantrumCharacterBase_h_11_PROLOG
+#define Tantrum_Source_Tantrum_TantrumCharacterBase_h_14_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	Tantrum_Source_Tantrum_TantrumCharacterBase_h_12_PRIVATE_PROPERTY_OFFSET \
-	Tantrum_Source_Tantrum_TantrumCharacterBase_h_12_SPARSE_DATA \
-	Tantrum_Source_Tantrum_TantrumCharacterBase_h_12_RPC_WRAPPERS \
-	Tantrum_Source_Tantrum_TantrumCharacterBase_h_12_INCLASS \
-	Tantrum_Source_Tantrum_TantrumCharacterBase_h_12_STANDARD_CONSTRUCTORS \
+	Tantrum_Source_Tantrum_TantrumCharacterBase_h_14_PRIVATE_PROPERTY_OFFSET \
+	Tantrum_Source_Tantrum_TantrumCharacterBase_h_14_SPARSE_DATA \
+	Tantrum_Source_Tantrum_TantrumCharacterBase_h_14_RPC_WRAPPERS \
+	Tantrum_Source_Tantrum_TantrumCharacterBase_h_14_INCLASS \
+	Tantrum_Source_Tantrum_TantrumCharacterBase_h_14_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define Tantrum_Source_Tantrum_TantrumCharacterBase_h_12_GENERATED_BODY \
+#define Tantrum_Source_Tantrum_TantrumCharacterBase_h_14_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	Tantrum_Source_Tantrum_TantrumCharacterBase_h_12_PRIVATE_PROPERTY_OFFSET \
-	Tantrum_Source_Tantrum_TantrumCharacterBase_h_12_SPARSE_DATA \
-	Tantrum_Source_Tantrum_TantrumCharacterBase_h_12_RPC_WRAPPERS_NO_PURE_DECLS \
-	Tantrum_Source_Tantrum_TantrumCharacterBase_h_12_INCLASS_NO_PURE_DECLS \
-	Tantrum_Source_Tantrum_TantrumCharacterBase_h_12_ENHANCED_CONSTRUCTORS \
+	Tantrum_Source_Tantrum_TantrumCharacterBase_h_14_PRIVATE_PROPERTY_OFFSET \
+	Tantrum_Source_Tantrum_TantrumCharacterBase_h_14_SPARSE_DATA \
+	Tantrum_Source_Tantrum_TantrumCharacterBase_h_14_RPC_WRAPPERS_NO_PURE_DECLS \
+	Tantrum_Source_Tantrum_TantrumCharacterBase_h_14_INCLASS_NO_PURE_DECLS \
+	Tantrum_Source_Tantrum_TantrumCharacterBase_h_14_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 

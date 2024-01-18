@@ -5,6 +5,7 @@
 #include "Kismet/GameplayStatics.h"
 #include "GameFramework/Character.h"
 #include "GameFramework/CharacterMovementComponent.h"
+#include "TantrumCharacterBase.h"
 #include "Camera/CameraComponent.h"
 
 void ATantrumPlayerController::BeginPlay()
@@ -177,17 +178,17 @@ void ATantrumPlayerController::RequestCrouchEnd()
 
 void ATantrumPlayerController::RequestSprintStart()
 {
-	if (GetCharacter())
+	if (ATantrumCharacterBase* TantrumCharacterBase = Cast<ATantrumCharacterBase>(GetCharacter()))
 	{
-		GetCharacter()->GetCharacterMovement()->MaxWalkSpeed += SprintSpeed;
+		TantrumCharacterBase->RequestSprintStart();
 	}
 }
 
 void ATantrumPlayerController::RequestSprintEnd()
 {
-	if (GetCharacter())
+	if (ATantrumCharacterBase* TantrumCharacterBase = Cast<ATantrumCharacterBase>(GetCharacter()))
 	{
-		GetCharacter()->GetCharacterMovement()->MaxWalkSpeed -= SprintSpeed;
+		TantrumCharacterBase->RequestSprintEnd();
 	}
 }
 
@@ -199,7 +200,6 @@ void ATantrumPlayerController::AlignCharacterToController()
 		ControllerRot.Pitch = 0;
 		GetCharacter()->SetActorRotation(ControllerRot);
 	}
-
 }
 
 void ATantrumPlayerController::RequestAlignCharacterToController()

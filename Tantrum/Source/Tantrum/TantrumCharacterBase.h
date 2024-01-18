@@ -6,6 +6,8 @@
 #include "GameFramework/Character.h"
 #include "TantrumCharacterBase.generated.h"
 
+class ATantrumCharacterBase;
+
 UCLASS()
 class TANTRUM_API ATantrumCharacterBase : public ACharacter
 {
@@ -27,6 +29,29 @@ protected:
 	UPROPERTY(EditAnywhere, Category = "Fall Impact")
 		float MaxImpactSpeed = 500.0f;
 
+	// Stun Attributes
+
+	UPROPERTY(EditAnywhere, Category = "Fall Impact")
+		float MinStunTime = 1.0f;
+
+	UPROPERTY(EditAnywhere, Category = "Fall Impact")
+		float MaxStunTime = 1.0f;
+
+	bool bIsStunned = false;
+	bool bIsSprinting = false;
+
+	float StunTime = 0.0f;
+	float StunBeginTimestamp = 0.0f;
+
+	FTimerHandle StunTimerHandle;
+	
+	// Movement Attributes:
+
+	UPROPERTY(EditAnywhere, Category = "Movement")
+		float MaxWalkSpeed = 400.0f;
+
+	UPROPERTY(EditAnywhere, Category = "Movement")
+		float MaxSprintSpeed = 1000.0f;
 
 public:	
 	// Called every frame
@@ -37,6 +62,13 @@ public:
 
 	// Custom Landing Code
 
-	void Landed(const FHitResult& Hit);
+	virtual void Landed(const FHitResult& Hit) override;
 
+	void OnStunBegin(float StunRatio);
+	void OnStunEnd();
+
+	//Sprinting
+
+	void RequestSprintStart();
+	void RequestSprintEnd();
 };
