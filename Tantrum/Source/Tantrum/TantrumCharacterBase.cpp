@@ -103,6 +103,6 @@ void ATantrumCharacterBase::OnStunEnd()
 
 	if (GetCharacterMovement())
 	{
-		GetCharacterMovement()->SetMovementMode(EMovementMode::MOVE_Walking); // or your default movement mode
+		GetCharacterMovement()->SetMovementMode(EMovementMode::MOVE_Walking); // or default movement mode
 	}
 }

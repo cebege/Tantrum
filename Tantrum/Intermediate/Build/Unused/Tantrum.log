@@ -8,5 +8,5 @@
     [3/4] UE4Editor-Tantrum.dll
        Creating library C:\CG Spectrum\GameProgramming\Tantrum\Tantrum\Intermediate\Build\Win64\UE4Editor\Development\Tantrum\UE4Editor-Tantrum.suppressed.lib and object C:\CG Spectrum\GameProgramming\Tantrum\Tantrum\Intermediate\Build\Win64\UE4Editor\Development\Tantrum\UE4Editor-Tantrum.suppressed.exp
     [4/4] TantrumEditor.target
-  Total time in Parallel executor: 9.32 seconds
-  Total execution time: 10.37 seconds
+  Total time in Parallel executor: 17.52 seconds
+  Total execution time: 18.31 seconds
