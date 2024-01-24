@@ -89,7 +89,6 @@ void ATantrumCharacterBase::OnStunBegin(float StunRatio)
 	bIsStunned = true;
 	const float StunDelt = MaxStunTime - MinStunTime;
 	StunTime = MinStunTime + (StunRatio * StunDelt);
-	StunBeginTimestamp = UGameplayStatics::GetTimeSeconds(GetWorld());
 	if (GetCharacterMovement())
 	{
 		GetCharacterMovement()->SetMovementMode(EMovementMode::MOVE_None);
