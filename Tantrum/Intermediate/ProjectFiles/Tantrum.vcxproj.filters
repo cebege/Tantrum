@@ -3,7 +3,7 @@
   <ItemGroup>
     <None Include="..\..\Tantrum.uproject" />
     <Filter Include="Source">
-      <UniqueIdentifier>{D8B6A017-29FF-4258-8CF5-F910A080AFF7}</UniqueIdentifier>
+      <UniqueIdentifier>{7CEBB354-BEFD-4045-92C0-3834EBA97C7F}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\Tantrum.Target.cs">
       <Filter>Source</Filter>
@@ -12,7 +12,7 @@
       <Filter>Source</Filter>
     </None>
     <Filter Include="Config">
-      <UniqueIdentifier>{EEF9C0F7-C4AE-4A19-B434-5BAE209D429F}</UniqueIdentifier>
+      <UniqueIdentifier>{0B25CC28-F92B-4424-B382-94E4642401E4}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Config\DefaultEditor.ini">
       <Filter>Config</Filter>
@@ -23,8 +23,11 @@
     <None Include="..\..\Config\DefaultGame.ini">
       <Filter>Config</Filter>
     </None>
+    <None Include="..\..\Config\DefaultInput.ini">
+      <Filter>Config</Filter>
+    </None>
     <Filter Include="Source\Tantrum">
-      <UniqueIdentifier>{9AC3D84F-07A1-405D-B09C-8F5C79391F2C}</UniqueIdentifier>
+      <UniqueIdentifier>{084DAD62-2B70-4B62-AECC-78A0F67E494C}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\Tantrum\Tantrum.Build.cs">
       <Filter>Source\Tantrum</Filter>
@@ -53,5 +56,11 @@
     <ClInclude Include="..\..\Source\Tantrum\TantrumPlayerController.h">
       <Filter>Source\Tantrum</Filter>
     </ClInclude>
+    <Filter Include="Source\Tantrum\Private">
+      <UniqueIdentifier>{D5EDDE18-21CF-4392-989A-60B96C5AC660}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Tantrum\Public">
+      <UniqueIdentifier>{0C6D8662-6844-4E64-B3E7-87EBC1B7281D}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
 </Project>
