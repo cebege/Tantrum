@@ -17,6 +17,9 @@ void EmptyLinkFunctionForGeneratedCodeTantrumPlayerController() {}
 	TANTRUM_API UClass* Z_Construct_UClass_ATantrumPlayerController();
 	ENGINE_API UClass* Z_Construct_UClass_APlayerController();
 	UPackage* Z_Construct_UPackage__Script_Tantrum();
+	COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
+	UMG_API UClass* Z_Construct_UClass_UUserWidget_NoRegister();
+	ENGINE_API UClass* Z_Construct_UClass_USoundCue_NoRegister();
 // End Cross Module References
 	void ATantrumPlayerController::StaticRegisterNativesATantrumPlayerController()
 	{
@@ -63,6 +66,22 @@ void EmptyLinkFunctionForGeneratedCodeTantrumPlayerController() {}
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_BaseTurnRate_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_BaseTurnRate;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_HUDClass_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FClassPropertyParams NewProp_HUDClass;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_HUDWidget_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_HUDWidget;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_JumpSound_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_JumpSound;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_FlickThreshold_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_FlickThreshold;
 		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UE4CodeGen_Private::FClassParams ClassParams;
@@ -73,7 +92,6 @@ void EmptyLinkFunctionForGeneratedCodeTantrumPlayerController() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ATantrumPlayerController_Statics::Class_MetaDataParams[] = {
-		{ "Comment", "/**\n * \n */" },
 		{ "HideCategories", "Collision Rendering Utilities|Transformation" },
 		{ "IncludePath", "TantrumPlayerController.h" },
 		{ "ModuleRelativePath", "TantrumPlayerController.h" },
@@ -141,6 +159,36 @@ void EmptyLinkFunctionForGeneratedCodeTantrumPlayerController() {}
 	};
 #endif
 	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_ATantrumPlayerController_Statics::NewProp_BaseTurnRate = { "BaseTurnRate", nullptr, (EPropertyFlags)0x0020080000000001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ATantrumPlayerController, BaseTurnRate), METADATA_PARAMS(Z_Construct_UClass_ATantrumPlayerController_Statics::NewProp_BaseTurnRate_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ATantrumPlayerController_Statics::NewProp_BaseTurnRate_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ATantrumPlayerController_Statics::NewProp_HUDClass_MetaData[] = {
+		{ "Category", "HUD" },
+		{ "ModuleRelativePath", "TantrumPlayerController.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_ATantrumPlayerController_Statics::NewProp_HUDClass = { "HUDClass", nullptr, (EPropertyFlags)0x0024080000000001, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ATantrumPlayerController, HUDClass), Z_Construct_UClass_UUserWidget_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_ATantrumPlayerController_Statics::NewProp_HUDClass_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ATantrumPlayerController_Statics::NewProp_HUDClass_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ATantrumPlayerController_Statics::NewProp_HUDWidget_MetaData[] = {
+		{ "EditInline", "true" },
+		{ "ModuleRelativePath", "TantrumPlayerController.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ATantrumPlayerController_Statics::NewProp_HUDWidget = { "HUDWidget", nullptr, (EPropertyFlags)0x0020080000080008, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ATantrumPlayerController, HUDWidget), Z_Construct_UClass_UUserWidget_NoRegister, METADATA_PARAMS(Z_Construct_UClass_ATantrumPlayerController_Statics::NewProp_HUDWidget_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ATantrumPlayerController_Statics::NewProp_HUDWidget_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ATantrumPlayerController_Statics::NewProp_JumpSound_MetaData[] = {
+		{ "Category", "Sound" },
+		{ "Comment", "/**Sound Cue for Jumping Sound. */" },
+		{ "ModuleRelativePath", "TantrumPlayerController.h" },
+		{ "ToolTip", "Sound Cue for Jumping Sound." },
+	};
+#endif
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ATantrumPlayerController_Statics::NewProp_JumpSound = { "JumpSound", nullptr, (EPropertyFlags)0x0020080000000001, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ATantrumPlayerController, JumpSound), Z_Construct_UClass_USoundCue_NoRegister, METADATA_PARAMS(Z_Construct_UClass_ATantrumPlayerController_Statics::NewProp_JumpSound_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ATantrumPlayerController_Statics::NewProp_JumpSound_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ATantrumPlayerController_Statics::NewProp_FlickThreshold_MetaData[] = {
+		{ "Category", "Input" },
+		{ "ModuleRelativePath", "TantrumPlayerController.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_ATantrumPlayerController_Statics::NewProp_FlickThreshold = { "FlickThreshold", nullptr, (EPropertyFlags)0x0020080000000001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ATantrumPlayerController, FlickThreshold), METADATA_PARAMS(Z_Construct_UClass_ATantrumPlayerController_Statics::NewProp_FlickThreshold_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ATantrumPlayerController_Statics::NewProp_FlickThreshold_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_ATantrumPlayerController_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ATantrumPlayerController_Statics::NewProp_ZoomRate,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ATantrumPlayerController_Statics::NewProp_MinZoomFOV,
@@ -150,6 +198,10 @@ void EmptyLinkFunctionForGeneratedCodeTantrumPlayerController() {}
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ATantrumPlayerController_Statics::NewProp_BaseLookUpRate,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ATantrumPlayerController_Statics::NewProp_BaseLookRightRate,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ATantrumPlayerController_Statics::NewProp_BaseTurnRate,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ATantrumPlayerController_Statics::NewProp_HUDClass,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ATantrumPlayerController_Statics::NewProp_HUDWidget,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ATantrumPlayerController_Statics::NewProp_JumpSound,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ATantrumPlayerController_Statics::NewProp_FlickThreshold,
 	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_ATantrumPlayerController_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<ATantrumPlayerController>::IsAbstract,
@@ -178,7 +230,7 @@ void EmptyLinkFunctionForGeneratedCodeTantrumPlayerController() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(ATantrumPlayerController, 1772210918);
+	IMPLEMENT_CLASS(ATantrumPlayerController, 3869971623);
 	template<> TANTRUM_API UClass* StaticClass<ATantrumPlayerController>()
 	{
 		return ATantrumPlayerController::StaticClass();

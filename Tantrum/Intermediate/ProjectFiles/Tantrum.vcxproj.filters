@@ -3,7 +3,7 @@
   <ItemGroup>
     <None Include="..\..\Tantrum.uproject" />
     <Filter Include="Source">
-      <UniqueIdentifier>{B96E63AF-B7D7-4FE8-A24D-45B8388C26CC}</UniqueIdentifier>
+      <UniqueIdentifier>{294AFC47-25FE-4447-A638-09CBC5FD1A99}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\Tantrum.Target.cs">
       <Filter>Source</Filter>
@@ -12,7 +12,7 @@
       <Filter>Source</Filter>
     </None>
     <Filter Include="Config">
-      <UniqueIdentifier>{F32F5D55-5EA1-472A-AA9C-1FA15CE334E3}</UniqueIdentifier>
+      <UniqueIdentifier>{D3BD5CD2-A33C-4ECD-891F-17F05A286992}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Config\DefaultEditor.ini">
       <Filter>Config</Filter>
@@ -27,8 +27,14 @@
       <Filter>Config</Filter>
     </None>
     <Filter Include="Source\Tantrum">
-      <UniqueIdentifier>{DFF59874-2AEB-4D38-A298-84B544D9239E}</UniqueIdentifier>
+      <UniqueIdentifier>{15230A02-DFBF-4F12-BB6E-BD92012CF74E}</UniqueIdentifier>
     </Filter>
+    <ClCompile Include="..\..\Source\Tantrum\ATantrumLevelEndTrigger.cpp">
+      <Filter>Source\Tantrum</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Tantrum\ATantrumLevelEndTrigger.h">
+      <Filter>Source\Tantrum</Filter>
+    </ClInclude>
     <None Include="..\..\Source\Tantrum\Tantrum.Build.cs">
       <Filter>Source\Tantrum</Filter>
     </None>

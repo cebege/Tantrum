@@ -4,11 +4,12 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/PlayerController.h"
+#include "Sound/SoundCue.h"
 #include "TantrumPlayerController.generated.h"
 
-/**
- * 
- */
+class ATantrumGameModeBase;
+class UUserWidget;
+
 UCLASS()
 class TANTRUM_API ATantrumPlayerController : public APlayerController
 {
@@ -32,6 +33,8 @@ private:
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
+
+	void SetupInputComponent() override;
 
 	// Movement:
 
@@ -77,6 +80,10 @@ protected:
 	//Zoom In and Zoom Out
 	void HandleCameraZoom(float AxisValue);
 
+	void RequestPullObject();
+	void RequestStopPullObject();
+	void RequestThrowObject(float AxisValue);
+
 	//Bind Actions
 
 	//Jump
@@ -96,5 +103,26 @@ protected:
 	void AlignCharacterToController();
 	void RequestAlignCharacterToController();
 	void RequestStopAligningCharacterToController();
+
+
+	UPROPERTY(EditAnywhere, Category = "HUD")
+		TSubclassOf<class UUserWidget> HUDClass;
+
+	UPROPERTY()
+		UUserWidget* HUDWidget;
+
+	/**Sound Cue for Jumping Sound. */
+
+	UPROPERTY(EditAnywhere, Category = "Sound")
+		USoundCue* JumpSound = nullptr;
+
+	ATantrumGameModeBase* GameModeRef;
+
+	//used to determine flick of axis
+	//float LastDelta = 0.0f;
+	float LastAxis = 0.0f;
+
+	UPROPERTY(EditAnywhere, Category = "Input")
+		float FlickThreshold = 0.75f;
 
 };

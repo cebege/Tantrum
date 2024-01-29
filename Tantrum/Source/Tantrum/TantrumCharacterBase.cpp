@@ -177,6 +177,7 @@ void ATantrumCharacterBase::RequestPullObject()
 	if (!bIsStunned && CharacterThrowState == ECharacterThrowState::None)
 	{
 		CharacterThrowState = ECharacterThrowState::RequestingPull;
+		UE_LOG(LogTemp, Warning, TEXT("Character Requesting Pull"));
 	}
 }
 

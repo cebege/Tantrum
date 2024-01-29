@@ -13,10 +13,10 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #endif
 #define TANTRUM_TantrumPlayerController_generated_h
 
-#define Tantrum_Source_Tantrum_TantrumPlayerController_h_15_SPARSE_DATA
-#define Tantrum_Source_Tantrum_TantrumPlayerController_h_15_RPC_WRAPPERS
-#define Tantrum_Source_Tantrum_TantrumPlayerController_h_15_RPC_WRAPPERS_NO_PURE_DECLS
-#define Tantrum_Source_Tantrum_TantrumPlayerController_h_15_INCLASS_NO_PURE_DECLS \
+#define Tantrum_Source_Tantrum_TantrumPlayerController_h_16_SPARSE_DATA
+#define Tantrum_Source_Tantrum_TantrumPlayerController_h_16_RPC_WRAPPERS
+#define Tantrum_Source_Tantrum_TantrumPlayerController_h_16_RPC_WRAPPERS_NO_PURE_DECLS
+#define Tantrum_Source_Tantrum_TantrumPlayerController_h_16_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesATantrumPlayerController(); \
 	friend struct Z_Construct_UClass_ATantrumPlayerController_Statics; \
@@ -25,7 +25,7 @@ public: \
 	DECLARE_SERIALIZER(ATantrumPlayerController)
 
 
-#define Tantrum_Source_Tantrum_TantrumPlayerController_h_15_INCLASS \
+#define Tantrum_Source_Tantrum_TantrumPlayerController_h_16_INCLASS \
 private: \
 	static void StaticRegisterNativesATantrumPlayerController(); \
 	friend struct Z_Construct_UClass_ATantrumPlayerController_Statics; \
@@ -34,7 +34,7 @@ public: \
 	DECLARE_SERIALIZER(ATantrumPlayerController)
 
 
-#define Tantrum_Source_Tantrum_TantrumPlayerController_h_15_STANDARD_CONSTRUCTORS \
+#define Tantrum_Source_Tantrum_TantrumPlayerController_h_16_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API ATantrumPlayerController(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(ATantrumPlayerController) \
@@ -47,7 +47,7 @@ private: \
 public:
 
 
-#define Tantrum_Source_Tantrum_TantrumPlayerController_h_15_ENHANCED_CONSTRUCTORS \
+#define Tantrum_Source_Tantrum_TantrumPlayerController_h_16_ENHANCED_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API ATantrumPlayerController(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()) : Super(ObjectInitializer) { }; \
 private: \
@@ -60,7 +60,7 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(ATantrumPlayerController); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(ATantrumPlayerController)
 
 
-#define Tantrum_Source_Tantrum_TantrumPlayerController_h_15_PRIVATE_PROPERTY_OFFSET \
+#define Tantrum_Source_Tantrum_TantrumPlayerController_h_16_PRIVATE_PROPERTY_OFFSET \
 	FORCEINLINE static uint32 __PPO__ZoomRate() { return STRUCT_OFFSET(ATantrumPlayerController, ZoomRate); } \
 	FORCEINLINE static uint32 __PPO__MinZoomFOV() { return STRUCT_OFFSET(ATantrumPlayerController, MinZoomFOV); } \
 	FORCEINLINE static uint32 __PPO__MaxZoomFOV() { return STRUCT_OFFSET(ATantrumPlayerController, MaxZoomFOV); } \
@@ -68,30 +68,34 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(ATantrumPlayerController); \
 	FORCEINLINE static uint32 __PPO__SprintSpeed() { return STRUCT_OFFSET(ATantrumPlayerController, SprintSpeed); } \
 	FORCEINLINE static uint32 __PPO__BaseLookUpRate() { return STRUCT_OFFSET(ATantrumPlayerController, BaseLookUpRate); } \
 	FORCEINLINE static uint32 __PPO__BaseLookRightRate() { return STRUCT_OFFSET(ATantrumPlayerController, BaseLookRightRate); } \
-	FORCEINLINE static uint32 __PPO__BaseTurnRate() { return STRUCT_OFFSET(ATantrumPlayerController, BaseTurnRate); }
+	FORCEINLINE static uint32 __PPO__BaseTurnRate() { return STRUCT_OFFSET(ATantrumPlayerController, BaseTurnRate); } \
+	FORCEINLINE static uint32 __PPO__HUDClass() { return STRUCT_OFFSET(ATantrumPlayerController, HUDClass); } \
+	FORCEINLINE static uint32 __PPO__HUDWidget() { return STRUCT_OFFSET(ATantrumPlayerController, HUDWidget); } \
+	FORCEINLINE static uint32 __PPO__JumpSound() { return STRUCT_OFFSET(ATantrumPlayerController, JumpSound); } \
+	FORCEINLINE static uint32 __PPO__FlickThreshold() { return STRUCT_OFFSET(ATantrumPlayerController, FlickThreshold); }
 
 
-#define Tantrum_Source_Tantrum_TantrumPlayerController_h_12_PROLOG
-#define Tantrum_Source_Tantrum_TantrumPlayerController_h_15_GENERATED_BODY_LEGACY \
+#define Tantrum_Source_Tantrum_TantrumPlayerController_h_13_PROLOG
+#define Tantrum_Source_Tantrum_TantrumPlayerController_h_16_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	Tantrum_Source_Tantrum_TantrumPlayerController_h_15_PRIVATE_PROPERTY_OFFSET \
-	Tantrum_Source_Tantrum_TantrumPlayerController_h_15_SPARSE_DATA \
-	Tantrum_Source_Tantrum_TantrumPlayerController_h_15_RPC_WRAPPERS \
-	Tantrum_Source_Tantrum_TantrumPlayerController_h_15_INCLASS \
-	Tantrum_Source_Tantrum_TantrumPlayerController_h_15_STANDARD_CONSTRUCTORS \
+	Tantrum_Source_Tantrum_TantrumPlayerController_h_16_PRIVATE_PROPERTY_OFFSET \
+	Tantrum_Source_Tantrum_TantrumPlayerController_h_16_SPARSE_DATA \
+	Tantrum_Source_Tantrum_TantrumPlayerController_h_16_RPC_WRAPPERS \
+	Tantrum_Source_Tantrum_TantrumPlayerController_h_16_INCLASS \
+	Tantrum_Source_Tantrum_TantrumPlayerController_h_16_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define Tantrum_Source_Tantrum_TantrumPlayerController_h_15_GENERATED_BODY \
+#define Tantrum_Source_Tantrum_TantrumPlayerController_h_16_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	Tantrum_Source_Tantrum_TantrumPlayerController_h_15_PRIVATE_PROPERTY_OFFSET \
-	Tantrum_Source_Tantrum_TantrumPlayerController_h_15_SPARSE_DATA \
-	Tantrum_Source_Tantrum_TantrumPlayerController_h_15_RPC_WRAPPERS_NO_PURE_DECLS \
-	Tantrum_Source_Tantrum_TantrumPlayerController_h_15_INCLASS_NO_PURE_DECLS \
-	Tantrum_Source_Tantrum_TantrumPlayerController_h_15_ENHANCED_CONSTRUCTORS \
+	Tantrum_Source_Tantrum_TantrumPlayerController_h_16_PRIVATE_PROPERTY_OFFSET \
+	Tantrum_Source_Tantrum_TantrumPlayerController_h_16_SPARSE_DATA \
+	Tantrum_Source_Tantrum_TantrumPlayerController_h_16_RPC_WRAPPERS_NO_PURE_DECLS \
+	Tantrum_Source_Tantrum_TantrumPlayerController_h_16_INCLASS_NO_PURE_DECLS \
+	Tantrum_Source_Tantrum_TantrumPlayerController_h_16_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 

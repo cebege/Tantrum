@@ -2,15 +2,36 @@
 
 
 #include "TantrumPlayerController.h"
-#include "Kismet/GameplayStatics.h"
 #include "GameFramework/Character.h"
 #include "GameFramework/CharacterMovementComponent.h"
+#include "Kismet/GameplayStatics.h"
 #include "TantrumCharacterBase.h"
 #include "Camera/CameraComponent.h"
+#include "TantrumGameModeBase.h"
+
+static TAutoConsoleVariable<bool> CVarDisplayLaunchInputDelta(
+	TEXT("Tantrum.Character.Debug.DisplayLaunchInputDelta"),
+	false,
+	TEXT("Display Launch Input Delta"),
+	ECVF_Default);
 
 void ATantrumPlayerController::BeginPlay()
 {
 	Super::BeginPlay();
+	GameModeRef = Cast<ATantrumGameModeBase>(GetWorld()->GetAuthGameMode());
+	if (HUDClass)
+	{
+		HUDWidget = CreateWidget(this, HUDClass);
+		if (HUDWidget)
+		{
+			HUDWidget->AddToViewport();
+		}
+	}
+}
+
+void ATantrumPlayerController::SetupInputComponent()
+{
+	Super::SetupInputComponent();
 	if (InputComponent)
 	{
 		//Bind Axis
@@ -18,7 +39,7 @@ void ATantrumPlayerController::BeginPlay()
 		//Move
 		InputComponent->BindAxis(TEXT("MoveForward"), this, &ATantrumPlayerController::RequestMoveForward);
 		/*InputComponent->BindAxis(TEXT("MoveRight"), this, &ATantrumPlayerController::RequestMoveRight);*/
-		
+
 		//Look
 		InputComponent->BindAxis(TEXT("LookUp"), this, &ATantrumPlayerController::RequestLookUp);
 		InputComponent->BindAxis(TEXT("LookRight"), this, &ATantrumPlayerController::RequestLookRight);
@@ -29,6 +50,9 @@ void ATantrumPlayerController::BeginPlay()
 		// Mouse Wheel Zoom In / Zoom Out
 		InputComponent->BindAxis(TEXT("MouseWheelAxis"), this, &ATantrumPlayerController::HandleCameraZoom);
 
+		//Throw Object
+		InputComponent->BindAxis(TEXT("ThrowObjectGP"), this, &ATantrumPlayerController::RequestThrowObject);
+
 		//Bind Actions
 
 		// Jump
@@ -38,7 +62,7 @@ void ATantrumPlayerController::BeginPlay()
 		//Sprint
 		InputComponent->BindAction(TEXT("Sprint"), IE_Pressed, this, &ATantrumPlayerController::RequestSprintStart);
 		InputComponent->BindAction(TEXT("Sprint"), IE_Released, this, &ATantrumPlayerController::RequestSprintEnd);
-		
+
 		//Crouch
 		InputComponent->BindAction(TEXT("Crouch"), IE_Pressed, this, &ATantrumPlayerController::RequestCrouchStart);
 		InputComponent->BindAction(TEXT("Crouch"), IE_Released, this, &ATantrumPlayerController::RequestCrouchEnd);
@@ -47,7 +71,11 @@ void ATantrumPlayerController::BeginPlay()
 		//Bind Right Mouse Button
 		InputComponent->BindAction(TEXT("AlignToController"), IE_Pressed, this, &ATantrumPlayerController::RequestAlignCharacterToController);
 		InputComponent->BindAction(TEXT("AlignToController"), IE_Released, this, &ATantrumPlayerController::RequestStopAligningCharacterToController);
-		
+
+		// Pulling
+		InputComponent->BindAction(TEXT("PullObject"), EInputEvent::IE_Pressed, this, &ATantrumPlayerController::RequestPullObject);
+		InputComponent->BindAction(TEXT("PullObject"), EInputEvent::IE_Released, this, &ATantrumPlayerController::RequestStopPullObject);
+
 	}
 }
 
@@ -64,6 +92,7 @@ void ATantrumPlayerController::Tick(float DeltaTime)
 
 void ATantrumPlayerController::RequestMoveForward(float AxisValue)
 {
+	if (!GameModeRef || GameModeRef->GetCurrentGameState() != EGameState::Playing) { return; }
 	if (AxisValue != 0.0f)
 	{
 		FRotator const ControlSpaceRot = GetControlRotation();
@@ -89,6 +118,7 @@ void ATantrumPlayerController::HandleCameraZoom(float AxisValue)
 
 //void ATantrumPlayerController::RequestMoveRight(float AxisValue)
 //{
+// 	if(!GameModeRef || GameModeRef->GetCurrentGameState() != EGameState::Playing) {return;}
 //	if (AxisValue != 0.0f)
 //	{
 //		FRotator const ControlSpaceRot = GetControlRotation();
@@ -120,11 +150,49 @@ void ATantrumPlayerController::RequestLookRight(float AxisValue)
 	}
 }
 
+void ATantrumPlayerController::RequestThrowObject(float AxisValue)
+{
+	if (ATantrumCharacterBase* TantrumCharacterBase = Cast<ATantrumCharacterBase>(GetCharacter()))
+	{
+		if (TantrumCharacterBase->CanThrowObject())
+		{
+			float currentDelta = AxisValue - LastAxis;
+
+			//debug
+			if (CVarDisplayLaunchInputDelta->GetBool())
+			{
+				if (fabs(currentDelta) > 0.0f)
+				{
+					UE_LOG(LogTemp, Warning, TEXT("Axis: %f LastAxis: %f currentDelta: %f"), AxisValue, LastAxis);
+				}
+			}
+			LastAxis = AxisValue;
+			const bool IsFlick = fabs(currentDelta) > FlickThreshold;
+			if (IsFlick)
+			{
+				TantrumCharacterBase->RequestThrowObject();
+			}
+		}
+		else
+		{
+			LastAxis = 0.0f;
+		}
+	}
+}
+
 void ATantrumPlayerController::RequestJump()
 {
+	if (!GameModeRef || GameModeRef->GetCurrentGameState() != EGameState::Playing) { return; }
 	if (GetCharacter())
 	{
 		GetCharacter()->Jump();
+
+		//SoundCue Triggers
+		if (JumpSound && GetCharacter()->GetCharacterMovement()->IsMovingOnGround())
+		{
+			FVector CharacterLocation = GetCharacter()->GetActorLocation();
+			UGameplayStatics::PlaySoundAtLocation(this, JumpSound, CharacterLocation);
+		}
 	}
 }
 
@@ -160,8 +228,8 @@ void ATantrumPlayerController::ToggleCrouch()
 
 void ATantrumPlayerController::RequestCrouchStart()
 {
-	if (!GetCharacter()->GetCharacterMovement()->IsMovingOnGround()) { return; } // avoid clashes with jump function.
-	
+	if (!GameModeRef || GameModeRef->GetCurrentGameState() != EGameState::Playing) { return; }
+	if (!GetCharacter()->GetCharacterMovement()->IsMovingOnGround()) { return; }
 	if (GetCharacter())
 	{
 		GetCharacter()->Crouch();
@@ -178,6 +246,7 @@ void ATantrumPlayerController::RequestCrouchEnd()
 
 void ATantrumPlayerController::RequestSprintStart()
 {
+	if (!GameModeRef || GameModeRef->GetCurrentGameState() != EGameState::Playing) { return; }
 	if (ATantrumCharacterBase* TantrumCharacterBase = Cast<ATantrumCharacterBase>(GetCharacter()))
 	{
 		TantrumCharacterBase->RequestSprintStart();
@@ -210,4 +279,20 @@ void ATantrumPlayerController::RequestAlignCharacterToController()
 void ATantrumPlayerController::RequestStopAligningCharacterToController()
 {
 	bIsAligningCharacter = false;
+}
+
+void ATantrumPlayerController::RequestPullObject()
+{
+	if (ATantrumCharacterBase* TantrumCharacterBase = Cast<ATantrumCharacterBase>(GetCharacter()))
+	{
+		TantrumCharacterBase->RequestPullObject();
+	}
+}
+
+void ATantrumPlayerController::RequestStopPullObject()
+{
+	if (ATantrumCharacterBase* TantrumCharacterBase = Cast<ATantrumCharacterBase>(GetCharacter()))
+	{
+		TantrumCharacterBase->RequestStopPullObject();
+	}
 }
