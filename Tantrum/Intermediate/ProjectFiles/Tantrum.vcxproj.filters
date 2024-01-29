@@ -3,7 +3,7 @@
   <ItemGroup>
     <None Include="..\..\Tantrum.uproject" />
     <Filter Include="Source">
-      <UniqueIdentifier>{BE43FFD7-2C37-44C2-AA87-B14E06F7CBD1}</UniqueIdentifier>
+      <UniqueIdentifier>{B96E63AF-B7D7-4FE8-A24D-45B8388C26CC}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\Tantrum.Target.cs">
       <Filter>Source</Filter>
@@ -12,7 +12,7 @@
       <Filter>Source</Filter>
     </None>
     <Filter Include="Config">
-      <UniqueIdentifier>{0D0F5709-75C9-4391-AD34-2634AB48EC71}</UniqueIdentifier>
+      <UniqueIdentifier>{F32F5D55-5EA1-472A-AA9C-1FA15CE334E3}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Config\DefaultEditor.ini">
       <Filter>Config</Filter>
@@ -27,7 +27,7 @@
       <Filter>Config</Filter>
     </None>
     <Filter Include="Source\Tantrum">
-      <UniqueIdentifier>{64E69D81-A448-4508-AC61-7D7E3A1E6364}</UniqueIdentifier>
+      <UniqueIdentifier>{DFF59874-2AEB-4D38-A298-84B544D9239E}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\Tantrum\Tantrum.Build.cs">
       <Filter>Source\Tantrum</Filter>
@@ -48,6 +48,12 @@
       <Filter>Source\Tantrum</Filter>
     </ClCompile>
     <ClInclude Include="..\..\Source\Tantrum\TantrumGameModeBase.h">
+      <Filter>Source\Tantrum</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\Tantrum\TantrumGameWidget.cpp">
+      <Filter>Source\Tantrum</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Tantrum\TantrumGameWidget.h">
       <Filter>Source\Tantrum</Filter>
     </ClInclude>
     <ClCompile Include="..\..\Source\Tantrum\TantrumPlayerController.cpp">

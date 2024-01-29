@@ -129,7 +129,6 @@ void AThrowableObject::Launch(const FVector& InitialVelocity, AActor* Target /* 
 				return;
 			}
 		}
-
 		ProjectileMovementComponent->Velocity = InitialVelocity;
 	}
 }
@@ -170,7 +169,6 @@ bool AThrowableObject::SetHomingTarget(AActor* Target)
 			}
 		}
 	}
-
 	return false;
 }
 
