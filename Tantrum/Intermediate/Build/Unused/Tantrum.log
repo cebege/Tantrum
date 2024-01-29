@@ -2,6 +2,11 @@
   Building TantrumEditor...
   Using Visual Studio 2019 14.37.32822 toolchain (C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822) and Windows 10.0.22621.0 SDK (C:\Program Files (x86)\Windows Kits\10).
   Building 4 actions with 16 processes...
-    [1/4] ThrowableActor.cpp
-C:\CG Spectrum\GameProgramming\Tantrum\Tantrum\Source\Tantrum\Private\ThrowableActor.cpp(5): fatal error C1083: Cannot open include file: 'TantrumCharacterBase.h': No such file or directory
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.MakeFile.Targets(45,5): error MSB3073: The command ""C:\Program Files\Epic Games\UE_4.26\Engine\Build\BatchFiles\Build.bat" TantrumEditor Win64 Development -Project="C:\CG Spectrum\GameProgramming\Tantrum\Tantrum\Tantrum.uproject" -WaitMutex -FromMsBuild" exited with code 6.
+    [1/4] ThrowableObject.cpp
+    [2/4] UE4Editor-Tantrum.lib
+       Creating library C:\CG Spectrum\GameProgramming\Tantrum\Tantrum\Intermediate\Build\Win64\UE4Editor\Development\Tantrum\UE4Editor-Tantrum.lib and object C:\CG Spectrum\GameProgramming\Tantrum\Tantrum\Intermediate\Build\Win64\UE4Editor\Development\Tantrum\UE4Editor-Tantrum.exp
+    [3/4] UE4Editor-Tantrum.dll
+       Creating library C:\CG Spectrum\GameProgramming\Tantrum\Tantrum\Intermediate\Build\Win64\UE4Editor\Development\Tantrum\UE4Editor-Tantrum.suppressed.lib and object C:\CG Spectrum\GameProgramming\Tantrum\Tantrum\Intermediate\Build\Win64\UE4Editor\Development\Tantrum\UE4Editor-Tantrum.suppressed.exp
+    [4/4] TantrumEditor.target
+  Total time in Parallel executor: 1.57 seconds
+  Total execution time: 1.95 seconds
