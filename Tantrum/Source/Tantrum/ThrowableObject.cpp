@@ -15,6 +15,20 @@ AThrowableObject::AThrowableObject()
 	StaticMeshComponent = CreateDefaultSubobject<UStaticMeshComponent>("StaticMeshComponent");
 	ProjectileMovementComponent = CreateDefaultSubobject<UProjectileMovementComponent>("ProjectileMovementComponent");
 	RootComponent = StaticMeshComponent;
+
+	// Disable gravity
+	StaticMeshComponent->SetEnableGravity(false);
+
+	// Make sure the object starts without any movement
+	StaticMeshComponent->SetPhysicsLinearVelocity(FVector::ZeroVector);
+	StaticMeshComponent->SetPhysicsAngularVelocityInDegrees(FVector::ZeroVector);
+
+}
+
+bool AThrowableObject::IsIdle() const
+{
+	UE_LOG(LogTemp, Warning, TEXT("IsIdle: Object State is %d"), static_cast<int>(State));
+	return State == EState::Idle;
 }
 
 // Called when the game starts or when spawned
@@ -94,8 +108,10 @@ void AThrowableObject::ProjectileStop(const FHitResult& ImpactResult)
 
 bool AThrowableObject::Pull(AActor* InActor)
 {
+	UE_LOG(LogTemp, Warning, TEXT("Pull method called in ThrowableObject"));
 	if (State != EState::Idle)
 	{
+		UE_LOG(LogTemp, Warning, TEXT("Pull failed: ThrowableObject not in Idle state."));
 		return false;
 	}
 
@@ -104,9 +120,10 @@ bool AThrowableObject::Pull(AActor* InActor)
 		ToggleHighlight(false);
 		State = EState::Pull;
 		PullActor = InActor;
+		UE_LOG(LogTemp, Warning, TEXT("Pull Successful"));
 		return true;
 	}
-
+	UE_LOG(LogTemp, Warning, TEXT("Pull failed: SetHomingTarget returned false."));
 	return false;
 }
 

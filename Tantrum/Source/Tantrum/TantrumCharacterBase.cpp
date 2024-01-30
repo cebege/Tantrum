@@ -228,10 +228,10 @@ void ATantrumCharacterBase::SphereCastPlayerView()
 			ThrowableObject->ToggleHighlight(false);
 			ThrowableObject = nullptr;
 		}
+		UE_LOG(LogTemp, Warning, TEXT("SphereCastPlayerView: DotResult < -0.23f, ignoring objects behind."));
 		return;
 		//UE_LOG(LogTemp, Warning, TEXT("Dot Result: %f"), DotResult);
 	}
-
 
 	FHitResult HitResult;
 	EDrawDebugTrace::Type DebugTrace = CVarDisplayTrace->GetBool() ? EDrawDebugTrace::ForOneFrame : EDrawDebugTrace::None;
@@ -239,6 +239,38 @@ void ATantrumCharacterBase::SphereCastPlayerView()
 	ActorsToIgnore.Add(this);
 
 	UKismetSystemLibrary::SphereTraceSingle(GetWorld(), Location, EndPos, 70.0f, UEngineTypes::ConvertToTraceType(ECollisionChannel::ECC_Visibility), false, ActorsToIgnore, DebugTrace, HitResult, true);
+	if (HitResult.bBlockingHit)
+	{
+		AThrowableObject* HitObject = Cast<AThrowableObject>(HitResult.GetActor());
+		if (HitObject)
+		{
+			//UE_LOG(LogTemp, Warning, TEXT("SphereCastPlayerView: Detected ThrowableObject: %s"), *HitObject->GetName());
+		}
+		else
+		{
+			//UE_LOG(LogTemp, Warning, TEXT("SphereCastPlayerView: Hit object is not a ThrowableObject. Hit: %s"), *HitResult.GetActor()->GetName());
+		}
+	}
+	else
+	{
+		//UE_LOG(LogTemp, Warning, TEXT("SphereCastPlayerView: No object detected."));
+	}
+	AThrowableObject* HitObject = Cast<AThrowableObject>(HitResult.GetActor());
+	if (HitObject)
+	{
+		ThrowableObject = HitObject;
+		ThrowableObject->ToggleHighlight(true);
+		UE_LOG(LogTemp, Warning, TEXT("SphereCastPlayerView: Detected and assigned ThrowableObject: %s"), *HitObject->GetName());
+	}
+	else
+	{
+		if (ThrowableObject)
+		{
+			ThrowableObject->ToggleHighlight(false);
+			ThrowableObject = nullptr;
+		}
+		UE_LOG(LogTemp, Warning, TEXT("SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject."));
+	}
 	ProcessTraceResult(HitResult);
 
 #if ENABLE_DRAW_DEBUG
@@ -262,6 +294,24 @@ void ATantrumCharacterBase::SphereCastActorTransform()
 	EDrawDebugTrace::Type DebugTrace = CVarDisplayTrace->GetBool() ? EDrawDebugTrace::ForOneFrame : EDrawDebugTrace::None;
 	FHitResult HitResult;
 	UKismetSystemLibrary::SphereTraceSingle(GetWorld(), StartPos, EndPos, 70.0f, UEngineTypes::ConvertToTraceType(ECollisionChannel::ECC_Visibility), false, TArray<AActor*>(), DebugTrace, HitResult, true);
+	
+	if (HitResult.bBlockingHit)
+	{
+		AThrowableObject* HitObject = Cast<AThrowableObject>(HitResult.GetActor());
+		if (HitObject)
+		{
+			UE_LOG(LogTemp, Warning, TEXT("SphereCastActorTransform: Detected ThrowableObject: %s"), *HitObject->GetName());
+		}
+		else
+		{
+			UE_LOG(LogTemp, Warning, TEXT("SphereCastActorTransform: Hit object is not a ThrowableObject. Hit: %s"), *HitResult.GetActor()->GetName());
+		}
+	}
+	else
+	{
+		UE_LOG(LogTemp, Warning, TEXT("SphereCastActorTransform: No object detected."));
+	}
+
 	ProcessTraceResult(HitResult);
 }
 
@@ -271,13 +321,31 @@ void ATantrumCharacterBase::LineCastActorTransform()
 	FVector StartPos = GetActorLocation();
 	FVector EndPos = StartPos + (GetActorForwardVector() * 1000.0f);
 	FHitResult HitResult;
-	GetWorld() ? GetWorld()->LineTraceSingleByChannel(HitResult, StartPos, EndPos, ECollisionChannel::ECC_Visibility) : false;
+	bool bHit = GetWorld() ? GetWorld()->LineTraceSingleByChannel(HitResult, StartPos, EndPos, ECollisionChannel::ECC_Visibility) : false;
 #if ENABLE_DRAW_DEBUG
 	if (CVarDisplayTrace->GetBool())
 	{
 		DrawDebugLine(GetWorld(), StartPos, EndPos, HitResult.bBlockingHit ? FColor::Red : FColor::White, false);
 	}
 #endif
+	if (bHit)
+	{
+		AThrowableObject* HitObject = Cast<AThrowableObject>(HitResult.GetActor());
+		if (HitObject)
+		{
+			UE_LOG(LogTemp, Warning, TEXT("LineCastActorTransform: Detected ThrowableObject: %s"), *HitObject->GetName());
+		}
+		else
+		{
+			UE_LOG(LogTemp, Warning, TEXT("LineCastActorTransform: Hit object is not a ThrowableObject. Hit: %s"), *HitResult.GetActor()->GetName());
+		}
+	}
+	else
+	{
+		UE_LOG(LogTemp, Warning, TEXT("LineCastActorTransform: No object detected."));
+	}
+
+
 	ProcessTraceResult(HitResult);
 }
 
@@ -288,6 +356,26 @@ void ATantrumCharacterBase::ProcessTraceResult(const FHitResult& HitResult)
 	AThrowableObject* HitThrowableObject = HitResult.bBlockingHit ? Cast<AThrowableObject>(HitResult.GetActor()) : nullptr;
 	const bool IsSameActor = (ThrowableObject == HitThrowableObject);
 	const bool IsValidTarget = ThrowableObject && ThrowableObject->IsIdle();
+	const bool IsCharacterReadyToPull = CharacterThrowState == ECharacterThrowState::RequestingPull;
+	
+	// Debug logs
+	if (HitThrowableObject)
+	{
+		UE_LOG(LogTemp, Warning, TEXT("ProcessTraceResult: ThrowableObject state is %d"), static_cast<int>(HitThrowableObject->GetState()));
+	}
+	else
+	{
+		UE_LOG(LogTemp, Warning, TEXT("ProcessTraceResult: Hit result did not yield a ThrowableObject."));
+	}
+
+	UE_LOG(LogTemp, Warning, TEXT("ProcessTraceResult: IsValidTarget: %s, IsCharacterReadyToPull: %s"),
+		IsValidTarget ? TEXT("True") : TEXT("False"),
+		IsCharacterReadyToPull ? TEXT("True") : TEXT("False"));
+
+	// Additional logs to investigate the issues
+	UE_LOG(LogTemp, Warning, TEXT("ProcessTraceResult: ThrowableObject is %s, IsSameActor: %s"),
+		ThrowableObject ? TEXT("Non-null") : TEXT("Null"),
+		IsSameActor ? TEXT("True") : TEXT("False"));
 
 	//clean up old actor
 	if (ThrowableObject)
@@ -296,6 +384,7 @@ void ATantrumCharacterBase::ProcessTraceResult(const FHitResult& HitResult)
 		{
 			ThrowableObject->ToggleHighlight(false);
 			ThrowableObject = nullptr;
+			UE_LOG(LogTemp, Warning, TEXT("ProcessTraceResult: Existing throwable object cleared."));
 		}
 	}
 
@@ -305,6 +394,7 @@ void ATantrumCharacterBase::ProcessTraceResult(const FHitResult& HitResult)
 		{
 			ThrowableObject = HitThrowableObject;
 			ThrowableObject->ToggleHighlight(true);
+			UE_LOG(LogTemp, Warning, TEXT("ProcessTraceResult: New throwable object highlighted: %s"), *ThrowableObject->GetName());
 		}
 	}
 
@@ -313,11 +403,24 @@ void ATantrumCharacterBase::ProcessTraceResult(const FHitResult& HitResult)
 		//don't allow for pulling objects while running/jogging
 		if (GetVelocity().SizeSquared() < 100.0f)
 		{
-			if (ThrowableObject && ThrowableObject->Pull(this))
+			if (ThrowableObject)
 			{
-				CharacterThrowState = ECharacterThrowState::Pulling;
-				ThrowableObject = nullptr;
+				UE_LOG(LogTemp, Warning, TEXT("ProcessTraceResult: Attempting to pull object: %s"), *ThrowableObject->GetName());
+				if (ThrowableObject->Pull(this))
+				{
+					CharacterThrowState = ECharacterThrowState::Pulling;
+					ThrowableObject = nullptr;
+					UE_LOG(LogTemp, Warning, TEXT("ProcessTraceResult: Pull action initiated on object."));
+				}
+				else
+				{
+					UE_LOG(LogTemp, Warning, TEXT("ProcessTraceResult: Failed to initiate pull on object."));
+				}
 			}
+		}
+		else
+		{
+			UE_LOG(LogTemp, Warning, TEXT("ProcessTraceResult: Cannot pull object while moving."));
 		}
 	}
 }

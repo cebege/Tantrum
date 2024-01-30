@@ -285,6 +285,7 @@ void ATantrumPlayerController::RequestPullObject()
 {
 	if (ATantrumCharacterBase* TantrumCharacterBase = Cast<ATantrumCharacterBase>(GetCharacter()))
 	{
+		UE_LOG(LogTemp, Warning, TEXT("RequestPullObject called"));
 		TantrumCharacterBase->RequestPullObject();
 	}
 }

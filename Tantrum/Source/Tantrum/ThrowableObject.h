@@ -22,7 +22,7 @@ public:
 	//virtual void Tick(float DeltaTime) override;
 
 	UFUNCTION(BlueprintCallable)
-		bool IsIdle() const { return State == EState::Idle; }
+		bool IsIdle() const;
 
 	UFUNCTION(BlueprintCallable)
 		bool Pull(AActor* InActor);
@@ -36,7 +36,6 @@ public:
 	UFUNCTION(BlueprintCallable)
 		void ToggleHighlight(bool bIsOn);
 
-protected:
 	enum class EState
 	{
 		Idle,
@@ -45,6 +44,11 @@ protected:
 		Launch,
 		Dropped,
 	};
+
+	EState GetState() const { return State; }
+
+protected:
+
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
 	virtual void EndPlay(const EEndPlayReason::Type EndPlayReason) override;
