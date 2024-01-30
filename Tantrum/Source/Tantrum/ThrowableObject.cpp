@@ -47,47 +47,43 @@ void AThrowableObject::EndPlay(const EEndPlayReason::Type EndPlayReason)
 void AThrowableObject::NotifyHit(UPrimitiveComponent* MyComp, AActor* Other, UPrimitiveComponent* OtherComp, bool bSelfMoved, FVector HitLocation, FVector HitNormal, FVector NormalImpulse, const FHitResult& Hit)
 {
 	Super::NotifyHit(MyComp, Other, OtherComp, bSelfMoved, HitLocation, HitNormal, NormalImpulse, Hit);
-	if (State == EState::Idle || State == EState::Attached || State == EState::Dropped)
+
+	// Ignore if the object is not in Pull state or already attached
+	if (State != EState::Pull)
 	{
 		return;
 	}
 
-	//three options when hit
-	//if in attached ignore
-
-	//if not we actor was being pulled or launched
-	//pulled we want to check that the hit is of the actor pulling
-	//in which case it's a successful attach
-
-	//if launched and hit a character that is not the launcher
-	//do damage or whatever it is we want
-
-	//ignore all other hits
-
-	//this will wait until the projectile comes to a natural stop before returning it to idle
-
-
-	if (PullActor && State == EState::Pull)
+	// Check if the object that was hit is the actor that is pulling this object
+	if (PullActor && Other == PullActor)
 	{
-		if (ATantrumCharacterBase* TantrumCharacter = Cast<ATantrumCharacterBase>(PullActor))
+		ATantrumCharacterBase* TantrumCharacter = Cast<ATantrumCharacterBase>(PullActor);
+		if (TantrumCharacter)
 		{
-			if (Other == PullActor)
-			{
-				AttachToComponent(TantrumCharacter->GetMesh(), FAttachmentTransformRules::SnapToTargetNotIncludingScale, TEXT("ObjectAttach"));
-				SetOwner(TantrumCharacter);
-				ProjectileMovementComponent->Deactivate();
-				State = EState::Attached;
-				//set character state to attached
-				TantrumCharacter->OnThrowableAttached(this);
-			}
-			else
+			// Attach this object to the pulling actor
+			AttachToComponent(TantrumCharacter->GetMesh(), FAttachmentTransformRules::SnapToTargetNotIncludingScale, TEXT("ObjectAttach"));
+			SetOwner(TantrumCharacter);
+			ProjectileMovementComponent->Deactivate();
+			State = EState::Attached;
+
+			// Notify the character that the object has been attached
+			TantrumCharacter->OnThrowableAttached(this);
+		}
+	}
+	else
+	{
+		// If the object hit something else, consider it dropped
+		if (State == EState::Pull)
+		{
+			if (ATantrumCharacterBase* TantrumCharacter = Cast<ATantrumCharacterBase>(PullActor))
 			{
 				TantrumCharacter->ResetThrowableObject();
-				State = EState::Dropped;
 			}
+			State = EState::Dropped;
 		}
 	}
 
+	// Clear the homing target and pull actor
 	ProjectileMovementComponent->HomingTargetComponent = nullptr;
 	PullActor = nullptr;
 }
@@ -158,7 +154,6 @@ void AThrowableObject::Drop()
 		{
 			DetachFromActor(FDetachmentTransformRules::KeepWorldTransform);
 		}
-
 		ProjectileMovementComponent->Activate(true);
 		ProjectileMovementComponent->HomingTargetComponent = nullptr;
 		State = EState::Dropped;

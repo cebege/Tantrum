@@ -359,23 +359,23 @@ void ATantrumCharacterBase::ProcessTraceResult(const FHitResult& HitResult)
 	const bool IsCharacterReadyToPull = CharacterThrowState == ECharacterThrowState::RequestingPull;
 	
 	// Debug logs
-	if (HitThrowableObject)
-	{
-		UE_LOG(LogTemp, Warning, TEXT("ProcessTraceResult: ThrowableObject state is %d"), static_cast<int>(HitThrowableObject->GetState()));
-	}
-	else
-	{
-		UE_LOG(LogTemp, Warning, TEXT("ProcessTraceResult: Hit result did not yield a ThrowableObject."));
-	}
+	//if (HitThrowableObject)
+	//{
+	//	UE_LOG(LogTemp, Warning, TEXT("ProcessTraceResult: ThrowableObject state is %d"), static_cast<int>(HitThrowableObject->GetState()));
+	//}
+	//else
+	//{
+	//	UE_LOG(LogTemp, Warning, TEXT("ProcessTraceResult: Hit result did not yield a ThrowableObject."));
+	//}
 
-	UE_LOG(LogTemp, Warning, TEXT("ProcessTraceResult: IsValidTarget: %s, IsCharacterReadyToPull: %s"),
-		IsValidTarget ? TEXT("True") : TEXT("False"),
-		IsCharacterReadyToPull ? TEXT("True") : TEXT("False"));
+	//UE_LOG(LogTemp, Warning, TEXT("ProcessTraceResult: IsValidTarget: %s, IsCharacterReadyToPull: %s"),
+	//	IsValidTarget ? TEXT("True") : TEXT("False"),
+	//	IsCharacterReadyToPull ? TEXT("True") : TEXT("False"));
 
-	// Additional logs to investigate the issues
-	UE_LOG(LogTemp, Warning, TEXT("ProcessTraceResult: ThrowableObject is %s, IsSameActor: %s"),
-		ThrowableObject ? TEXT("Non-null") : TEXT("Null"),
-		IsSameActor ? TEXT("True") : TEXT("False"));
+	//// Additional logs to investigate the issues
+	//UE_LOG(LogTemp, Warning, TEXT("ProcessTraceResult: ThrowableObject is %s, IsSameActor: %s"),
+	//	ThrowableObject ? TEXT("Non-null") : TEXT("Null"),
+	//	IsSameActor ? TEXT("True") : TEXT("False"));
 
 	//clean up old actor
 	if (ThrowableObject)

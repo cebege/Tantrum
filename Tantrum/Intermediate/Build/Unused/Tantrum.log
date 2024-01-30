@@ -2,11 +2,11 @@
   Building TantrumEditor...
   Using Visual Studio 2019 14.37.32822 toolchain (C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822) and Windows 10.0.22621.0 SDK (C:\Program Files (x86)\Windows Kits\10).
   Building 4 actions with 16 processes...
-    [1/4] TantrumCharacterBase.cpp
-    [2/4] UE4Editor-Tantrum-0019.lib
-       Creating library C:\CG Spectrum\GameProgramming\Tantrum\Tantrum\Intermediate\Build\Win64\UE4Editor\Development\Tantrum\UE4Editor-Tantrum-0019.lib and object C:\CG Spectrum\GameProgramming\Tantrum\Tantrum\Intermediate\Build\Win64\UE4Editor\Development\Tantrum\UE4Editor-Tantrum-0019.exp
-    [3/4] UE4Editor-Tantrum-0019.dll
-       Creating library C:\CG Spectrum\GameProgramming\Tantrum\Tantrum\Intermediate\Build\Win64\UE4Editor\Development\Tantrum\UE4Editor-Tantrum-0019.suppressed.lib and object C:\CG Spectrum\GameProgramming\Tantrum\Tantrum\Intermediate\Build\Win64\UE4Editor\Development\Tantrum\UE4Editor-Tantrum-0019.suppressed.exp
+    [1/4] TantrumPlayerController.cpp
+    [2/4] UE4Editor-Tantrum-0032.lib
+       Creating library C:\CG Spectrum\GameProgramming\Tantrum\Tantrum\Intermediate\Build\Win64\UE4Editor\Development\Tantrum\UE4Editor-Tantrum-0032.lib and object C:\CG Spectrum\GameProgramming\Tantrum\Tantrum\Intermediate\Build\Win64\UE4Editor\Development\Tantrum\UE4Editor-Tantrum-0032.exp
+    [3/4] UE4Editor-Tantrum-0032.dll
+       Creating library C:\CG Spectrum\GameProgramming\Tantrum\Tantrum\Intermediate\Build\Win64\UE4Editor\Development\Tantrum\UE4Editor-Tantrum-0032.suppressed.lib and object C:\CG Spectrum\GameProgramming\Tantrum\Tantrum\Intermediate\Build\Win64\UE4Editor\Development\Tantrum\UE4Editor-Tantrum-0032.suppressed.exp
     [4/4] TantrumEditor.target
-  Total time in Parallel executor: 1.70 seconds
-  Total execution time: 2.21 seconds
+  Total time in Parallel executor: 4.29 seconds
+  Total execution time: 4.78 seconds
