@@ -82,7 +82,7 @@ protected:
 
 	void RequestPullObject();
 	void RequestStopPullObject();
-	void RequestThrowObject(float AxisValue);
+	void RequestThrowObject();
 
 	//Bind Actions
 

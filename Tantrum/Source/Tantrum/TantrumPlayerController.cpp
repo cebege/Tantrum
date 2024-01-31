@@ -50,10 +50,10 @@ void ATantrumPlayerController::SetupInputComponent()
 		// Mouse Wheel Zoom In / Zoom Out
 		InputComponent->BindAxis(TEXT("MouseWheelAxis"), this, &ATantrumPlayerController::HandleCameraZoom);
 
-		//Throw Object
-		InputComponent->BindAxis(TEXT("ThrowObjectGP"), this, &ATantrumPlayerController::RequestThrowObject);
-
 		//Bind Actions
+
+		//Throw Object
+		InputComponent->BindAction(TEXT("ThrowObject"), IE_Pressed, this, &ATantrumPlayerController::RequestThrowObject);
 
 		// Jump
 		InputComponent->BindAction(TEXT("Jump"), IE_Pressed, this, &ATantrumPlayerController::RequestJump);
@@ -150,35 +150,46 @@ void ATantrumPlayerController::RequestLookRight(float AxisValue)
 	}
 }
 
-void ATantrumPlayerController::RequestThrowObject(float AxisValue)
+void ATantrumPlayerController::RequestThrowObject()
 {
 	if (ATantrumCharacterBase* TantrumCharacterBase = Cast<ATantrumCharacterBase>(GetCharacter()))
 	{
 		if (TantrumCharacterBase->CanThrowObject())
 		{
-			float currentDelta = AxisValue - LastAxis;
-
-			//debug
-			if (CVarDisplayLaunchInputDelta->GetBool())
-			{
-				if (fabs(currentDelta) > 0.0f)
-				{
-					UE_LOG(LogTemp, Warning, TEXT("Axis: %f LastAxis: %f currentDelta: %f"), AxisValue, LastAxis);
-				}
-			}
-			LastAxis = AxisValue;
-			const bool IsFlick = fabs(currentDelta) > FlickThreshold;
-			if (IsFlick)
-			{
-				TantrumCharacterBase->RequestThrowObject();
-			}
-		}
-		else
-		{
-			LastAxis = 0.0f;
+			TantrumCharacterBase->RequestThrowObject();
 		}
 	}
 }
+
+//void ATantrumPlayerController::RequestThrowObject(float AxisValue)
+//{
+//	if (ATantrumCharacterBase* TantrumCharacterBase = Cast<ATantrumCharacterBase>(GetCharacter()))
+//	{
+//		if (TantrumCharacterBase->CanThrowObject())
+//		{
+//			float currentDelta = AxisValue - LastAxis;
+//
+//			//debug
+//			if (CVarDisplayLaunchInputDelta->GetBool())
+//			{
+//				if (fabs(currentDelta) > 0.0f)
+//				{
+//					UE_LOG(LogTemp, Warning, TEXT("Axis: %f LastAxis: %f currentDelta: %f"), AxisValue, LastAxis);
+//				}
+//			}
+//			LastAxis = AxisValue;
+//			const bool IsFlick = fabs(currentDelta) > FlickThreshold;
+//			if (IsFlick)
+//			{
+//				TantrumCharacterBase->RequestThrowObject();
+//			}
+//		}
+//		else
+//		{
+//			LastAxis = 0.0f;
+//		}
+//	}
+//}
 
 void ATantrumPlayerController::RequestJump()
 {
