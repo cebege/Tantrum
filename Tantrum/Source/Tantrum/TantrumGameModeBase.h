@@ -44,6 +44,7 @@ private:
 	// Create and set CurrentGameState to NONE. This will be tracked in the code file. 
 	UPROPERTY(VisibleAnywhere, Category = "States")
 		EGameState CurrentGameState = EGameState::None;
+
 	// Countdown before gameplay state begins. Exposed so we can easily change this in BP editor. 
 	UPROPERTY(EditAnywhere, Category = "Game Details")
 		float GameCountdownDuration = 4.0f;
@@ -52,17 +53,23 @@ private:
 
 	UPROPERTY()
 		UTantrumGameWidget* GameWidget; // Object we'll be creating and adding to the Viewport
+
 	UPROPERTY(EditAnywhere, Category = "Widget")
 		TSubclassOf<UTantrumGameWidget> GameWidgetClass; // Exposed class to check the type of widget to display
 
 	APlayerController* PC = nullptr;
 
 	FVector OnGroundLastPosition = FVector::ZeroVector; //Last Position on World when OnGround
+
 	FVector FallingPosition = FVector::ZeroVector; //Position From Player when it Hits KillZ
+
 	float CurrentTime = 0.0f; // Used to set a timer from Moving Player back to Ground
+
 	bool bIsPlayerBeingRescued = false;//Set to true when he hits KillZ
+
 	UPROPERTY(EditAnywhere, Category = "KillZ")
 		float TimeToRescuePlayer = 3.f;//Set time that takes to put Player back in Ground
+
 	UPROPERTY(EditAnywhere, Category = "KillZ")
 		float KillZ = -500.f;//Location at which World won't allow Player to keep falling
 
@@ -70,6 +77,7 @@ private:
 
 	void DisplayCountdown();
 	void StartGame();
+
 	void DetectPlayerFallingOffWorld(float DeltaTime);
 	void MovingPlayerToGround(APawn* Player, float DeltaTime);
 	void RemovingInputFromPlayer(APawn* Player);
