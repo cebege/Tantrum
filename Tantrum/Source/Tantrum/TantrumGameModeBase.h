@@ -82,5 +82,4 @@ private:
 	void MovingPlayerToGround(APawn* Player, float DeltaTime);
 	void RemovingInputFromPlayer(APawn* Player);
 	void RestoreInputToPlayer(APawn* Player);
-
 };

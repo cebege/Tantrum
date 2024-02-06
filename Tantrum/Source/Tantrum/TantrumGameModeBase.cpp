@@ -50,6 +50,18 @@ void ATantrumGameModeBase::DisplayCountdown()
 	GameWidget->StartCountdown(GameCountdownDuration, this);
 }
 
+// Notes for practice:
+
+	// Early Return Game Widget Class
+
+	// Get Controller 
+
+	// Create Widget
+
+	// Add to Viewport
+
+	// StartCount Down
+
 void ATantrumGameModeBase::StartGame()
 {
 	CurrentGameState = EGameState::Playing;
@@ -57,7 +69,6 @@ void ATantrumGameModeBase::StartGame()
 	PC = UGameplayStatics::GetPlayerController(GetWorld(), 0);
 	PC->SetInputMode(InputMode);
 	PC->SetShowMouseCursor(false);
-
 }
 
 void ATantrumGameModeBase::DetectPlayerFallingOffWorld(float DeltaTime)
