@@ -23,3 +23,5 @@ void ATantrumLevelEndTrigger::OnOverlapBegin(AActor* OverlappedActor, AActor* Ot
 		GameModeRef->PlayerReachedEnd();
 	}
 }
+
+// GameModeRef Singleton - Active acting point, same instance and game memory address

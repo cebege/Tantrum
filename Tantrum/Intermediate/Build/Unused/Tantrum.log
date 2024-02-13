@@ -1,18 +1,12 @@
 ﻿  Using 'git status' to determine working set for adaptive non-unity build (C:\CG Spectrum\GameProgramming\Tantrum).
-  Parsing headers for TantrumEditor
-    Running UnrealHeaderTool "C:\CG Spectrum\GameProgramming\Tantrum\Tantrum\Tantrum.uproject" "C:\CG Spectrum\GameProgramming\Tantrum\Tantrum\Intermediate\Build\Win64\TantrumEditor\Development\TantrumEditor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -abslog="C:\Users\conor\AppData\Local\UnrealBuildTool\Log_UHT.txt" -installed
-  Reflection code generated for TantrumEditor in 37.2231106 seconds
   Building TantrumEditor...
   Using Visual Studio 2019 14.37.32822 toolchain (C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822) and Windows 10.0.22621.0 SDK (C:\Program Files (x86)\Windows Kits\10).
-  Building 7 actions with 16 processes...
-    [1/7] TantrumGameModeBase.gen.cpp
-    [2/7] TantrumGameModeBase.cpp
-    [3/7] ATantrumLevelEndTrigger.cpp
-    [4/7] TantrumPlayerController.cpp
-    [5/7] UE4Editor-Tantrum.lib
-       Creating library C:\CG Spectrum\GameProgramming\Tantrum\Tantrum\Intermediate\Build\Win64\UE4Editor\Development\Tantrum\UE4Editor-Tantrum.lib and object C:\CG Spectrum\GameProgramming\Tantrum\Tantrum\Intermediate\Build\Win64\UE4Editor\Development\Tantrum\UE4Editor-Tantrum.exp
-    [6/7] UE4Editor-Tantrum.dll
-       Creating library C:\CG Spectrum\GameProgramming\Tantrum\Tantrum\Intermediate\Build\Win64\UE4Editor\Development\Tantrum\UE4Editor-Tantrum.suppressed.lib and object C:\CG Spectrum\GameProgramming\Tantrum\Tantrum\Intermediate\Build\Win64\UE4Editor\Development\Tantrum\UE4Editor-Tantrum.suppressed.exp
-    [7/7] TantrumEditor.target
-  Total time in Parallel executor: 25.60 seconds
-  Total execution time: 64.14 seconds
+  Building 4 actions with 16 processes...
+    [1/4] TantrumCharacterBase.cpp
+    [2/4] UE4Editor-Tantrum-0002.lib
+       Creating library C:\CG Spectrum\GameProgramming\Tantrum\Tantrum\Intermediate\Build\Win64\UE4Editor\Development\Tantrum\UE4Editor-Tantrum-0002.lib and object C:\CG Spectrum\GameProgramming\Tantrum\Tantrum\Intermediate\Build\Win64\UE4Editor\Development\Tantrum\UE4Editor-Tantrum-0002.exp
+    [3/4] UE4Editor-Tantrum-0002.dll
+       Creating library C:\CG Spectrum\GameProgramming\Tantrum\Tantrum\Intermediate\Build\Win64\UE4Editor\Development\Tantrum\UE4Editor-Tantrum-0002.suppressed.lib and object C:\CG Spectrum\GameProgramming\Tantrum\Tantrum\Intermediate\Build\Win64\UE4Editor\Development\Tantrum\UE4Editor-Tantrum-0002.suppressed.exp
+    [4/4] TantrumEditor.target
+  Total time in Parallel executor: 10.60 seconds
+  Total execution time: 11.35 seconds

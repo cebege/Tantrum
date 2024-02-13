@@ -18,7 +18,7 @@ static TAutoConsoleVariable<bool> CVarDisplayLaunchInputDelta(
 void ATantrumPlayerController::BeginPlay()
 {
 	Super::BeginPlay();
-	GameModeRef = Cast<ATantrumGameModeBase>(GetWorld()->GetAuthGameMode());
+	GameModeRef = Cast<ATantrumGameModeBase>(GetWorld()->GetAuthGameMode()); //Acts like a Singleton, but primarily used as a listener
 	if (HUDClass)
 	{
 		HUDWidget = CreateWidget(this, HUDClass);
