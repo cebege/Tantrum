@@ -2,4 +2,6 @@ C:\CG Spectrum\GameProgramming\Tantrum\Tantrum\Intermediate\Build\Win64\UE4Edito
 C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\CoreUObject\Public\UObject/GeneratedCppIncludes.h
 C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\CoreUObject\Public\UObject/MetaData.h
 C:\CG Spectrum\GameProgramming\Tantrum\Tantrum\Source\Tantrum/ThrowableObject.h
+C:\CG Spectrum\GameProgramming\Tantrum\Tantrum\Source\Tantrum\InteractInterface.h
+C:\CG Spectrum\GameProgramming\Tantrum\Tantrum\Intermediate\Build\Win64\UE4Editor\Inc\Tantrum\InteractInterface.generated.h
 C:\CG Spectrum\GameProgramming\Tantrum\Tantrum\Intermediate\Build\Win64\UE4Editor\Inc\Tantrum\ThrowableObject.generated.h

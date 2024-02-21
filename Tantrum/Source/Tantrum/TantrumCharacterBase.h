@@ -5,6 +5,7 @@
 #include "CoreMinimal.h"
 #include "GameFramework/Character.h"
 #include "Sound/SoundCue.h"
+#include "InteractInterface.h"
 #include "TantrumCharacterBase.generated.h"
 
 class AThrowableObject;
@@ -20,7 +21,7 @@ enum class ECharacterThrowState : uint8
 };
 
 UCLASS()
-class TANTRUM_API ATantrumCharacterBase : public ACharacter
+class TANTRUM_API ATantrumCharacterBase : public ACharacter, public IInteractInterface
 {
 	GENERATED_BODY()
 
@@ -43,6 +44,8 @@ public:
 	void RequestPullObject();
 	void RequestStopPullObject();
 	void ResetThrowableObject();
+
+	void RequestUseObject();
 
 	void OnThrowableAttached(AThrowableObject* InThrowableActor);
 
@@ -136,5 +139,17 @@ private:
 
 	UPROPERTY()
 		AThrowableObject* ThrowableObject;
+
+	void ApplyEffect_Implementation(EEffectType EffectType, bool bIsBuff) override;
+
+	void EndEffect();
+
+	bool bIsUnderEffect = false;
+	bool bIsEffectBuff = false;
+
+	float DefaultEffectCooldown = 5.0f;
+	float EffectCooldown = 0.0f;
+
+	EEffectType CurrentEffect = EEffectType::None;
 
 };

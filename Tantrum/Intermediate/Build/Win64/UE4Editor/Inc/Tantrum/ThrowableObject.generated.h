@@ -16,8 +16,8 @@ struct FVector;
 #endif
 #define TANTRUM_ThrowableObject_generated_h
 
-#define Tantrum_Source_Tantrum_ThrowableObject_h_15_SPARSE_DATA
-#define Tantrum_Source_Tantrum_ThrowableObject_h_15_RPC_WRAPPERS \
+#define Tantrum_Source_Tantrum_ThrowableObject_h_16_SPARSE_DATA
+#define Tantrum_Source_Tantrum_ThrowableObject_h_16_RPC_WRAPPERS \
  \
 	DECLARE_FUNCTION(execSetHomingTarget); \
 	DECLARE_FUNCTION(execProjectileStop); \
@@ -28,7 +28,7 @@ struct FVector;
 	DECLARE_FUNCTION(execIsIdle);
 
 
-#define Tantrum_Source_Tantrum_ThrowableObject_h_15_RPC_WRAPPERS_NO_PURE_DECLS \
+#define Tantrum_Source_Tantrum_ThrowableObject_h_16_RPC_WRAPPERS_NO_PURE_DECLS \
  \
 	DECLARE_FUNCTION(execSetHomingTarget); \
 	DECLARE_FUNCTION(execProjectileStop); \
@@ -39,7 +39,7 @@ struct FVector;
 	DECLARE_FUNCTION(execIsIdle);
 
 
-#define Tantrum_Source_Tantrum_ThrowableObject_h_15_INCLASS_NO_PURE_DECLS \
+#define Tantrum_Source_Tantrum_ThrowableObject_h_16_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesAThrowableObject(); \
 	friend struct Z_Construct_UClass_AThrowableObject_Statics; \
@@ -48,7 +48,7 @@ public: \
 	DECLARE_SERIALIZER(AThrowableObject)
 
 
-#define Tantrum_Source_Tantrum_ThrowableObject_h_15_INCLASS \
+#define Tantrum_Source_Tantrum_ThrowableObject_h_16_INCLASS \
 private: \
 	static void StaticRegisterNativesAThrowableObject(); \
 	friend struct Z_Construct_UClass_AThrowableObject_Statics; \
@@ -57,7 +57,7 @@ public: \
 	DECLARE_SERIALIZER(AThrowableObject)
 
 
-#define Tantrum_Source_Tantrum_ThrowableObject_h_15_STANDARD_CONSTRUCTORS \
+#define Tantrum_Source_Tantrum_ThrowableObject_h_16_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API AThrowableObject(const FObjectInitializer& ObjectInitializer); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(AThrowableObject) \
@@ -70,7 +70,7 @@ private: \
 public:
 
 
-#define Tantrum_Source_Tantrum_ThrowableObject_h_15_ENHANCED_CONSTRUCTORS \
+#define Tantrum_Source_Tantrum_ThrowableObject_h_16_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API AThrowableObject(AThrowableObject&&); \
@@ -81,33 +81,34 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AThrowableObject); \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(AThrowableObject)
 
 
-#define Tantrum_Source_Tantrum_ThrowableObject_h_15_PRIVATE_PROPERTY_OFFSET \
+#define Tantrum_Source_Tantrum_ThrowableObject_h_16_PRIVATE_PROPERTY_OFFSET \
 	FORCEINLINE static uint32 __PPO__StaticMeshComponent() { return STRUCT_OFFSET(AThrowableObject, StaticMeshComponent); } \
 	FORCEINLINE static uint32 __PPO__ProjectileMovementComponent() { return STRUCT_OFFSET(AThrowableObject, ProjectileMovementComponent); } \
-	FORCEINLINE static uint32 __PPO__PullActor() { return STRUCT_OFFSET(AThrowableObject, PullActor); }
+	FORCEINLINE static uint32 __PPO__PullActor() { return STRUCT_OFFSET(AThrowableObject, PullActor); } \
+	FORCEINLINE static uint32 __PPO__EffectType() { return STRUCT_OFFSET(AThrowableObject, EffectType); }
 
 
-#define Tantrum_Source_Tantrum_ThrowableObject_h_12_PROLOG
-#define Tantrum_Source_Tantrum_ThrowableObject_h_15_GENERATED_BODY_LEGACY \
+#define Tantrum_Source_Tantrum_ThrowableObject_h_13_PROLOG
+#define Tantrum_Source_Tantrum_ThrowableObject_h_16_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	Tantrum_Source_Tantrum_ThrowableObject_h_15_PRIVATE_PROPERTY_OFFSET \
-	Tantrum_Source_Tantrum_ThrowableObject_h_15_SPARSE_DATA \
-	Tantrum_Source_Tantrum_ThrowableObject_h_15_RPC_WRAPPERS \
-	Tantrum_Source_Tantrum_ThrowableObject_h_15_INCLASS \
-	Tantrum_Source_Tantrum_ThrowableObject_h_15_STANDARD_CONSTRUCTORS \
+	Tantrum_Source_Tantrum_ThrowableObject_h_16_PRIVATE_PROPERTY_OFFSET \
+	Tantrum_Source_Tantrum_ThrowableObject_h_16_SPARSE_DATA \
+	Tantrum_Source_Tantrum_ThrowableObject_h_16_RPC_WRAPPERS \
+	Tantrum_Source_Tantrum_ThrowableObject_h_16_INCLASS \
+	Tantrum_Source_Tantrum_ThrowableObject_h_16_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define Tantrum_Source_Tantrum_ThrowableObject_h_15_GENERATED_BODY \
+#define Tantrum_Source_Tantrum_ThrowableObject_h_16_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	Tantrum_Source_Tantrum_ThrowableObject_h_15_PRIVATE_PROPERTY_OFFSET \
-	Tantrum_Source_Tantrum_ThrowableObject_h_15_SPARSE_DATA \
-	Tantrum_Source_Tantrum_ThrowableObject_h_15_RPC_WRAPPERS_NO_PURE_DECLS \
-	Tantrum_Source_Tantrum_ThrowableObject_h_15_INCLASS_NO_PURE_DECLS \
-	Tantrum_Source_Tantrum_ThrowableObject_h_15_ENHANCED_CONSTRUCTORS \
+	Tantrum_Source_Tantrum_ThrowableObject_h_16_PRIVATE_PROPERTY_OFFSET \
+	Tantrum_Source_Tantrum_ThrowableObject_h_16_SPARSE_DATA \
+	Tantrum_Source_Tantrum_ThrowableObject_h_16_RPC_WRAPPERS_NO_PURE_DECLS \
+	Tantrum_Source_Tantrum_ThrowableObject_h_16_INCLASS_NO_PURE_DECLS \
+	Tantrum_Source_Tantrum_ThrowableObject_h_16_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 

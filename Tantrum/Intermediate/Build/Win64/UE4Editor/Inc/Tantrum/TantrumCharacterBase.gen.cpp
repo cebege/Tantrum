@@ -22,6 +22,7 @@ void EmptyLinkFunctionForGeneratedCodeTantrumCharacterBase() {}
 	ENGINE_API UScriptStruct* Z_Construct_UScriptStruct_FBranchingPointNotifyPayload();
 	ENGINE_API UClass* Z_Construct_UClass_USoundCue_NoRegister();
 	TANTRUM_API UClass* Z_Construct_UClass_AThrowableObject_NoRegister();
+	TANTRUM_API UClass* Z_Construct_UClass_UInteractInterface_NoRegister();
 // End Cross Module References
 	static UEnum* ECharacterThrowState_StaticEnum()
 	{
@@ -536,6 +537,7 @@ void EmptyLinkFunctionForGeneratedCodeTantrumCharacterBase() {}
 #endif
 		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_ThrowableObject;
 		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+		static const UE4CodeGen_Private::FImplementedInterfaceParams InterfaceParams[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UE4CodeGen_Private::FClassParams ClassParams;
 	};
@@ -653,6 +655,9 @@ void EmptyLinkFunctionForGeneratedCodeTantrumCharacterBase() {}
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ATantrumCharacterBase_Statics::NewProp_ThrowMontage,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ATantrumCharacterBase_Statics::NewProp_ThrowableObject,
 	};
+		const UE4CodeGen_Private::FImplementedInterfaceParams Z_Construct_UClass_ATantrumCharacterBase_Statics::InterfaceParams[] = {
+			{ Z_Construct_UClass_UInteractInterface_NoRegister, (int32)VTABLE_OFFSET(ATantrumCharacterBase, IInteractInterface), false },
+		};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_ATantrumCharacterBase_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<ATantrumCharacterBase>::IsAbstract,
 	};
@@ -663,11 +668,11 @@ void EmptyLinkFunctionForGeneratedCodeTantrumCharacterBase() {}
 		DependentSingletons,
 		FuncInfo,
 		Z_Construct_UClass_ATantrumCharacterBase_Statics::PropPointers,
-		nullptr,
+		InterfaceParams,
 		UE_ARRAY_COUNT(DependentSingletons),
 		UE_ARRAY_COUNT(FuncInfo),
 		UE_ARRAY_COUNT(Z_Construct_UClass_ATantrumCharacterBase_Statics::PropPointers),
-		0,
+		UE_ARRAY_COUNT(InterfaceParams),
 		0x009000A4u,
 		METADATA_PARAMS(Z_Construct_UClass_ATantrumCharacterBase_Statics::Class_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UClass_ATantrumCharacterBase_Statics::Class_MetaDataParams))
 	};
@@ -680,7 +685,7 @@ void EmptyLinkFunctionForGeneratedCodeTantrumCharacterBase() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(ATantrumCharacterBase, 2619588852);
+	IMPLEMENT_CLASS(ATantrumCharacterBase, 711680474);
 	template<> TANTRUM_API UClass* StaticClass<ATantrumCharacterBase>()
 	{
 		return ATantrumCharacterBase::StaticClass();

@@ -54,6 +54,15 @@ void AThrowableObject::NotifyHit(UPrimitiveComponent* MyComp, AActor* Other, UPr
 		return;
 	}
 
+	if (State == EState::Launch)
+	{
+		IInteractInterface* I = Cast<IInteractInterface>(Other); // if the other object has a type interface is will cast
+		if (I)
+		{
+			I->Execute_ApplyEffect(Other, EffectType, false);
+		}
+	}
+
 	// Check if the object that was hit is the actor that is pulling this object
 	if (PullActor && Other == PullActor)
 	{

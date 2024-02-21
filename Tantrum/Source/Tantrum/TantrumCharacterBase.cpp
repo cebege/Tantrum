@@ -51,6 +51,7 @@ ATantrumCharacterBase::ATantrumCharacterBase()
 void ATantrumCharacterBase::BeginPlay()
 {
 	Super::BeginPlay();
+	EffectCooldown = DefaultEffectCooldown;
 	if (GetCharacterMovement())
 	{
 		MaxWalkSpeed = GetCharacterMovement()->MaxWalkSpeed;
@@ -65,6 +66,20 @@ void ATantrumCharacterBase::Tick(float DeltaTime)
 	if (bIsStunned)
 	{
 		return;
+	}
+
+	if (bIsUnderEffect)
+	{
+		if (EffectCooldown > 0)
+		{
+			EffectCooldown -= DeltaTime;
+		}
+		else
+		{
+			bIsUnderEffect = false;
+			EffectCooldown = DefaultEffectCooldown;
+			EndEffect();
+		}
 	}
 
 	if (CharacterThrowState == ECharacterThrowState::Throwing)
@@ -160,9 +175,11 @@ void ATantrumCharacterBase::RequestThrowObject()
 {
 	if (CanThrowObject())
 	{
+		UE_LOG(LogTemp, Warning, TEXT("CanThrowObject"));
 		if (PlayThrowMontage())
 		{
 			CharacterThrowState = ECharacterThrowState::Throwing;
+			UE_LOG(LogTemp, Warning, TEXT("PlayMontage"));
 		}
 		else
 		{
@@ -207,6 +224,13 @@ void ATantrumCharacterBase::OnThrowableAttached(AThrowableObject* InThrowableAct
 	CharacterThrowState = ECharacterThrowState::Attached;
 	ThrowableObject = InThrowableActor;
 	MoveIgnoreActorAdd(ThrowableObject);
+}
+
+void ATantrumCharacterBase::RequestUseObject()
+{
+	ApplyEffect_Implementation(ThrowableObject->GetEffectType(), true);
+	ThrowableObject->Destroy();
+	ResetThrowableObject();
 }
 
 void ATantrumCharacterBase::SphereCastPlayerView()
@@ -545,4 +569,36 @@ void ATantrumCharacterBase::OnStunEnd()
 {
 	StunBeginTimestamp = 0.0f;
 	StunTime = 0.0f;
+}
+
+void ATantrumCharacterBase::ApplyEffect_Implementation(EEffectType EffectType, bool bIsBuff)
+{
+	if(bIsUnderEffect) return;
+
+	CurrentEffect = EffectType;
+	bIsUnderEffect = true;
+	bIsEffectBuff = bIsBuff;
+
+	switch (CurrentEffect)
+	{
+	case EEffectType::Speed:
+		bIsEffectBuff ? SprintSpeed *= 2  : GetCharacterMovement()->DisableMovement();
+		break;
+	default:
+		break;
+	}
+}
+
+void ATantrumCharacterBase::EndEffect()
+{
+	bIsUnderEffect = false;
+
+	switch (CurrentEffect)
+	{
+	case EEffectType::Speed :
+		bIsEffectBuff ? SprintSpeed /= 2, RequestSprintEnd() : GetCharacterMovement()->SetMovementMode(MOVE_Walking);
+		break;
+	default:
+		break;
+	}
 }

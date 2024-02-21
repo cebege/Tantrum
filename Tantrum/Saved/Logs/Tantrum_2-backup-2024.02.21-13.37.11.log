@@ -1,0 +1,1387 @@
+﻿Log file open, 02/21/24 13:36:08
+LogInit: LLM is enabled
+LogInit: LLM CsvWriter: off TraceWriter: off
+LogInit: Display: Running engine for game: Tantrum
+LogPlatformFile: Not using cached read wrapper
+LogTaskGraph: Started task graph with 5 named threads and 47 total threads with 3 sets of task threads.
+LogStats: Stats thread started at 7.240543
+LogD3D11RHI: Loaded GFSDK_Aftermath_Lib.x64.dll
+LogICUInternationalization: ICU TimeZone Detection - Raw Offset: +0:00, Platform Override: ''
+LogPluginManager: Mounting plugin MeshPainting
+LogPluginManager: Mounting plugin XGEController
+LogPluginManager: Mounting plugin Paper2D
+LogPluginManager: Mounting plugin EnvironmentQueryEditor
+LogPluginManager: Mounting plugin AISupport
+LogPluginManager: Mounting plugin AnimationSharing
+LogPluginManager: Mounting plugin CameraShakePreviewer
+LogPluginManager: Mounting plugin CodeLiteSourceCodeAccess
+LogPluginManager: Mounting plugin CLionSourceCodeAccess
+LogPluginManager: Mounting plugin KDevelopSourceCodeAccess
+LogPluginManager: Mounting plugin GitSourceControl
+LogPluginManager: Mounting plugin NullSourceCodeAccess
+LogPluginManager: Mounting plugin PerforceSourceControl
+LogPluginManager: Mounting plugin PluginUtils
+LogPluginManager: Mounting plugin PlasticSourceControl
+LogPluginManager: Mounting plugin PropertyAccessNode
+LogPluginManager: Mounting plugin RiderSourceCodeAccess
+LogPluginManager: Mounting plugin SubversionSourceControl
+LogPluginManager: Mounting plugin UObjectPlugin
+LogPluginManager: Mounting plugin VisualStudioCodeSourceCodeAccess
+LogPluginManager: Mounting plugin VisualStudioSourceCodeAccess
+LogPluginManager: Mounting plugin XCodeSourceCodeAccess
+LogPluginManager: Mounting plugin AssetManagerEditor
+LogPluginManager: Mounting plugin CurveEditorTools
+LogPluginManager: Mounting plugin CryptoKeys
+LogPluginManager: Mounting plugin DataValidation
+LogPluginManager: Mounting plugin FacialAnimation
+LogPluginManager: Mounting plugin GameplayTagsEditor
+LogPluginManager: Mounting plugin GeometryMode
+LogPluginManager: Mounting plugin MacGraphicsSwitching
+LogPluginManager: Mounting plugin MaterialAnalyzer
+LogPluginManager: Mounting plugin PluginBrowser
+LogPluginManager: Mounting plugin MobileLauncherProfileWizard
+LogPluginManager: Mounting plugin SpeedTreeImporter
+LogPluginManager: Mounting plugin AlembicImporter
+LogPluginManager: Mounting plugin AutomationUtils
+LogPluginManager: Mounting plugin BackChannel
+LogPluginManager: Mounting plugin ChaosCloth
+LogPluginManager: Mounting plugin ChaosClothEditor
+LogPluginManager: Mounting plugin ChaosEditor
+LogPluginManager: Mounting plugin ChaosNiagara
+LogPluginManager: Mounting plugin ChaosSolverPlugin
+LogPluginManager: Mounting plugin CharacterAI
+LogPluginManager: Mounting plugin GeometryCache
+LogPluginManager: Mounting plugin GeometryCollectionPlugin
+LogPluginManager: Mounting plugin GeometryProcessing
+LogPluginManager: Mounting plugin MotoSynth
+LogPluginManager: Mounting plugin PlanarCut
+LogPluginManager: Mounting plugin PlatformCrypto
+LogPluginManager: Mounting plugin ProxyLODPlugin
+LogPluginManager: Mounting plugin SkeletalReduction
+LogPluginManager: Mounting plugin DatasmithContent
+LogPluginManager: Mounting plugin VariantManagerContent
+LogPluginManager: Mounting plugin LuminPlatformFeatures
+LogPluginManager: Mounting plugin MagicLeap
+LogPluginManager: Mounting plugin MagicLeapLightEstimation
+LogPluginManager: Mounting plugin MagicLeapMedia
+LogPluginManager: Mounting plugin MagicLeapPassableWorld
+LogPluginManager: Mounting plugin Niagara
+LogPluginManager: Mounting plugin MLSDK
+LogPluginManager: Mounting plugin AvfMedia
+LogPluginManager: Mounting plugin AndroidMedia
+LogPluginManager: Mounting plugin ImgMedia
+LogPluginManager: Mounting plugin MediaCompositing
+LogPluginManager: Mounting plugin MediaPlayerEditor
+LogPluginManager: Mounting plugin WebMMedia
+LogPluginManager: Mounting plugin WmfMedia
+LogPluginManager: Mounting plugin TcpMessaging
+LogPluginManager: Mounting plugin UdpMessaging
+LogPluginManager: Mounting plugin OnlineSubsystem
+LogPluginManager: Mounting plugin OnlineSubsystemNull
+LogPluginManager: Mounting plugin OnlineSubsystemUtils
+LogPluginManager: Mounting plugin ActorSequence
+LogPluginManager: Mounting plugin LevelSequenceEditor
+LogPluginManager: Mounting plugin MatineeToLevelSequence
+LogPluginManager: Mounting plugin LauncherChunkInstaller
+LogPluginManager: Mounting plugin ActorLayerUtilities
+LogPluginManager: Mounting plugin TemplateSequence
+LogPluginManager: Mounting plugin AndroidDeviceProfileSelector
+LogPluginManager: Mounting plugin AndroidPermission
+LogPluginManager: Mounting plugin AndroidMoviePlayer
+LogPluginManager: Mounting plugin AppleImageUtils
+LogPluginManager: Mounting plugin AppleMoviePlayer
+LogPluginManager: Mounting plugin ArchVisCharacter
+LogPluginManager: Mounting plugin AssetTags
+LogPluginManager: Mounting plugin AudioCapture
+LogPluginManager: Mounting plugin AudioSynesthesia
+LogPluginManager: Mounting plugin CableComponent
+LogPluginManager: Mounting plugin ChunkDownloader
+LogPluginManager: Mounting plugin CustomMeshComponent
+LogPluginManager: Mounting plugin EditableMesh
+LogPluginManager: Mounting plugin ExampleDeviceProfileSelector
+LogPluginManager: Mounting plugin GoogleCloudMessaging
+LogPluginManager: Mounting plugin GooglePAD
+LogPluginManager: Mounting plugin IOSDeviceProfileSelector
+LogPluginManager: Mounting plugin LinuxDeviceProfileSelector
+LogPluginManager: Mounting plugin LocationServicesBPLibrary
+LogPluginManager: Mounting plugin MobilePatchingUtils
+LogPluginManager: Mounting plugin PostSplashScreen
+LogPluginManager: Mounting plugin PhysXVehicles
+LogPluginManager: Mounting plugin ProceduralMeshComponent
+LogPluginManager: Mounting plugin PropertyAccessEditor
+LogPluginManager: Mounting plugin RuntimePhysXCooking
+LogPluginManager: Mounting plugin SignificanceManager
+LogPluginManager: Mounting plugin SoundFields
+LogPluginManager: Mounting plugin LightPropagationVolume
+LogPluginManager: Mounting plugin Synthesis
+LogPluginManager: Mounting plugin WindowsMoviePlayer
+LogPluginManager: Mounting plugin WebMMoviePlayer
+LogPluginManager: Mounting plugin ScreenshotTools
+LogPluginManager: Mounting plugin ContentBrowserAssetDataSource
+LogPluginManager: Mounting plugin ContentBrowserClassDataSource
+LogPluginManager: Mounting plugin OnlineSubsystemGooglePlay
+LogPluginManager: Mounting plugin OnlineSubsystemIOS
+LogPluginManager: Mounting plugin OculusVR
+LogPluginManager: Mounting plugin SteamVR
+LogXGEController: Cannot use XGE Controller as Incredibuild is not installed on this machine.
+LogInit: Using libcurl 7.55.1-DEV
+LogInit:  - built for x86_64-pc-win32
+LogInit:  - supports SSL with OpenSSL/1.1.1
+LogInit:  - supports HTTP deflate (compression) using libz 1.2.8
+LogInit:  - other features:
+LogInit:      CURL_VERSION_SSL
+LogInit:      CURL_VERSION_LIBZ
+LogInit:      CURL_VERSION_IPV6
+LogInit:      CURL_VERSION_ASYNCHDNS
+LogInit:      CURL_VERSION_LARGEFILE
+LogInit:      CURL_VERSION_IDN
+LogInit:  CurlRequestOptions (configurable via config and command line):
+LogInit:  - bVerifyPeer = true  - Libcurl will verify peer certificate
+LogInit:  - bUseHttpProxy = false  - Libcurl will NOT use HTTP proxy
+LogInit:  - bDontReuseConnections = false  - Libcurl will reuse connections
+LogInit:  - MaxHostConnections = 16  - Libcurl will limit the number of connections to a host
+LogInit:  - LocalHostAddr = Default
+LogInit:  - BufferSize = 65536
+LogOnline: OSS: Creating online subsystem instance for: NULL
+LogInit: WinSock: version 1.1 (2.2), MaxSocks=32767, MaxUdp=65467
+LogOnline: OSS: TryLoadSubsystemAndSetDefault: Loaded subsystem for module [NULL]
+LogInit: Build: ++UE4+Release-4.26-CL-15973114
+LogInit: Engine Version: 4.26.2-15973114+++UE4+Release-4.26
+LogInit: Compatible Engine Version: 4.26.0-14830424+++UE4+Release-4.26
+LogInit: Net CL: 14830424
+LogInit: OS: Windows 10 (Release 2009) (), CPU: 12th Gen Intel(R) Core(TM) i7-12650H, GPU: Intel(R) UHD Graphics
+LogInit: Compiled (64-bit): Apr 12 2021 06:14:10
+LogInit: Compiled with Visual C++: 19.24.28315.00
+LogInit: Build Configuration: Development
+LogInit: Branch Name: ++UE4+Release-4.26
+LogInit: Command Line:  -skipcompile
+LogInit: Base Directory: C:/Program Files/Epic Games/UE_4.26/Engine/Binaries/Win64/
+LogInit: Allocator: TBB
+LogInit: Installed Engine Build: 1
+LogDevObjectVersion: Number of dev versions registered: 29
+LogDevObjectVersion:   Dev-Blueprints (B0D832E4-1F89-4F0D-ACCF-7EB736FD4AA2): 10
+LogDevObjectVersion:   Dev-Build (E1C64328-A22C-4D53-A36C-8E866417BD8C): 0
+LogDevObjectVersion:   Dev-Core (375EC13C-06E4-48FB-B500-84F0262A717E): 4
+LogDevObjectVersion:   Dev-Editor (E4B068ED-F494-42E9-A231-DA0B2E46BB41): 40
+LogDevObjectVersion:   Dev-Framework (CFFC743F-43B0-4480-9391-14DF171D2073): 37
+LogDevObjectVersion:   Dev-Mobile (B02B49B5-BB20-44E9-A304-32B752E40360): 3
+LogDevObjectVersion:   Dev-Networking (A4E4105C-59A1-49B5-A7C5-40C4547EDFEE): 0
+LogDevObjectVersion:   Dev-Online (39C831C9-5AE6-47DC-9A44-9C173E1C8E7C): 0
+LogDevObjectVersion:   Dev-Physics (78F01B33-EBEA-4F98-B9B4-84EACCB95AA2): 4
+LogDevObjectVersion:   Dev-Platform (6631380F-2D4D-43E0-8009-CF276956A95A): 0
+LogDevObjectVersion:   Dev-Rendering (12F88B9F-8875-4AFC-A67C-D90C383ABD29): 44
+LogDevObjectVersion:   Dev-Sequencer (7B5AE74C-D270-4C10-A958-57980B212A5A): 12
+LogDevObjectVersion:   Dev-VR (D7296918-1DD6-4BDD-9DE2-64A83CC13884): 3
+LogDevObjectVersion:   Dev-LoadTimes (C2A15278-BFE7-4AFE-6C17-90FF531DF755): 1
+LogDevObjectVersion:   Private-Geometry (6EACA3D4-40EC-4CC1-B786-8BED09428FC5): 3
+LogDevObjectVersion:   Dev-AnimPhys (29E575DD-E0A3-4627-9D10-D276232CDCEA): 17
+LogDevObjectVersion:   Dev-Anim (AF43A65D-7FD3-4947-9873-3E8ED9C1BB05): 15
+LogDevObjectVersion:   Dev-ReflectionCapture (6B266CEC-1EC7-4B8F-A30B-E4D90942FC07): 1
+LogDevObjectVersion:   Dev-Automation (0DF73D61-A23F-47EA-B727-89E90C41499A): 1
+LogDevObjectVersion:   FortniteMain (601D1886-AC64-4F84-AA16-D3DE0DEAC7D6): 43
+LogDevObjectVersion:   FortniteRelease (E7086368-6B23-4C58-8439-1B7016265E91): 1
+LogDevObjectVersion:   Dev-Enterprise (9DFFBCD6-494F-0158-E221-12823C92A888): 10
+LogDevObjectVersion:   Dev-Niagara (F2AED0AC-9AFE-416F-8664-AA7FFA26D6FC): 1
+LogDevObjectVersion:   Dev-Destruction (174F1F0B-B4C6-45A5-B13F-2EE8D0FB917D): 10
+LogDevObjectVersion:   Dev-Physics-Ext (35F94A83-E258-406C-A318-09F59610247C): 40
+LogDevObjectVersion:   Dev-PhysicsMaterial-Chaos (B68FC16E-8B1B-42E2-B453-215C058844FE): 1
+LogDevObjectVersion:   Dev-CineCamera (B2E18506-4273-CFC2-A54E-F4BB758BBA07): 1
+LogDevObjectVersion:   Dev-VirtualProduction (64F58936-FD1B-42BA-BA96-7289D5D0FA4E): 1
+LogDevObjectVersion:   Dev-MediaFramework (6F0ED827-A609-4895-9C91-998D90180EA4): 2
+LogInit: Presizing for max 25165824 objects, including 0 objects not considered by GC, pre-allocating 0 bytes for permanent pool.
+LogConfig: Applying CVar settings from Section [/Script/Engine.StreamingSettings] File [C:/CG Spectrum/GameProgramming/Tantrum/Tantrum/Saved/Config/Windows/Engine.ini]
+LogConfig: Setting CVar [[s.MinBulkDataSizeForAsyncLoading:131072]]
+LogConfig: Setting CVar [[s.AsyncLoadingThreadEnabled:0]]
+LogConfig: Setting CVar [[s.EventDrivenLoaderEnabled:1]]
+LogConfig: Setting CVar [[s.WarnIfTimeLimitExceeded:0]]
+LogConfig: Setting CVar [[s.TimeLimitExceededMultiplier:1.5]]
+LogConfig: Setting CVar [[s.TimeLimitExceededMinTime:0.005]]
+LogConfig: Setting CVar [[s.UseBackgroundLevelStreaming:1]]
+LogConfig: Setting CVar [[s.PriorityAsyncLoadingExtraTime:15.0]]
+LogConfig: Setting CVar [[s.LevelStreamingActorsUpdateTimeLimit:5.0]]
+LogConfig: Setting CVar [[s.PriorityLevelStreamingActorsUpdateExtraTime:5.0]]
+LogConfig: Setting CVar [[s.LevelStreamingComponentsRegistrationGranularity:10]]
+LogConfig: Setting CVar [[s.UnregisterComponentsTimeLimit:1.0]]
+LogConfig: Setting CVar [[s.LevelStreamingComponentsUnregistrationGranularity:5]]
+LogConfig: Setting CVar [[s.FlushStreamingOnExit:1]]
+LogInit: Object subsystem initialized
+LogConfig: Setting CVar [[con.DebugEarlyDefault:1]]
+LogConfig: Setting CVar [[r.setres:1280x720]]
+[2024.02.21-13.36.09:184][  0]LogConfig: Setting CVar [[r.VSync:0]]
+[2024.02.21-13.36.09:184][  0]LogConfig: Setting CVar [[r.RHICmdBypass:0]]
+[2024.02.21-13.36.09:185][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.RendererSettings] File [C:/CG Spectrum/GameProgramming/Tantrum/Tantrum/Saved/Config/Windows/Engine.ini]
+[2024.02.21-13.36.09:185][  0]LogConfig: Setting CVar [[r.GPUCrashDebugging:0]]
+[2024.02.21-13.36.09:185][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.RendererOverrideSettings] File [C:/CG Spectrum/GameProgramming/Tantrum/Tantrum/Saved/Config/Windows/Engine.ini]
+[2024.02.21-13.36.09:185][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.StreamingSettings] File [C:/CG Spectrum/GameProgramming/Tantrum/Tantrum/Saved/Config/Windows/Engine.ini]
+[2024.02.21-13.36.09:185][  0]LogConfig: Setting CVar [[s.MinBulkDataSizeForAsyncLoading:131072]]
+[2024.02.21-13.36.09:185][  0]LogConfig: Setting CVar [[s.AsyncLoadingThreadEnabled:0]]
+[2024.02.21-13.36.09:185][  0]LogConfig: Setting CVar [[s.EventDrivenLoaderEnabled:1]]
+[2024.02.21-13.36.09:185][  0]LogConfig: Setting CVar [[s.WarnIfTimeLimitExceeded:0]]
+[2024.02.21-13.36.09:185][  0]LogConfig: Setting CVar [[s.TimeLimitExceededMultiplier:1.5]]
+[2024.02.21-13.36.09:185][  0]LogConfig: Setting CVar [[s.TimeLimitExceededMinTime:0.005]]
+[2024.02.21-13.36.09:185][  0]LogConfig: Setting CVar [[s.UseBackgroundLevelStreaming:1]]
+[2024.02.21-13.36.09:185][  0]LogConfig: Setting CVar [[s.PriorityAsyncLoadingExtraTime:15.0]]
+[2024.02.21-13.36.09:185][  0]LogConfig: Setting CVar [[s.LevelStreamingActorsUpdateTimeLimit:5.0]]
+[2024.02.21-13.36.09:185][  0]LogConfig: Setting CVar [[s.PriorityLevelStreamingActorsUpdateExtraTime:5.0]]
+[2024.02.21-13.36.09:185][  0]LogConfig: Setting CVar [[s.LevelStreamingComponentsRegistrationGranularity:10]]
+[2024.02.21-13.36.09:185][  0]LogConfig: Setting CVar [[s.UnregisterComponentsTimeLimit:1.0]]
+[2024.02.21-13.36.09:185][  0]LogConfig: Setting CVar [[s.LevelStreamingComponentsUnregistrationGranularity:5]]
+[2024.02.21-13.36.09:185][  0]LogConfig: Setting CVar [[s.FlushStreamingOnExit:1]]
+[2024.02.21-13.36.09:186][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.GarbageCollectionSettings] File [C:/CG Spectrum/GameProgramming/Tantrum/Tantrum/Saved/Config/Windows/Engine.ini]
+[2024.02.21-13.36.09:186][  0]LogConfig: Setting CVar [[gc.MaxObjectsNotConsideredByGC:1]]
+[2024.02.21-13.36.09:186][  0]LogConfig: Setting CVar [[gc.SizeOfPermanentObjectPool:0]]
+[2024.02.21-13.36.09:186][  0]LogConfig: Setting CVar [[gc.FlushStreamingOnGC:0]]
+[2024.02.21-13.36.09:186][  0]LogConfig: Setting CVar [[gc.NumRetriesBeforeForcingGC:10]]
+[2024.02.21-13.36.09:186][  0]LogConfig: Setting CVar [[gc.AllowParallelGC:1]]
+[2024.02.21-13.36.09:186][  0]LogConfig: Setting CVar [[gc.TimeBetweenPurgingPendingKillObjects:61.1]]
+[2024.02.21-13.36.09:186][  0]LogConfig: Setting CVar [[gc.MaxObjectsInEditor:25165824]]
+[2024.02.21-13.36.09:186][  0]LogConfig: Setting CVar [[gc.IncrementalBeginDestroyEnabled:1]]
+[2024.02.21-13.36.09:186][  0]LogConfig: Setting CVar [[gc.CreateGCClusters:1]]
+[2024.02.21-13.36.09:186][  0]LogConfig: Setting CVar [[gc.MinGCClusterSize:5]]
+[2024.02.21-13.36.09:186][  0]LogConfig: Setting CVar [[gc.ActorClusteringEnabled:0]]
+[2024.02.21-13.36.09:186][  0]LogConfig: Setting CVar [[gc.BlueprintClusteringEnabled:0]]
+[2024.02.21-13.36.09:186][  0]LogConfig: Setting CVar [[gc.UseDisregardForGCOnDedicatedServers:0]]
+[2024.02.21-13.36.09:186][  0]LogConfig: Setting CVar [[gc.MultithreadedDestructionEnabled:1]]
+[2024.02.21-13.36.09:186][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.NetworkSettings] File [C:/CG Spectrum/GameProgramming/Tantrum/Tantrum/Saved/Config/Windows/Engine.ini]
+[2024.02.21-13.36.09:186][  0]LogConfig: Applying CVar settings from Section [/Script/UnrealEd.CookerSettings] File [C:/CG Spectrum/GameProgramming/Tantrum/Tantrum/Saved/Config/Windows/Engine.ini]
+[2024.02.21-13.36.09:196][  0]LogConfig: Applying CVar settings from Section [ViewDistanceQuality@3] File [C:/CG Spectrum/GameProgramming/Tantrum/Tantrum/Saved/Config/Windows/Scalability.ini]
+[2024.02.21-13.36.09:196][  0]LogConfig: Setting CVar [[r.SkeletalMeshLODBias:0]]
+[2024.02.21-13.36.09:196][  0]LogConfig: Setting CVar [[r.ViewDistanceScale:1.0]]
+[2024.02.21-13.36.09:196][  0]LogConfig: Applying CVar settings from Section [AntiAliasingQuality@3] File [C:/CG Spectrum/GameProgramming/Tantrum/Tantrum/Saved/Config/Windows/Scalability.ini]
+[2024.02.21-13.36.09:196][  0]LogConfig: Setting CVar [[r.PostProcessAAQuality:4]]
+[2024.02.21-13.36.09:196][  0]LogConfig: Applying CVar settings from Section [ShadowQuality@3] File [C:/CG Spectrum/GameProgramming/Tantrum/Tantrum/Saved/Config/Windows/Scalability.ini]
+[2024.02.21-13.36.09:196][  0]LogConfig: Setting CVar [[r.LightFunctionQuality:1]]
+[2024.02.21-13.36.09:196][  0]LogConfig: Setting CVar [[r.ShadowQuality:5]]
+[2024.02.21-13.36.09:196][  0]LogConfig: Setting CVar [[r.Shadow.CSM.MaxCascades:10]]
+[2024.02.21-13.36.09:197][  0]LogConfig: Setting CVar [[r.Shadow.MaxResolution:2048]]
+[2024.02.21-13.36.09:197][  0]LogConfig: Setting CVar [[r.Shadow.MaxCSMResolution:2048]]
+[2024.02.21-13.36.09:197][  0]LogConfig: Setting CVar [[r.Shadow.RadiusThreshold:0.01]]
+[2024.02.21-13.36.09:197][  0]LogConfig: Setting CVar [[r.Shadow.DistanceScale:1.0]]
+[2024.02.21-13.36.09:197][  0]LogConfig: Setting CVar [[r.Shadow.CSM.TransitionScale:1.0]]
+[2024.02.21-13.36.09:197][  0]LogConfig: Setting CVar [[r.Shadow.PreShadowResolutionFactor:1.0]]
+[2024.02.21-13.36.09:197][  0]LogConfig: Setting CVar [[r.DistanceFieldShadowing:1]]
+[2024.02.21-13.36.09:197][  0]LogConfig: Setting CVar [[r.DistanceFieldAO:1]]
+[2024.02.21-13.36.09:197][  0]LogConfig: Setting CVar [[r.AOQuality:2]]
+[2024.02.21-13.36.09:197][  0]LogConfig: Setting CVar [[r.VolumetricFog:1]]
+[2024.02.21-13.36.09:197][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridPixelSize:8]]
+[2024.02.21-13.36.09:197][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridSizeZ:128]]
+[2024.02.21-13.36.09:197][  0]LogConfig: Setting CVar [[r.VolumetricFog.HistoryMissSupersampleCount:4]]
+[2024.02.21-13.36.09:197][  0]LogConfig: Setting CVar [[r.LightMaxDrawDistanceScale:1]]
+[2024.02.21-13.36.09:197][  0]LogConfig: Setting CVar [[r.CapsuleShadows:1]]
+[2024.02.21-13.36.09:197][  0]LogConfig: Applying CVar settings from Section [PostProcessQuality@3] File [C:/CG Spectrum/GameProgramming/Tantrum/Tantrum/Saved/Config/Windows/Scalability.ini]
+[2024.02.21-13.36.09:198][  0]LogConfig: Setting CVar [[r.MotionBlurQuality:4]]
+[2024.02.21-13.36.09:198][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMipLevelFactor:0.4]]
+[2024.02.21-13.36.09:198][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMaxQuality:100]]
+[2024.02.21-13.36.09:198][  0]LogConfig: Setting CVar [[r.AmbientOcclusionLevels:-1]]
+[2024.02.21-13.36.09:198][  0]LogConfig: Setting CVar [[r.AmbientOcclusionRadiusScale:1.0]]
+[2024.02.21-13.36.09:198][  0]LogConfig: Setting CVar [[r.DepthOfFieldQuality:2]]
+[2024.02.21-13.36.09:198][  0]LogConfig: Setting CVar [[r.RenderTargetPoolMin:400]]
+[2024.02.21-13.36.09:198][  0]LogConfig: Setting CVar [[r.LensFlareQuality:2]]
+[2024.02.21-13.36.09:198][  0]LogConfig: Setting CVar [[r.SceneColorFringeQuality:1]]
+[2024.02.21-13.36.09:198][  0]LogConfig: Setting CVar [[r.EyeAdaptationQuality:2]]
+[2024.02.21-13.36.09:198][  0]LogConfig: Setting CVar [[r.BloomQuality:5]]
+[2024.02.21-13.36.09:198][  0]LogConfig: Setting CVar [[r.FastBlurThreshold:100]]
+[2024.02.21-13.36.09:198][  0]LogConfig: Setting CVar [[r.Upscale.Quality:3]]
+[2024.02.21-13.36.09:198][  0]LogConfig: Setting CVar [[r.Tonemapper.GrainQuantization:1]]
+[2024.02.21-13.36.09:198][  0]LogConfig: Setting CVar [[r.LightShaftQuality:1]]
+[2024.02.21-13.36.09:198][  0]LogConfig: Setting CVar [[r.Filter.SizeScale:1]]
+[2024.02.21-13.36.09:198][  0]LogConfig: Setting CVar [[r.Tonemapper.Quality:5]]
+[2024.02.21-13.36.09:198][  0]LogConfig: Setting CVar [[r.DOF.Gather.AccumulatorQuality:1        ; higher gathering accumulator quality]]
+[2024.02.21-13.36.09:198][  0]LogConfig: Setting CVar [[r.DOF.Gather.PostfilterMethod:1          ; Median3x3 postfilering method]]
+[2024.02.21-13.36.09:198][  0]LogConfig: Setting CVar [[r.DOF.Gather.EnableBokehSettings:0       ; no bokeh simulation when gathering]]
+[2024.02.21-13.36.09:198][  0]LogConfig: Setting CVar [[r.DOF.Gather.RingCount:4                 ; medium number of samples when gathering]]
+[2024.02.21-13.36.09:199][  0]LogConfig: Setting CVar [[r.DOF.Scatter.ForegroundCompositing:1    ; additive foreground scattering]]
+[2024.02.21-13.36.09:199][  0]LogConfig: Setting CVar [[r.DOF.Scatter.BackgroundCompositing:2    ; additive background scattering]]
+[2024.02.21-13.36.09:199][  0]LogConfig: Setting CVar [[r.DOF.Scatter.EnableBokehSettings:1      ; bokeh simulation when scattering]]
+[2024.02.21-13.36.09:199][  0]LogConfig: Setting CVar [[r.DOF.Scatter.MaxSpriteRatio:0.1         ; only a maximum of 10% of scattered bokeh]]
+[2024.02.21-13.36.09:199][  0]LogConfig: Setting CVar [[r.DOF.Recombine.Quality:1                ; cheap slight out of focus]]
+[2024.02.21-13.36.09:199][  0]LogConfig: Setting CVar [[r.DOF.Recombine.EnableBokehSettings:0    ; no bokeh simulation on slight out of focus]]
+[2024.02.21-13.36.09:199][  0]LogConfig: Setting CVar [[r.DOF.TemporalAAQuality:1                ; more stable temporal accumulation]]
+[2024.02.21-13.36.09:199][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxForegroundRadius:0.025]]
+[2024.02.21-13.36.09:199][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxBackgroundRadius:0.025]]
+[2024.02.21-13.36.09:199][  0]LogConfig: Applying CVar settings from Section [TextureQuality@3] File [C:/CG Spectrum/GameProgramming/Tantrum/Tantrum/Saved/Config/Windows/Scalability.ini]
+[2024.02.21-13.36.09:199][  0]LogConfig: Setting CVar [[r.Streaming.MipBias:0]]
+[2024.02.21-13.36.09:199][  0]LogConfig: Setting CVar [[r.Streaming.AmortizeCPUToGPUCopy:0]]
+[2024.02.21-13.36.09:199][  0]LogConfig: Setting CVar [[r.Streaming.MaxNumTexturesToStreamPerFrame:0]]
+[2024.02.21-13.36.09:199][  0]LogConfig: Setting CVar [[r.Streaming.Boost:1]]
+[2024.02.21-13.36.09:199][  0]LogConfig: Setting CVar [[r.MaxAnisotropy:8]]
+[2024.02.21-13.36.09:199][  0]LogConfig: Setting CVar [[r.VT.MaxAnisotropy:8]]
+[2024.02.21-13.36.09:199][  0]LogConfig: Setting CVar [[r.Streaming.LimitPoolSizeToVRAM:0]]
+[2024.02.21-13.36.09:199][  0]LogConfig: Setting CVar [[r.Streaming.PoolSize:1000]]
+[2024.02.21-13.36.09:199][  0]LogConfig: Setting CVar [[r.Streaming.MaxEffectiveScreenSize:0]]
+[2024.02.21-13.36.09:199][  0]LogConfig: Applying CVar settings from Section [EffectsQuality@3] File [C:/CG Spectrum/GameProgramming/Tantrum/Tantrum/Saved/Config/Windows/Scalability.ini]
+[2024.02.21-13.36.09:200][  0]LogConfig: Setting CVar [[r.TranslucencyLightingVolumeDim:64]]
+[2024.02.21-13.36.09:200][  0]LogConfig: Setting CVar [[r.RefractionQuality:2]]
+[2024.02.21-13.36.09:200][  0]LogConfig: Setting CVar [[r.SSR.Quality:3]]
+[2024.02.21-13.36.09:200][  0]LogConfig: Setting CVar [[r.SSR.HalfResSceneColor:0]]
+[2024.02.21-13.36.09:200][  0]LogConfig: Setting CVar [[r.SceneColorFormat:4]]
+[2024.02.21-13.36.09:200][  0]LogConfig: Setting CVar [[r.DetailMode:2]]
+[2024.02.21-13.36.09:200][  0]LogConfig: Setting CVar [[r.TranslucencyVolumeBlur:1]]
+[2024.02.21-13.36.09:200][  0]LogConfig: Setting CVar [[r.MaterialQualityLevel:1 ; High quality]]
+[2024.02.21-13.36.09:200][  0]LogConfig: Setting CVar [[r.AnisotropicMaterials:1]]
+[2024.02.21-13.36.09:200][  0]LogConfig: Setting CVar [[r.SSS.Scale:1]]
+[2024.02.21-13.36.09:200][  0]LogConfig: Setting CVar [[r.SSS.SampleSet:2]]
+[2024.02.21-13.36.09:200][  0]LogConfig: Setting CVar [[r.SSS.Quality:1]]
+[2024.02.21-13.36.09:200][  0]LogConfig: Setting CVar [[r.SSS.HalfRes:0]]
+[2024.02.21-13.36.09:200][  0]LogConfig: Setting CVar [[r.SSGI.Quality:3]]
+[2024.02.21-13.36.09:200][  0]LogConfig: Setting CVar [[r.EmitterSpawnRateScale:1.0]]
+[2024.02.21-13.36.09:200][  0]LogConfig: Setting CVar [[r.ParticleLightQuality:2]]
+[2024.02.21-13.36.09:200][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.FastApplyOnOpaque:1 ; Always have FastSkyLUT 1 in this case to avoid wrong sky]]
+[2024.02.21-13.36.09:201][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.SampleCountMaxPerSlice:4]]
+[2024.02.21-13.36.09:201][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.DepthResolution:16.0]]
+[2024.02.21-13.36.09:201][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT:1]]
+[2024.02.21-13.36.09:201][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMin:4.0]]
+[2024.02.21-13.36.09:201][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMax:128.0]]
+[2024.02.21-13.36.09:201][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.SampleCountMin:4.0]]
+[2024.02.21-13.36.09:201][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.SampleCountMax:128.0]]
+[2024.02.21-13.36.09:201][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.TransmittanceLUT.UseSmallFormat:0]]
+[2024.02.21-13.36.09:201][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.TransmittanceLUT.SampleCount:10.0]]
+[2024.02.21-13.36.09:201][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.MultiScatteringLUT.SampleCount:15.0]]
+[2024.02.21-13.36.09:201][  0]LogConfig: Applying CVar settings from Section [FoliageQuality@3] File [C:/CG Spectrum/GameProgramming/Tantrum/Tantrum/Saved/Config/Windows/Scalability.ini]
+[2024.02.21-13.36.09:201][  0]LogConfig: Setting CVar [[foliage.DensityScale:1.0]]
+[2024.02.21-13.36.09:201][  0]LogConfig: Setting CVar [[grass.DensityScale:1.0]]
+[2024.02.21-13.36.09:201][  0]LogConfig: Applying CVar settings from Section [ShadingQuality@3] File [C:/CG Spectrum/GameProgramming/Tantrum/Tantrum/Saved/Config/Windows/Scalability.ini]
+[2024.02.21-13.36.09:201][  0]LogConfig: Setting CVar [[r.HairStrands.SkyLighting.IntegrationType:2]]
+[2024.02.21-13.36.09:201][  0]LogConfig: Setting CVar [[r.HairStrands.SkyAO.SampleCount:4]]
+[2024.02.21-13.36.09:201][  0]LogConfig: Setting CVar [[r.HairStrands.Visibility.MSAA.SamplePerPixel:4]]
+[2024.02.21-13.36.09:202][  0]LogInit: Selected Device Profile: [Windows]
+[2024.02.21-13.36.09:202][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
+[2024.02.21-13.36.09:202][  0]LogHAL: Display: Platform has ~ 16 GB [16782184448 / 17179869184 / 16], which maps to Larger [LargestMinGB=32, LargerMinGB=12, DefaultMinGB=8, SmallerMinGB=6, SmallestMinGB=0)
+[2024.02.21-13.36.09:202][  0]LogInit: Going up to parent DeviceProfile []
+[2024.02.21-13.36.09:202][  0]LogConfig: Applying CVar settings from Section [ViewDistanceQuality@3] File [C:/CG Spectrum/GameProgramming/Tantrum/Tantrum/Saved/Config/Windows/Scalability.ini]
+[2024.02.21-13.36.09:203][  0]LogConfig: Setting CVar [[r.SkeletalMeshLODBias:0]]
+[2024.02.21-13.36.09:203][  0]LogConfig: Setting CVar [[r.ViewDistanceScale:1.0]]
+[2024.02.21-13.36.09:203][  0]LogConfig: Applying CVar settings from Section [AntiAliasingQuality@3] File [C:/CG Spectrum/GameProgramming/Tantrum/Tantrum/Saved/Config/Windows/Scalability.ini]
+[2024.02.21-13.36.09:203][  0]LogConfig: Setting CVar [[r.PostProcessAAQuality:4]]
+[2024.02.21-13.36.09:203][  0]LogConfig: Applying CVar settings from Section [ShadowQuality@3] File [C:/CG Spectrum/GameProgramming/Tantrum/Tantrum/Saved/Config/Windows/Scalability.ini]
+[2024.02.21-13.36.09:203][  0]LogConfig: Setting CVar [[r.LightFunctionQuality:1]]
+[2024.02.21-13.36.09:203][  0]LogConfig: Setting CVar [[r.ShadowQuality:5]]
+[2024.02.21-13.36.09:203][  0]LogConfig: Setting CVar [[r.Shadow.CSM.MaxCascades:10]]
+[2024.02.21-13.36.09:203][  0]LogConfig: Setting CVar [[r.Shadow.MaxResolution:2048]]
+[2024.02.21-13.36.09:203][  0]LogConfig: Setting CVar [[r.Shadow.MaxCSMResolution:2048]]
+[2024.02.21-13.36.09:203][  0]LogConfig: Setting CVar [[r.Shadow.RadiusThreshold:0.01]]
+[2024.02.21-13.36.09:203][  0]LogConfig: Setting CVar [[r.Shadow.DistanceScale:1.0]]
+[2024.02.21-13.36.09:203][  0]LogConfig: Setting CVar [[r.Shadow.CSM.TransitionScale:1.0]]
+[2024.02.21-13.36.09:203][  0]LogConfig: Setting CVar [[r.Shadow.PreShadowResolutionFactor:1.0]]
+[2024.02.21-13.36.09:203][  0]LogConfig: Setting CVar [[r.DistanceFieldShadowing:1]]
+[2024.02.21-13.36.09:204][  0]LogConfig: Setting CVar [[r.DistanceFieldAO:1]]
+[2024.02.21-13.36.09:204][  0]LogConfig: Setting CVar [[r.AOQuality:2]]
+[2024.02.21-13.36.09:204][  0]LogConfig: Setting CVar [[r.VolumetricFog:1]]
+[2024.02.21-13.36.09:204][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridPixelSize:8]]
+[2024.02.21-13.36.09:204][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridSizeZ:128]]
+[2024.02.21-13.36.09:204][  0]LogConfig: Setting CVar [[r.VolumetricFog.HistoryMissSupersampleCount:4]]
+[2024.02.21-13.36.09:204][  0]LogConfig: Setting CVar [[r.LightMaxDrawDistanceScale:1]]
+[2024.02.21-13.36.09:204][  0]LogConfig: Setting CVar [[r.CapsuleShadows:1]]
+[2024.02.21-13.36.09:204][  0]LogConfig: Applying CVar settings from Section [PostProcessQuality@3] File [C:/CG Spectrum/GameProgramming/Tantrum/Tantrum/Saved/Config/Windows/Scalability.ini]
+[2024.02.21-13.36.09:204][  0]LogConfig: Setting CVar [[r.MotionBlurQuality:4]]
+[2024.02.21-13.36.09:204][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMipLevelFactor:0.4]]
+[2024.02.21-13.36.09:204][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMaxQuality:100]]
+[2024.02.21-13.36.09:204][  0]LogConfig: Setting CVar [[r.AmbientOcclusionLevels:-1]]
+[2024.02.21-13.36.09:204][  0]LogConfig: Setting CVar [[r.AmbientOcclusionRadiusScale:1.0]]
+[2024.02.21-13.36.09:204][  0]LogConfig: Setting CVar [[r.DepthOfFieldQuality:2]]
+[2024.02.21-13.36.09:204][  0]LogConfig: Setting CVar [[r.RenderTargetPoolMin:400]]
+[2024.02.21-13.36.09:204][  0]LogConfig: Setting CVar [[r.LensFlareQuality:2]]
+[2024.02.21-13.36.09:204][  0]LogConfig: Setting CVar [[r.SceneColorFringeQuality:1]]
+[2024.02.21-13.36.09:204][  0]LogConfig: Setting CVar [[r.EyeAdaptationQuality:2]]
+[2024.02.21-13.36.09:204][  0]LogConfig: Setting CVar [[r.BloomQuality:5]]
+[2024.02.21-13.36.09:204][  0]LogConfig: Setting CVar [[r.FastBlurThreshold:100]]
+[2024.02.21-13.36.09:204][  0]LogConfig: Setting CVar [[r.Upscale.Quality:3]]
+[2024.02.21-13.36.09:205][  0]LogConfig: Setting CVar [[r.Tonemapper.GrainQuantization:1]]
+[2024.02.21-13.36.09:205][  0]LogConfig: Setting CVar [[r.LightShaftQuality:1]]
+[2024.02.21-13.36.09:205][  0]LogConfig: Setting CVar [[r.Filter.SizeScale:1]]
+[2024.02.21-13.36.09:205][  0]LogConfig: Setting CVar [[r.Tonemapper.Quality:5]]
+[2024.02.21-13.36.09:205][  0]LogConfig: Setting CVar [[r.DOF.Gather.AccumulatorQuality:1        ; higher gathering accumulator quality]]
+[2024.02.21-13.36.09:205][  0]LogConfig: Setting CVar [[r.DOF.Gather.PostfilterMethod:1          ; Median3x3 postfilering method]]
+[2024.02.21-13.36.09:205][  0]LogConfig: Setting CVar [[r.DOF.Gather.EnableBokehSettings:0       ; no bokeh simulation when gathering]]
+[2024.02.21-13.36.09:205][  0]LogConfig: Setting CVar [[r.DOF.Gather.RingCount:4                 ; medium number of samples when gathering]]
+[2024.02.21-13.36.09:205][  0]LogConfig: Setting CVar [[r.DOF.Scatter.ForegroundCompositing:1    ; additive foreground scattering]]
+[2024.02.21-13.36.09:205][  0]LogConfig: Setting CVar [[r.DOF.Scatter.BackgroundCompositing:2    ; additive background scattering]]
+[2024.02.21-13.36.09:205][  0]LogConfig: Setting CVar [[r.DOF.Scatter.EnableBokehSettings:1      ; bokeh simulation when scattering]]
+[2024.02.21-13.36.09:205][  0]LogConfig: Setting CVar [[r.DOF.Scatter.MaxSpriteRatio:0.1         ; only a maximum of 10% of scattered bokeh]]
+[2024.02.21-13.36.09:205][  0]LogConfig: Setting CVar [[r.DOF.Recombine.Quality:1                ; cheap slight out of focus]]
+[2024.02.21-13.36.09:205][  0]LogConfig: Setting CVar [[r.DOF.Recombine.EnableBokehSettings:0    ; no bokeh simulation on slight out of focus]]
+[2024.02.21-13.36.09:205][  0]LogConfig: Setting CVar [[r.DOF.TemporalAAQuality:1                ; more stable temporal accumulation]]
+[2024.02.21-13.36.09:205][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxForegroundRadius:0.025]]
+[2024.02.21-13.36.09:205][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxBackgroundRadius:0.025]]
+[2024.02.21-13.36.09:205][  0]LogConfig: Applying CVar settings from Section [TextureQuality@3] File [C:/CG Spectrum/GameProgramming/Tantrum/Tantrum/Saved/Config/Windows/Scalability.ini]
+[2024.02.21-13.36.09:205][  0]LogConfig: Setting CVar [[r.Streaming.MipBias:0]]
+[2024.02.21-13.36.09:206][  0]LogConfig: Setting CVar [[r.Streaming.AmortizeCPUToGPUCopy:0]]
+[2024.02.21-13.36.09:206][  0]LogConfig: Setting CVar [[r.Streaming.MaxNumTexturesToStreamPerFrame:0]]
+[2024.02.21-13.36.09:206][  0]LogConfig: Setting CVar [[r.Streaming.Boost:1]]
+[2024.02.21-13.36.09:206][  0]LogConfig: Setting CVar [[r.MaxAnisotropy:8]]
+[2024.02.21-13.36.09:206][  0]LogConfig: Setting CVar [[r.VT.MaxAnisotropy:8]]
+[2024.02.21-13.36.09:206][  0]LogConfig: Setting CVar [[r.Streaming.LimitPoolSizeToVRAM:0]]
+[2024.02.21-13.36.09:206][  0]LogConfig: Setting CVar [[r.Streaming.PoolSize:1000]]
+[2024.02.21-13.36.09:206][  0]LogConfig: Setting CVar [[r.Streaming.MaxEffectiveScreenSize:0]]
+[2024.02.21-13.36.09:206][  0]LogConfig: Applying CVar settings from Section [EffectsQuality@3] File [C:/CG Spectrum/GameProgramming/Tantrum/Tantrum/Saved/Config/Windows/Scalability.ini]
+[2024.02.21-13.36.09:206][  0]LogConfig: Setting CVar [[r.TranslucencyLightingVolumeDim:64]]
+[2024.02.21-13.36.09:206][  0]LogConfig: Setting CVar [[r.RefractionQuality:2]]
+[2024.02.21-13.36.09:206][  0]LogConfig: Setting CVar [[r.SSR.Quality:3]]
+[2024.02.21-13.36.09:206][  0]LogConfig: Setting CVar [[r.SSR.HalfResSceneColor:0]]
+[2024.02.21-13.36.09:206][  0]LogConfig: Setting CVar [[r.SceneColorFormat:4]]
+[2024.02.21-13.36.09:206][  0]LogConfig: Setting CVar [[r.DetailMode:2]]
+[2024.02.21-13.36.09:206][  0]LogConfig: Setting CVar [[r.TranslucencyVolumeBlur:1]]
+[2024.02.21-13.36.09:206][  0]LogConfig: Setting CVar [[r.MaterialQualityLevel:1 ; High quality]]
+[2024.02.21-13.36.09:206][  0]LogConfig: Setting CVar [[r.AnisotropicMaterials:1]]
+[2024.02.21-13.36.09:206][  0]LogConfig: Setting CVar [[r.SSS.Scale:1]]
+[2024.02.21-13.36.09:207][  0]LogConfig: Setting CVar [[r.SSS.SampleSet:2]]
+[2024.02.21-13.36.09:207][  0]LogConfig: Setting CVar [[r.SSS.Quality:1]]
+[2024.02.21-13.36.09:207][  0]LogConfig: Setting CVar [[r.SSS.HalfRes:0]]
+[2024.02.21-13.36.09:207][  0]LogConfig: Setting CVar [[r.SSGI.Quality:3]]
+[2024.02.21-13.36.09:207][  0]LogConfig: Setting CVar [[r.EmitterSpawnRateScale:1.0]]
+[2024.02.21-13.36.09:207][  0]LogConfig: Setting CVar [[r.ParticleLightQuality:2]]
+[2024.02.21-13.36.09:207][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.FastApplyOnOpaque:1 ; Always have FastSkyLUT 1 in this case to avoid wrong sky]]
+[2024.02.21-13.36.09:207][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.SampleCountMaxPerSlice:4]]
+[2024.02.21-13.36.09:207][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.DepthResolution:16.0]]
+[2024.02.21-13.36.09:207][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT:1]]
+[2024.02.21-13.36.09:207][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMin:4.0]]
+[2024.02.21-13.36.09:207][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMax:128.0]]
+[2024.02.21-13.36.09:207][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.SampleCountMin:4.0]]
+[2024.02.21-13.36.09:207][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.SampleCountMax:128.0]]
+[2024.02.21-13.36.09:207][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.TransmittanceLUT.UseSmallFormat:0]]
+[2024.02.21-13.36.09:207][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.TransmittanceLUT.SampleCount:10.0]]
+[2024.02.21-13.36.09:207][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.MultiScatteringLUT.SampleCount:15.0]]
+[2024.02.21-13.36.09:207][  0]LogConfig: Applying CVar settings from Section [FoliageQuality@3] File [C:/CG Spectrum/GameProgramming/Tantrum/Tantrum/Saved/Config/Windows/Scalability.ini]
+[2024.02.21-13.36.09:207][  0]LogConfig: Setting CVar [[foliage.DensityScale:1.0]]
+[2024.02.21-13.36.09:208][  0]LogConfig: Setting CVar [[grass.DensityScale:1.0]]
+[2024.02.21-13.36.09:208][  0]LogConfig: Applying CVar settings from Section [ShadingQuality@3] File [C:/CG Spectrum/GameProgramming/Tantrum/Tantrum/Saved/Config/Windows/Scalability.ini]
+[2024.02.21-13.36.09:208][  0]LogConfig: Setting CVar [[r.HairStrands.SkyLighting.IntegrationType:2]]
+[2024.02.21-13.36.09:208][  0]LogConfig: Setting CVar [[r.HairStrands.SkyAO.SampleCount:4]]
+[2024.02.21-13.36.09:208][  0]LogConfig: Setting CVar [[r.HairStrands.Visibility.MSAA.SamplePerPixel:4]]
+[2024.02.21-13.36.09:208][  0]LogConfig: Applying CVar settings from Section [Startup] File [../../../Engine/Config/ConsoleVariables.ini]
+[2024.02.21-13.36.09:208][  0]LogConfig: Setting CVar [[net.UseAdaptiveNetUpdateFrequency:0]]
+[2024.02.21-13.36.09:208][  0]LogConfig: Setting CVar [[p.chaos.AllowCreatePhysxBodies:1]]
+[2024.02.21-13.36.09:208][  0]LogConfig: Setting CVar [[fx.SkipVectorVMBackendOptimizations:1]]
+[2024.02.21-13.36.09:208][  0]LogConfig: Applying CVar settings from Section [ConsoleVariables] File [C:/CG Spectrum/GameProgramming/Tantrum/Tantrum/Saved/Config/Windows/Engine.ini]
+[2024.02.21-13.36.09:208][  0]LogConfig: Applying CVar settings from Section [ConsoleVariables] File [C:/CG Spectrum/GameProgramming/Tantrum/Tantrum/Saved/Config/Windows/Editor.ini]
+[2024.02.21-13.36.09:209][  0]LogInit: Computer: BEAST
+[2024.02.21-13.36.09:209][  0]LogInit: User: conor
+[2024.02.21-13.36.09:209][  0]LogInit: CPU Page size=4096, Cores=10
+[2024.02.21-13.36.09:209][  0]LogInit: High frequency timer resolution =10.000000 MHz
+[2024.02.21-13.36.09:209][  0]LogMemory: Memory total: Physical=15.6GB (16GB approx)
+[2024.02.21-13.36.09:209][  0]LogMemory: Platform Memory Stats for Windows
+[2024.02.21-13.36.09:209][  0]LogMemory: Process Physical Memory: 136.58 MB used, 136.58 MB peak
+[2024.02.21-13.36.09:209][  0]LogMemory: Process Virtual Memory: 111.94 MB used, 111.94 MB peak
+[2024.02.21-13.36.09:209][  0]LogMemory: Physical Memory: 14055.62 MB used,  1949.12 MB free, 16004.74 MB total
+[2024.02.21-13.36.09:209][  0]LogMemory: Virtual Memory: 134209232.00 MB used,  8494.28 MB free, 134217728.00 MB total
+[2024.02.21-13.36.09:225][  0]LogWindows: WindowsPlatformFeatures enabled
+[2024.02.21-13.36.09:711][  0]LogInit: Physics initialised using underlying interface: PhysX
+[2024.02.21-13.36.09:713][  0]LogInit: Using OS detected language (en-GB).
+[2024.02.21-13.36.09:713][  0]LogInit: Using OS detected locale (en-GB).
+[2024.02.21-13.36.09:731][  0]LogTextLocalizationManager: No specific localization for 'en-GB' exists, so the 'en' localization will be used.
+[2024.02.21-13.36.09:971][  0]LogInit: Setting process to per monitor DPI aware
+[2024.02.21-13.36.10:015][  0]LogWindowsTextInputMethodSystem: Display: IME system deactivated.
+[2024.02.21-13.36.10:086][  0]LogSlate: New Slate User Created.  User Index 0, Is Virtual User: 0
+[2024.02.21-13.36.10:086][  0]LogSlate: Slate User Registered.  User Index 0, Is Virtual User: 0
+[2024.02.21-13.36.12:144][  0]LogHMD: Failed to initialize OpenVR with code 110
+[2024.02.21-13.36.12:144][  0]LogD3D11RHI: D3D11 min allowed feature level: 11_0
+[2024.02.21-13.36.12:144][  0]LogD3D11RHI: D3D11 max allowed feature level: 11_0
+[2024.02.21-13.36.12:144][  0]LogD3D11RHI: D3D11 adapters:
+[2024.02.21-13.36.12:344][  0]LogD3D11RHI:    0. 'NVIDIA GeForce RTX 3060 Laptop GPU' (Feature Level 11_0)
+[2024.02.21-13.36.12:344][  0]LogD3D11RHI:       6010/0/8002 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:2, VendorId:0x10de
+[2024.02.21-13.36.12:417][  0]LogD3D11RHI:    1. 'Intel(R) UHD Graphics' (Feature Level 11_0)
+[2024.02.21-13.36.12:417][  0]LogD3D11RHI:       128/0/8002 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x8086
+[2024.02.21-13.36.12:425][  0]LogD3D11RHI:    2. 'Microsoft Basic Render Driver' (Feature Level 11_0)
+[2024.02.21-13.36.12:425][  0]LogD3D11RHI:       0/0/8002 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x1414
+[2024.02.21-13.36.12:425][  0]LogD3D11RHI: Chosen D3D11 Adapter: 0
+[2024.02.21-13.36.12:436][  0]LogD3D11RHI: Creating new Direct3DDevice
+[2024.02.21-13.36.12:436][  0]LogD3D11RHI:     GPU DeviceId: 0x2520 (for the marketing name, search the web for "GPU Device Id")
+[2024.02.21-13.36.12:436][  0]LogWindows: EnumDisplayDevices:
+[2024.02.21-13.36.12:436][  0]LogWindows:    0. 'Intel(R) UHD Graphics' (P:1 D:1)
+[2024.02.21-13.36.12:436][  0]LogWindows:    1. 'Intel(R) UHD Graphics' (P:0 D:0)
+[2024.02.21-13.36.12:436][  0]LogWindows:    2. 'Intel(R) UHD Graphics' (P:0 D:0)
+[2024.02.21-13.36.12:437][  0]LogWindows:    3. 'Intel(R) UHD Graphics' (P:0 D:0)
+[2024.02.21-13.36.12:437][  0]LogWindows:    4. 'NVIDIA GeForce RTX 3060 Laptop GPU' (P:0 D:1)
+[2024.02.21-13.36.12:437][  0]LogWindows:    5. 'NVIDIA GeForce RTX 3060 Laptop GPU' (P:0 D:0)
+[2024.02.21-13.36.12:437][  0]LogWindows:    6. 'NVIDIA GeForce RTX 3060 Laptop GPU' (P:0 D:0)
+[2024.02.21-13.36.12:437][  0]LogWindows:    7. 'NVIDIA GeForce RTX 3060 Laptop GPU' (P:0 D:0)
+[2024.02.21-13.36.12:437][  0]LogWindows: DebugString: PrimaryIsNotTheChoosenAdapter PrimaryIsNotTheChoosenAdapter PrimaryIsNotTheChoosenAdapter PrimaryIsNotTheChoosenAdapter FoundDriverCount:4 
+[2024.02.21-13.36.12:437][  0]LogD3D11RHI:     Adapter Name: NVIDIA GeForce RTX 3060 Laptop GPU
+[2024.02.21-13.36.12:437][  0]LogD3D11RHI:   Driver Version: 546.28 (internal:31.0.15.4628, unified:546.28)
+[2024.02.21-13.36.12:438][  0]LogD3D11RHI:      Driver Date: 11-28-2023
+[2024.02.21-13.36.12:438][  0]LogRHI: Texture pool is 4207 MB (70% of 6010 MB)
+[2024.02.21-13.36.12:512][  0]LogD3D11RHI: RHI has support for 64 bit atomics
+[2024.02.21-13.36.12:512][  0]LogD3D11RHI: Async texture creation enabled
+[2024.02.21-13.36.12:512][  0]LogD3D11RHI: Array index from any shader is supported
+[2024.02.21-13.36.12:556][  0]LogD3D11RHI: GPU Timing Frequency: 1000.000000 (Debug: 2 1)
+[2024.02.21-13.36.12:563][  0]LogRHI: GeForceNow SDK initialized: 1
+[2024.02.21-13.36.12:793][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'AllDesktop'
+[2024.02.21-13.36.12:811][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android'
+[2024.02.21-13.36.12:811][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ASTC'
+[2024.02.21-13.36.12:811][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_DXT'
+[2024.02.21-13.36.12:812][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ETC2'
+[2024.02.21-13.36.12:812][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'AndroidClient'
+[2024.02.21-13.36.12:812][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ASTCClient'
+[2024.02.21-13.36.12:812][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_DXTClient'
+[2024.02.21-13.36.12:812][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ETC2Client'
+[2024.02.21-13.36.12:812][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_Multi'
+[2024.02.21-13.36.12:812][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_MultiClient'
+[2024.02.21-13.36.12:839][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'IOSClient'
+[2024.02.21-13.36.12:839][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'IOS'
+[2024.02.21-13.36.12:857][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Linux'
+[2024.02.21-13.36.12:866][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxNoEditor'
+[2024.02.21-13.36.12:875][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxClient'
+[2024.02.21-13.36.12:884][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxServer'
+[2024.02.21-13.36.12:894][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxAArch64NoEditor'
+[2024.02.21-13.36.12:902][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxAArch64Client'
+[2024.02.21-13.36.12:912][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxAArch64Server'
+[2024.02.21-13.36.12:938][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Lumin'
+[2024.02.21-13.36.12:938][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LuminClient'
+[2024.02.21-13.36.12:947][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'MacNoEditor'
+[2024.02.21-13.36.12:967][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Mac'
+[2024.02.21-13.36.12:976][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'MacClient'
+[2024.02.21-13.36.12:988][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'MacServer'
+[2024.02.21-13.36.13:002][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'TVOSClient'
+[2024.02.21-13.36.13:002][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'TVOS'
+[2024.02.21-13.36.13:013][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'WindowsNoEditor'
+[2024.02.21-13.36.13:023][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Windows'
+[2024.02.21-13.36.13:033][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'WindowsClient'
+[2024.02.21-13.36.13:043][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'WindowsServer'
+[2024.02.21-13.36.13:043][  0]LogTargetPlatformManager: Display: Building Assets For Windows
+[2024.02.21-13.36.13:102][  0]LogAudioDebug: Display: Lib vorbis DLL was dynamically loaded.
+[2024.02.21-13.36.13:335][  0]LogRendererCore: Ray tracing is disabled. Reason: r.RayTracing=0.
+[2024.02.21-13.36.13:336][  0]LogShaderCompilers: Guid format shader working directory is -16 characters bigger than the processId version (../../../../../../CG Spectrum/GameProgramming/Tantrum/Tantrum/Intermediate/Shaders/WorkingDirectory/48724/).
+[2024.02.21-13.36.13:336][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/conor/AppData/Local/Temp/UnrealShaderWorkingDir/B61175734CDA57AA84D9269EACFB7507/'.
+[2024.02.21-13.36.13:337][  0]LogShaderCompilers: Cannot use XGE Shader Compiler as Incredibuild is not installed on this machine.
+[2024.02.21-13.36.13:337][  0]LogShaderCompilers: Display: Using Local Shader Compiler.
+[2024.02.21-13.36.16:097][  0]LogDerivedDataCache: Display: Max Cache Size: 512 MB
+[2024.02.21-13.36.16:187][  0]LogDerivedDataCache: Loaded boot cache 0.09s 85MB C:/Users/conor/AppData/Local/UnrealEngine/4.26/DerivedDataCache/Boot.ddc.
+[2024.02.21-13.36.16:187][  0]LogDerivedDataCache: Display: Loaded Boot cache: C:/Users/conor/AppData/Local/UnrealEngine/4.26/DerivedDataCache/Boot.ddc
+[2024.02.21-13.36.16:187][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file ../../../../../../CG Spectrum/GameProgramming/Tantrum/Tantrum/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
+[2024.02.21-13.36.16:187][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
+[2024.02.21-13.36.16:187][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file ../../../../../../CG Spectrum/GameProgramming/Tantrum/Tantrum/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2024.02.21-13.36.16:187][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
+[2024.02.21-13.36.16:207][  0]LogDerivedDataCache: Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
+[2024.02.21-13.36.16:207][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  EnterprisePak pak cache file ../../../Enterprise/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2024.02.21-13.36.16:207][  0]LogDerivedDataCache: Unable to find inner node EnterprisePak for hierarchical cache Hierarchy.
+[2024.02.21-13.36.16:251][  0]LogDerivedDataCache: Speed tests for C:/Users/conor/AppData/Local/UnrealEngine/Common/DerivedDataCache took 0.04 seconds
+[2024.02.21-13.36.16:251][  0]LogDerivedDataCache: Display: Performance to C:/Users/conor/AppData/Local/UnrealEngine/Common/DerivedDataCache: Latency=0.20ms. RandomReadSpeed=25.41MBs, RandomWriteSpeed=184.99MBs. Assigned SpeedClass 'Local'
+[2024.02.21-13.36.16:253][  0]LogDerivedDataCache: Using Local data cache path C:/Users/conor/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
+[2024.02.21-13.36.16:253][  0]LogDerivedDataCache: Shared data cache path not found in *engine.ini, will not use an Shared cache.
+[2024.02.21-13.36.16:253][  0]LogDerivedDataCache: Unable to find inner node Shared for hierarchical cache Hierarchy.
+[2024.02.21-13.36.16:287][  0]LogSlate: Using FreeType 2.10.0
+[2024.02.21-13.36.16:302][  0]LogSlate: SlateFontServices - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2024.02.21-13.36.16:345][  0]LogAssetRegistry: FAssetRegistry took 0.0048 seconds to start up
+[2024.02.21-13.36.16:653][  0]LogInit: Selected Device Profile: [Windows]
+[2024.02.21-13.36.16:653][  0]LogInit: Active device profile: [000001D1FDA2D900][000001D1FD38A580 49] Windows
+[2024.02.21-13.36.16:653][  0]LogInit: Profiles: [000001D1FDA2D900][000001D1FD38A580 49] Windows, [000001D1FDA13900][000001D1FD392700 49] WindowsNoEditor, [000001D1FDA2F300][000001D1FD396880 49] WindowsServer, [000001D1FDA11000][000001D1FD39AA00 49] WindowsClient, [000001D1FDA2D100][000001D1FD39EB80 49] IOS, [000001D1FDA13600][000001D1FD3A2D00 49] iPadAir, [000001D1FDA2F200][000001D1FD3A6E80 49] iPadAir2, [000001D1FD9B6600][000001D1FD3AF140 49] IPadPro, [000001D1FD9B6700][000001D1FD3AB180 49] iPadAir3, [000001D1FDA2F700][000001D1FD3B3300 49] iPadAir4, [000001D1FD9B7C00][000001D1FD3B7480 49] iPadMini2, [000001D1FDA2DF00][000001D1FD38F5C0 49] iPadMini3, [000001D1FD9B5B00][000001D1FD3BB700 49] iPadMini4, [000001D1FDA2DD00][000001D1FD3BF840 49] iPadMini5, [000001D1FD9FDF00][000001D1FD3CBAC0 49] iPhone6, [000001D1FD9FE000][000001D1FD3C3B00 49] iPodTouch6, [000001D1FDA13700][000001D1FD3D2100 49] iPhone7, [000001D1FDA13800][000001D1FD3CE140 49] iPodTouch7, [000001D1FD9FF600][000001D1FD3D62C0 49] iPhone5S, [000001D1FDA11800][000001D1FD3DA440 49] iPhone6Plus, [000001D1FD9FD900][000001D1FD3DE5C0 49] iPhone6S, [000001D1FDA13E00][000001D1FD3E2740 49] iPhone6SPlus, [000001D1FD9FCC00][000001D1FD3E68C0 49] iPhone7Plus, [000001D1FDA12100][000001D1FD3EAA40 49] iPhoneSE, [000001D1FD9FD200][000001D1FD3EEBC0 49] iPhone8, [000001D1FDA13400][000001D1FD3F2D40 49] iPhone8Plus, [000001D1FD9FCA00][000001D1FD3F6EC0 49] iPhoneX, [000001D1FDA11200][000001D1FD3FB040 49] iPhoneXS, [000001D1FD9FE500][000001D1FD3FF1C0 49] iPhoneXSMax, [000001D1FDA10700][000001D1FD403340 49] iPhoneXR, [000001D1FD9FF000][000001D1FD4074C0 49] iPhone11, [000001D1FDA12D00][000001D1FD40B640 49] iPhone11Pro, [000001D1FD9FD800][000001D1FD3C7780 49] iPhone11ProMax, [000001D1FDA12300][000001D1FD40F8C0 49] iPhoneSE2, [000001D1FD9FFC00][000001D1FD41BA00 49] iPhone12Mini, [000001D1FDA12200][000001D1FD427B80 49] iPhone12, [000001D1FDA2FA00][000001D1FD443D00 49] iPhone12Pro, [000001D1FD9FD700][000001D1FD4461C0 49] iPhone12ProMax, [000001D1FDA2FC00][000001D1FD452340 49] iPadPro105, [000001D1FD9FCE00][000001D1FD4564C0 49] iPadPro129, [000001D1FDA2ED00][000001D1FD45A640 49] iPadPro97, [000001D1FD9FEC00][000001D1FD45E7C0 49] iPadPro2_129, [000001D1FDA11700][000001D1FD462940 49] iPad5, [000001D1FD9FF800][000001D1FD466AC0 49] iPad6, [000001D1FDA11A00][000001D1FD46AC40 49] iPad7, [000001D1FD9FD100][000001D1FF480DC0 49] iPad8, [000001D1FDA10C00][000001D1FF484F40 49] iPadPro11, [000001D1FD9FCB00][000001D1FF4890C0 49] iPadPro2_11, [000001D1FDA13200][000001D1FF48D240 49] iPadPro3_129, [000001D1FD9FC100][000001D1FF4913C0 49] iPadPro4_129, [000001D1FDA13500][000001D1FF495540 49] AppleTV, [000001D1FD9FFB00][000001D1FF4996C0 49] AppleTV4K, [000001D1FDA10100][000001D1FD41F800 49] TVOS, [000001D1FD9FC500][000001D1FF49D940 49] Mac, [000001D1FDA13000][000001D1FF4A1A80 49] MacClient, [000001D1FD9FF400][000001D1FF4A9C00 49] MacNoEditor, [000001D1FDA13D00][000001D1FF4AC0C0 49] MacServer, [000001D1FD9FD300][000001D1FF4B0240 49] Linux, [000001D1FDA12C00][000001D1FF4B43C0 49] LinuxAArch64, [000001D1FD9FE200][000001D1FF4B8540 49] LinuxNoEditor, [000001D1FDA11B00][000001D1FF4BC6C0 49] LinuxAArch64NoEditor, [000001D1FD9FF300][000001D1FF4C0840 49] LinuxClient, [000001D1FDA12700][000001D1FF4C49C0 49] LinuxAArch64Client, [000001D1FD9FE600][000001D1FF4C8B40 49] LinuxServer, [000001D1FDA11F00][000001D1FF4CCCC0 49] LinuxAArch64Server, [000001D1FD9FED00][000001D1FF4D0E40 49] Android, [000001D1FDA10E00][000001D1FF4D4FC0 49] Android_Low, [000001D1FD9FD600][000001D1FF4D9140 49] Android_Mid, [000001D1FDA12400][000001D1FF4DD2C0 49] Android_High, [000001D1FD9FE700][000001D1FF4E1440 49] Android_Default, [000001D1FDA11900][000001D1FF4E55C0 49] Android_Adreno4xx, [000001D1FD9FC700][000001D1FF4E9740 49] Android_Adreno5xx_Low, [000001D1FDA13B00][000001D1FF4A5880 49] Android_Adreno5xx, [000001D1FD9FC800][000001D1FF4ED9C0 49] Android_Adreno6xx, [000001D1FDA13100][000001D1FF4F1B00 49] Android_Adreno6xx_Vulkan, [000001D1FD9FE800][000001D1FF4F5C40 49] Android_Mali_T6xx, [000001D1FDA12A00][000001D1FF4FC100 49] Android_Mali_T7xx, [000001D1FD9FCD00][000001D1FF500280 49] Android_Mali_T8xx, [000001D1FDA12800][000001D1FF504400 49] Android_Mali_G71, [000001D1FD9FCF00][000001D1FF508580 49] Android_Mali_G72, [000001D1FDA10D00][000001D1FF50C700 49] Android_Mali_G72_Vulkan, [000001D1FD9FEA00][000001D1FF510880 49] Android_Mali_G76, [000001D1FDA11300][000001D1FF514A00 49] Android_Mali_G76_Vulkan, [000001D1FD9FDA00][000001D1FF518B80 49] Android_Mali_G77, [000001D1FD9B6E00][000001D1FF51CD00 49] Android_Mali_G77_Vulkan, [000001D1FDA2F900][000001D1FF520E80 49] Android_Vulkan_SM5, [000001D1FD9B4800][000001D1FF525000 49] Android_PowerVR_G6xxx, [000001D1FDA2F400][000001D1FF529180 49] Android_PowerVR_GT7xxx, [000001D1FD9B4E00][000001D1FF52D300 49] Android_PowerVR_GE8xxx, [000001D1FDA2D400][000001D1FF531480 49] Android_PowerVR_GM9xxx, [000001D1FD9B4900][000001D1FF535600 49] Android_PowerVR_GM9xxx_Vulkan, [000001D1FDA2CE00][000001D1FF539780 49] Android_TegraK1, [000001D1FD9B4D00][000001D1FF4F98C0 49] Android_Unknown_Vulkan, [000001D1FDA2CC00][000001D1FF53DA00 49] Lumin, [000001D1FD9B5000][000001D1FF541B40 49] Lumin_Desktop, [000001D1FDA2D700][000001D1FF545C80 49] HoloLens, 
+[2024.02.21-13.36.16:829][  0]LogMeshReduction: Using QuadricMeshReduction for automatic static mesh reduction
+[2024.02.21-13.36.16:830][  0]LogMeshReduction: Using SimplygonMeshReduction for automatic skeletal mesh reduction
+[2024.02.21-13.36.16:830][  0]LogMeshReduction: Using ProxyLODMeshReduction for automatic mesh merging
+[2024.02.21-13.36.16:830][  0]LogMeshReduction: No distributed automatic mesh merging module available
+[2024.02.21-13.36.16:832][  0]LogMeshMerging: No distributed automatic mesh merging module available
+[2024.02.21-13.36.17:015][  0]LogNetVersion: Tantrum 1.0.0, NetCL: 14830424, EngineNetVer: 16, GameNetVer: 0 (Checksum: 3935054855)
+[2024.02.21-13.36.25:827][  0]LogHMD: PokeAHoleMaterial loaded successfully
+[2024.02.21-13.36.25:886][  0]LogPackageLocalizationCache: Processed 22 localized package path(s) for 1 prioritized culture(s) in 0.056774 seconds
+[2024.02.21-13.36.25:890][  0]LogUObjectArray: 16831 objects as part of root set at end of initial load.
+[2024.02.21-13.36.25:890][  0]LogUObjectAllocator: 4209728 out of 0 bytes used by permanent object pool.
+[2024.02.21-13.36.25:891][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
+[2024.02.21-13.36.26:773][  0]LogTcpMessaging: Initializing TcpMessaging bridge
+[2024.02.21-13.36.26:781][  0]LogUdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
+[2024.02.21-13.36.26:967][  0]SourceControl: Source control is disabled
+[2024.02.21-13.36.26:967][  0]SourceControl: Source control is disabled
+[2024.02.21-13.36.26:976][  0]SourceControl: Source control is disabled
+[2024.02.21-13.36.26:986][  0]SourceControl: Source control is disabled
+[2024.02.21-13.36.27:000][  0]SourceControl: Source control is disabled
+[2024.02.21-13.36.27:013][  0]LogUProjectInfo: Found projects:
+[2024.02.21-13.36.27:475][  0]LogAndroidPermission: UAndroidPermissionCallbackProxy::GetInstance
+[2024.02.21-13.36.27:508][  0]LogAudioCaptureCore: Display: No Audio Capture implementations found. Audio input will be silent.
+[2024.02.21-13.36.27:508][  0]LogAudioCaptureCore: Display: No Audio Capture implementations found. Audio input will be silent.
+[2024.02.21-13.36.27:602][  0]LogCollectionManager: Loaded 0 collections in 0.001403 seconds
+[2024.02.21-13.36.27:646][  0]LogFileCache: Scanning file cache for directory 'C:/CG Spectrum/GameProgramming/Tantrum/Tantrum/Saved/Collections/' took 0.00s
+[2024.02.21-13.36.27:646][  0]LogFileCache: Scanning file cache for directory 'C:/CG Spectrum/GameProgramming/Tantrum/Tantrum/Content/Developers/conor/Collections/' took 0.00s
+[2024.02.21-13.36.27:646][  0]LogFileCache: Scanning file cache for directory 'C:/CG Spectrum/GameProgramming/Tantrum/Tantrum/Content/Collections/' took 0.00s
+[2024.02.21-13.36.27:646][  0]LogOcInput: OculusInput pre-init called
+[2024.02.21-13.36.27:663][  0]LogWindows: Failed to load 'OVRPlugin.dll' (GetLastError=126)
+[2024.02.21-13.36.27:663][  0]LogWindows: File 'OVRPlugin.dll' does not exist
+[2024.02.21-13.36.27:784][  0]LogEngine: Initializing Engine...
+[2024.02.21-13.36.27:787][  0]LogHMD: Failed to initialize OpenVR with code 110
+[2024.02.21-13.36.27:788][  0]LogMagicLeap: Warning: VR disabled because ZI is not enabled.  To enable, in the editor, Edit -> Project Settings -> Plugins -> Magic Leap Plugin -> Enable Zero Iteration
+[2024.02.21-13.36.27:791][  0]LogStats: UGameplayTagsManager::InitializeManager -  0.001 s
+[2024.02.21-13.36.28:007][  0]LogInit: Initializing FReadOnlyCVARCache
+[2024.02.21-13.36.28:046][  0]LogAIModule: Creating AISystem for world Untitled
+[2024.02.21-13.36.28:051][  0]LogAudio: Display: Initializing Audio Device Manager...
+[2024.02.21-13.36.28:059][  0]LogAudio: Display: Audio Device Manager Initialized
+[2024.02.21-13.36.28:059][  0]LogAudio: Display: Creating Audio Device:                 Id: 1, Scope: Shared, Realtime: True
+[2024.02.21-13.36.28:059][  0]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2024.02.21-13.36.28:059][  0]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2024.02.21-13.36.28:060][  0]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2024.02.21-13.36.28:060][  0]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2024.02.21-13.36.28:060][  0]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2024.02.21-13.36.28:060][  0]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2024.02.21-13.36.28:060][  0]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2024.02.21-13.36.28:060][  0]LogAudio: Display: AudioDevice MaxSources: 32
+[2024.02.21-13.36.28:060][  0]LogAudio: Display: Using built-in audio occlusion.
+[2024.02.21-13.36.28:061][  0]LogAudioMixer: Display: Initializing audio mixer.
+[2024.02.21-13.36.28:084][  0]LogAudioMixer: Display: 0: FrontLeft
+[2024.02.21-13.36.28:084][  0]LogAudioMixer: Display: 1: FrontRight
+[2024.02.21-13.36.28:130][  0]LogAudioMixer: Display: Using Audio Device Speakers (C-Media(R) Audio)
+[2024.02.21-13.36.28:131][  0]LogAudioMixer: Display: Initializing Sound Submixes...
+[2024.02.21-13.36.28:150][  0]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2024.02.21-13.36.28:150][  0]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2024.02.21-13.36.28:152][  0]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2024.02.21-13.36.28:152][  0]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called
+[2024.02.21-13.36.28:152][  0]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048
+[2024.02.21-13.36.28:154][  0]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal()
+[2024.02.21-13.36.28:154][  0]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time
+[2024.02.21-13.36.28:154][  0]LogInit: FAudioDevice initialized.
+[2024.02.21-13.36.28:155][  0]LogAudio: Display: Audio Device (ID: 1) registered with world 'Untitled'.
+[2024.02.21-13.36.28:155][  0]LogNetVersion: Set ProjectVersion to 1.0.0.0. Version Checksum will be recalculated on next use.
+[2024.02.21-13.36.28:198][  0]LogDerivedDataCache: Saved boot cache 0.04s 85MB C:/Users/conor/AppData/Local/UnrealEngine/4.26/DerivedDataCache/Boot.ddc.
+[2024.02.21-13.36.28:199][  0]LogInit: Texture streaming: Enabled
+[2024.02.21-13.36.28:220][  0]LogAnalytics: Display: [UEEditor.Rocket.Release] APIServer = https://datarouter.ol.epicgames.com/. AppVersion = 4.26.2-15973114+++UE4+Release-4.26
+[2024.02.21-13.36.28:230][  0]LogEngineSessionManager: EngineSessionManager initialized
+[2024.02.21-13.36.28:230][  0]LogEditorSessionSummary: Verbose: Initializing EditorSessionSummaryWriter for editor session tracking
+[2024.02.21-13.36.28:235][  0]LogEditorSessionSummary: EditorSessionSummaryWriter initialized
+[2024.02.21-13.36.28:268][  0]LogInit: Transaction tracking system initialized
+[2024.02.21-13.36.28:317][  0]BlueprintLog: New page: Editor Load
+[2024.02.21-13.36.28:514][  0]LocalizationService: Localization service is disabled
+[2024.02.21-13.36.28:578][  0]TimingProfiler: Initialize
+[2024.02.21-13.36.28:579][  0]TimingProfiler: OnSessionChanged
+[2024.02.21-13.36.28:579][  0]LoadingProfiler: Initialize
+[2024.02.21-13.36.28:579][  0]LoadingProfiler: OnSessionChanged
+[2024.02.21-13.36.28:580][  0]NetworkingProfiler: Initialize
+[2024.02.21-13.36.28:580][  0]NetworkingProfiler: OnSessionChanged
+[2024.02.21-13.36.28:580][  0]MemoryProfiler: Initialize
+[2024.02.21-13.36.28:580][  0]MemoryProfiler: OnSessionChanged
+[2024.02.21-13.36.28:971][  0]LogCook: Display: CookSettings for Memory: MemoryMaxUsedVirtual 0MiB, MemoryMaxUsedPhysical 16384MiB, MemoryMinFreeVirtual 0MiB, MemoryMinFreePhysical 1024MiB
+[2024.02.21-13.36.28:971][  0]LogCook: Display: Mobile HDR setting 1
+[2024.02.21-13.36.29:345][  0]LogFileCache: Scanning file cache for directory 'C:/CG Spectrum/GameProgramming/Tantrum/Tantrum/Content/' took 0.01s
+[2024.02.21-13.36.29:482][  0]LogInit: Display: Engine is initialized. Leaving FEngineLoop::Init()
+[2024.02.21-13.36.29:492][  0]SourceControl: Source control is disabled
+[2024.02.21-13.36.29:492][  0]LogUnrealEdMisc: Loading editor; pre map load, took 29.052
+[2024.02.21-13.36.29:493][  0]Cmd: MAP LOAD FILE="../../../../../../CG Spectrum/GameProgramming/Tantrum/Tantrum/Content/Tantrum/Blueprints/Maps/Tantrum.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2024.02.21-13.36.29:501][  0]LightingResults: New page: Lighting Build
+[2024.02.21-13.36.29:505][  0]LogWorld: UWorld::CleanupWorld for Untitled, bSessionEnded=true, bCleanupResources=true
+[2024.02.21-13.36.29:507][  0]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2024.02.21-13.36.29:509][  0]MapCheck: New page: Map Check
+[2024.02.21-13.36.29:509][  0]LightingResults: New page: Lighting Build
+[2024.02.21-13.36.29:522][  0]LogUObjectHash: Compacting FUObjectHashTables data took   0.61ms
+[2024.02.21-13.36.29:710][  0]LogAudio: Display: Audio Device (ID: 1) registered with world 'Tantrum'.
+[2024.02.21-13.36.29:711][  0]LogAIModule: Creating AISystem for world Tantrum
+[2024.02.21-13.36.29:727][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2024.02.21-13.36.29:736][  0]LogUObjectHash: Compacting FUObjectHashTables data took   0.45ms
+[2024.02.21-13.36.29:736][  0]Cmd: MAP CHECKDEP NOCLEARLOG
+[2024.02.21-13.36.29:737][  0]MapCheck: Map check complete: 0 Error(s), 0 Warning(s), took 0.328ms to complete.
+[2024.02.21-13.36.29:737][  0]LogFileHelpers: Loading map 'Tantrum' took 0.244
+[2024.02.21-13.36.29:741][  0]LogUnrealEdMisc: Total Editor Startup Time, took 29.302
+[2024.02.21-13.36.29:891][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2024.02.21-13.36.29:896][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2024.02.21-13.36.29:901][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2024.02.21-13.36.29:907][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2024.02.21-13.36.29:934][  0]LogNativeClassHierarchy: Verbose: Native class hierarchy populated in 0.0069 seconds. Added 3608 classes and 861 folders.
+[2024.02.21-13.36.29:943][  0]LogNativeClassHierarchy: Verbose: Native class hierarchy updated for 'WidgetCarousel' in 0.0003 seconds. Added 0 classes and 0 folders.
+[2024.02.21-13.36.29:958][  0]LogPakFile: PakFile PrimaryIndexSize=187
+[2024.02.21-13.36.29:958][  0]LogPakFile: PakFile PathHashIndexSize=101
+[2024.02.21-13.36.29:958][  0]LogPakFile: PakFile FullDirectoryIndexSize=148
+[2024.02.21-13.36.29:958][  0]LogPakFile: OnPakFileMounted2Time == 0.000009
+[2024.02.21-13.36.29:966][  0]LogPakFile: PakFile PrimaryIndexSize=189
+[2024.02.21-13.36.29:967][  0]LogPakFile: PakFile PathHashIndexSize=101
+[2024.02.21-13.36.29:967][  0]LogPakFile: PakFile FullDirectoryIndexSize=152
+[2024.02.21-13.36.29:967][  0]LogPakFile: OnPakFileMounted2Time == 0.000013
+[2024.02.21-13.36.29:973][  0]LogPakFile: PakFile PrimaryIndexSize=191
+[2024.02.21-13.36.29:973][  0]LogPakFile: PakFile PathHashIndexSize=101
+[2024.02.21-13.36.29:973][  0]LogPakFile: PakFile FullDirectoryIndexSize=160
+[2024.02.21-13.36.29:973][  0]LogPakFile: OnPakFileMounted2Time == 0.000017
+[2024.02.21-13.36.29:980][  0]LogPakFile: PakFile PrimaryIndexSize=185
+[2024.02.21-13.36.29:980][  0]LogPakFile: PakFile PathHashIndexSize=101
+[2024.02.21-13.36.29:980][  0]LogPakFile: PakFile FullDirectoryIndexSize=148
+[2024.02.21-13.36.29:980][  0]LogPakFile: OnPakFileMounted2Time == 0.000021
+[2024.02.21-13.36.29:986][  0]LogPakFile: PakFile PrimaryIndexSize=190
+[2024.02.21-13.36.29:986][  0]LogPakFile: PakFile PathHashIndexSize=101
+[2024.02.21-13.36.29:986][  0]LogPakFile: PakFile FullDirectoryIndexSize=154
+[2024.02.21-13.36.29:986][  0]LogPakFile: OnPakFileMounted2Time == 0.000026
+[2024.02.21-13.36.29:992][  0]LogPakFile: PakFile PrimaryIndexSize=192
+[2024.02.21-13.36.29:992][  0]LogPakFile: PakFile PathHashIndexSize=101
+[2024.02.21-13.36.29:992][  0]LogPakFile: PakFile FullDirectoryIndexSize=158
+[2024.02.21-13.36.29:992][  0]LogPakFile: OnPakFileMounted2Time == 0.000030
+[2024.02.21-13.36.29:998][  0]LogPakFile: PakFile PrimaryIndexSize=182
+[2024.02.21-13.36.29:998][  0]LogPakFile: PakFile PathHashIndexSize=101
+[2024.02.21-13.36.29:998][  0]LogPakFile: PakFile FullDirectoryIndexSize=138
+[2024.02.21-13.36.29:998][  0]LogPakFile: OnPakFileMounted2Time == 0.000037
+[2024.02.21-13.36.30:004][  0]LogPakFile: PakFile PrimaryIndexSize=184
+[2024.02.21-13.36.30:005][  0]LogPakFile: PakFile PathHashIndexSize=101
+[2024.02.21-13.36.30:005][  0]LogPakFile: PakFile FullDirectoryIndexSize=142
+[2024.02.21-13.36.30:005][  0]LogPakFile: OnPakFileMounted2Time == 0.000066
+[2024.02.21-13.36.30:014][  0]LogPakFile: PakFile PrimaryIndexSize=188
+[2024.02.21-13.36.30:014][  0]LogPakFile: PakFile PathHashIndexSize=101
+[2024.02.21-13.36.30:014][  0]LogPakFile: PakFile FullDirectoryIndexSize=150
+[2024.02.21-13.36.30:014][  0]LogPakFile: OnPakFileMounted2Time == 0.000070
+[2024.02.21-13.36.30:019][  0]LogPakFile: PakFile PrimaryIndexSize=182
+[2024.02.21-13.36.30:019][  0]LogPakFile: PakFile PathHashIndexSize=101
+[2024.02.21-13.36.30:019][  0]LogPakFile: PakFile FullDirectoryIndexSize=138
+[2024.02.21-13.36.30:019][  0]LogPakFile: OnPakFileMounted2Time == 0.000074
+[2024.02.21-13.36.30:024][  0]LogPakFile: PakFile PrimaryIndexSize=184
+[2024.02.21-13.36.30:024][  0]LogPakFile: PakFile PathHashIndexSize=101
+[2024.02.21-13.36.30:025][  0]LogPakFile: PakFile FullDirectoryIndexSize=142
+[2024.02.21-13.36.30:025][  0]LogPakFile: OnPakFileMounted2Time == 0.000076
+[2024.02.21-13.36.30:031][  0]LogPakFile: PakFile PrimaryIndexSize=183
+[2024.02.21-13.36.30:031][  0]LogPakFile: PakFile PathHashIndexSize=101
+[2024.02.21-13.36.30:031][  0]LogPakFile: PakFile FullDirectoryIndexSize=140
+[2024.02.21-13.36.30:031][  0]LogPakFile: OnPakFileMounted2Time == 0.000081
+[2024.02.21-13.36.30:036][  0]LogPakFile: PakFile PrimaryIndexSize=185
+[2024.02.21-13.36.30:036][  0]LogPakFile: PakFile PathHashIndexSize=101
+[2024.02.21-13.36.30:037][  0]LogPakFile: PakFile FullDirectoryIndexSize=144
+[2024.02.21-13.36.30:037][  0]LogPakFile: OnPakFileMounted2Time == 0.000085
+[2024.02.21-13.36.30:043][  0]LogPakFile: PakFile PrimaryIndexSize=188
+[2024.02.21-13.36.30:043][  0]LogPakFile: PakFile PathHashIndexSize=101
+[2024.02.21-13.36.30:043][  0]LogPakFile: PakFile FullDirectoryIndexSize=150
+[2024.02.21-13.36.30:043][  0]LogPakFile: OnPakFileMounted2Time == 0.000089
+[2024.02.21-13.36.30:048][  0]LogPakFile: PakFile PrimaryIndexSize=190
+[2024.02.21-13.36.30:048][  0]LogPakFile: PakFile PathHashIndexSize=101
+[2024.02.21-13.36.30:048][  0]LogPakFile: PakFile FullDirectoryIndexSize=154
+[2024.02.21-13.36.30:048][  0]LogPakFile: OnPakFileMounted2Time == 0.000093
+[2024.02.21-13.36.30:054][  0]LogPakFile: PakFile PrimaryIndexSize=187
+[2024.02.21-13.36.30:054][  0]LogPakFile: PakFile PathHashIndexSize=101
+[2024.02.21-13.36.30:054][  0]LogPakFile: PakFile FullDirectoryIndexSize=148
+[2024.02.21-13.36.30:054][  0]LogPakFile: OnPakFileMounted2Time == 0.000095
+[2024.02.21-13.36.30:059][  0]LogPakFile: PakFile PrimaryIndexSize=189
+[2024.02.21-13.36.30:059][  0]LogPakFile: PakFile PathHashIndexSize=101
+[2024.02.21-13.36.30:059][  0]LogPakFile: PakFile FullDirectoryIndexSize=152
+[2024.02.21-13.36.30:059][  0]LogPakFile: OnPakFileMounted2Time == 0.000099
+[2024.02.21-13.36.30:065][  0]LogPakFile: PakFile PrimaryIndexSize=183
+[2024.02.21-13.36.30:065][  0]LogPakFile: PakFile PathHashIndexSize=101
+[2024.02.21-13.36.30:065][  0]LogPakFile: PakFile FullDirectoryIndexSize=140
+[2024.02.21-13.36.30:065][  0]LogPakFile: OnPakFileMounted2Time == 0.000103
+[2024.02.21-13.36.30:072][  0]LogPakFile: PakFile PrimaryIndexSize=185
+[2024.02.21-13.36.30:072][  0]LogPakFile: PakFile PathHashIndexSize=101
+[2024.02.21-13.36.30:072][  0]LogPakFile: PakFile FullDirectoryIndexSize=144
+[2024.02.21-13.36.30:072][  0]LogPakFile: OnPakFileMounted2Time == 0.000108
+[2024.02.21-13.36.30:081][  0]LogPakFile: PakFile PrimaryIndexSize=185
+[2024.02.21-13.36.30:081][  0]LogPakFile: PakFile PathHashIndexSize=101
+[2024.02.21-13.36.30:081][  0]LogPakFile: PakFile FullDirectoryIndexSize=144
+[2024.02.21-13.36.30:081][  0]LogPakFile: OnPakFileMounted2Time == 0.000114
+[2024.02.21-13.36.30:090][  0]LogPakFile: PakFile PrimaryIndexSize=187
+[2024.02.21-13.36.30:090][  0]LogPakFile: PakFile PathHashIndexSize=101
+[2024.02.21-13.36.30:090][  0]LogPakFile: PakFile FullDirectoryIndexSize=148
+[2024.02.21-13.36.30:090][  0]LogPakFile: OnPakFileMounted2Time == 0.000119
+[2024.02.21-13.36.30:096][  0]LogPakFile: PakFile PrimaryIndexSize=183
+[2024.02.21-13.36.30:097][  0]LogPakFile: PakFile PathHashIndexSize=101
+[2024.02.21-13.36.30:097][  0]LogPakFile: PakFile FullDirectoryIndexSize=140
+[2024.02.21-13.36.30:097][  0]LogPakFile: OnPakFileMounted2Time == 0.000124
+[2024.02.21-13.36.30:105][  0]LogPakFile: PakFile PrimaryIndexSize=186
+[2024.02.21-13.36.30:106][  0]LogPakFile: PakFile PathHashIndexSize=101
+[2024.02.21-13.36.30:106][  0]LogPakFile: PakFile FullDirectoryIndexSize=146
+[2024.02.21-13.36.30:106][  0]LogPakFile: OnPakFileMounted2Time == 0.000129
+[2024.02.21-13.36.30:112][  0]LogPakFile: PakFile PrimaryIndexSize=188
+[2024.02.21-13.36.30:112][  0]LogPakFile: PakFile PathHashIndexSize=101
+[2024.02.21-13.36.30:112][  0]LogPakFile: PakFile FullDirectoryIndexSize=150
+[2024.02.21-13.36.30:112][  0]LogPakFile: OnPakFileMounted2Time == 0.000134
+[2024.02.21-13.36.30:120][  0]LogPakFile: PakFile PrimaryIndexSize=185
+[2024.02.21-13.36.30:120][  0]LogPakFile: PakFile PathHashIndexSize=101
+[2024.02.21-13.36.30:120][  0]LogPakFile: PakFile FullDirectoryIndexSize=144
+[2024.02.21-13.36.30:120][  0]LogPakFile: OnPakFileMounted2Time == 0.000139
+[2024.02.21-13.36.30:126][  0]LogPakFile: PakFile PrimaryIndexSize=192
+[2024.02.21-13.36.30:126][  0]LogPakFile: PakFile PathHashIndexSize=101
+[2024.02.21-13.36.30:126][  0]LogPakFile: PakFile FullDirectoryIndexSize=158
+[2024.02.21-13.36.30:126][  0]LogPakFile: OnPakFileMounted2Time == 0.000144
+[2024.02.21-13.36.30:317][  0]LogNativeClassHierarchy: Verbose: Native class hierarchy updated for 'AddContentDialog' in 0.0002 seconds. Added 0 classes and 0 folders.
+[2024.02.21-13.36.30:327][  0]LogNativeClassHierarchy: Verbose: Native class hierarchy updated for 'SceneOutliner' in 0.0002 seconds. Added 2 classes and 0 folders.
+[2024.02.21-13.36.30:744][  0]LogSlate: Only BGRA pngs, bmps or icos are supported in by External Image Picker
+[2024.02.21-13.36.30:846][  0]LogSlate: Took 0.007393 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Regular.ttf' (155K)
+[2024.02.21-13.36.30:853][  0]LogSlate: Took 0.005935 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Bold.ttf' (160K)
+[2024.02.21-13.36.30:864][  0]LogSlate: Took 0.005825 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/FontAwesome.ttf' (139K)
+[2024.02.21-13.36.30:992][  0]LogRenderer: Reallocating scene render targets to support 1012x472 Format 10 NumSamples 1 (Frame:1).
+[2024.02.21-13.36.31:332][  0]LogSlate: Took 0.004771 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (167K)
+[2024.02.21-13.36.31:396][  0]LogNativeClassHierarchy: Verbose: Native class hierarchy updated for 'HierarchicalLODOutliner' in 0.0002 seconds. Added 0 classes and 0 folders.
+[2024.02.21-13.36.31:397][  0]LogLoad: (Engine Initialization) Total time: 30.96 seconds
+[2024.02.21-13.36.31:397][  0]LogLoad: (Engine Initialization) Total Blueprint compile time: 0.00 seconds
+[2024.02.21-13.36.31:397][  0]LogInit: First time updating LLM stats...
+[2024.02.21-13.36.31:441][  0]LogAssetRegistry: Asset discovery search completed in 15.0991 seconds
+[2024.02.21-13.36.31:443][  0]LogCollectionManager: Fixed up redirectors for 0 collections in 0.000205 seconds (updated 0 objects)
+[2024.02.21-13.36.31:459][  0]LogContentStreaming: Texture pool size now 1000 MB
+[2024.02.21-13.36.52:669][228]LogRenderer: Reallocating scene render targets to support 1268x624 Format 10 NumSamples 1 (Frame:1235).
+[2024.02.21-13.36.59:955][448]LogTemp: Repeating last play command: Selected Viewport
+[2024.02.21-13.36.59:964][448]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2024.02.21-13.36.59:973][448]PIE: New page: PIE session: Tantrum (21 Feb 2024, 13:36:59)
+[2024.02.21-13.36.59:978][448]LogOnline: OSS: Creating online subsystem instance for: NULL
+[2024.02.21-13.36.59:980][448]LogOnline: OSS: TryLoadSubsystemAndSetDefault: Loaded subsystem for module [NULL]
+[2024.02.21-13.36.59:982][448]LogPlayLevel: Creating play world package: /Game/Tantrum/Blueprints/Maps/UEDPIE_0_Tantrum
+[2024.02.21-13.36.59:987][448]LogPlayLevel: PIE: StaticDuplicateObject took: (0.005182s)
+[2024.02.21-13.36.59:989][448]LogAIModule: Creating AISystem for world Tantrum
+[2024.02.21-13.36.59:989][448]LogPlayLevel: PIE: World Init took: (0.001568s)
+[2024.02.21-13.36.59:989][448]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Tantrum/Blueprints/Maps/Tantrum.Tantrum to /Game/Tantrum/Blueprints/Maps/UEDPIE_0_Tantrum.Tantrum (0.007222s)
+[2024.02.21-13.36.59:993][448]LogUObjectHash: Compacting FUObjectHashTables data took   0.49ms
+[2024.02.21-13.36.59:995][448]LogAudio: Display: Creating Audio Device:                 Id: 2, Scope: Unique, Realtime: True
+[2024.02.21-13.36.59:995][448]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2024.02.21-13.36.59:995][448]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2024.02.21-13.36.59:995][448]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2024.02.21-13.36.59:995][448]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2024.02.21-13.36.59:995][448]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2024.02.21-13.36.59:995][448]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2024.02.21-13.36.59:995][448]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2024.02.21-13.36.59:996][448]LogAudio: Display: AudioDevice MaxSources: 32
+[2024.02.21-13.36.59:996][448]LogAudio: Display: Using built-in audio occlusion.
+[2024.02.21-13.36.59:996][448]LogAudioMixer: Display: Initializing audio mixer.
+[2024.02.21-13.36.59:998][448]LogAudioMixer: Display: 0: FrontLeft
+[2024.02.21-13.36.59:998][448]LogAudioMixer: Display: 1: FrontRight
+[2024.02.21-13.37.00:041][448]LogAudioMixer: Display: Using Audio Device Speakers (C-Media(R) Audio)
+[2024.02.21-13.37.00:041][448]LogAudioMixer: Display: Initializing Sound Submixes...
+[2024.02.21-13.37.00:041][448]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2024.02.21-13.37.00:042][448]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2024.02.21-13.37.00:042][448]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2024.02.21-13.37.00:042][448]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called
+[2024.02.21-13.37.00:042][448]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048
+[2024.02.21-13.37.00:053][448]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal()
+[2024.02.21-13.37.00:053][448]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time
+[2024.02.21-13.37.00:053][448]LogInit: FAudioDevice initialized.
+[2024.02.21-13.37.00:053][448]LogAudio: Display: Audio Device (ID: 2) registered with world 'Tantrum'.
+[2024.02.21-13.37.00:731][448]LogLoad: Game class is 'BP_TGameModeBase_C'
+[2024.02.21-13.37.00:737][448]LogWorld: Bringing World /Game/Tantrum/Blueprints/Maps/UEDPIE_0_Tantrum.Tantrum up for play (max tick rate 60) at 2024.02.21-13.37.00
+[2024.02.21-13.37.00:739][448]LogWorld: Bringing up level for play took: 0.002643
+[2024.02.21-13.37.00:740][448]LogOnline: OSS: Creating online subsystem instance for: :Context_2
+[2024.02.21-13.37.00:751][448]LogNativeClassHierarchy: Verbose: Native class hierarchy updated for 'MovieSceneCapture' in 0.0003 seconds. Added 20 classes and 0 folders.
+[2024.02.21-13.37.00:775][448]PIE: Server logged in
+[2024.02.21-13.37.00:777][448]PIE: Play in editor total start time 0.817 seconds.
+[2024.02.21-13.37.00:784][448]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.00:869][449]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.00:892][450]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.00:914][451]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.00:926][452]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.00:943][453]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.00:959][454]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.00:976][455]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.00:993][456]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.01:010][457]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.01:026][458]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.01:044][459]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.01:060][460]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.01:076][461]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.01:092][462]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.01:110][463]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.01:126][464]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.01:142][465]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.01:160][466]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.01:176][467]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.01:193][468]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.01:210][469]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.01:226][470]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.01:243][471]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.01:260][472]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.01:276][473]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.01:292][474]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.01:313][475]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.01:326][476]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.01:343][477]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.01:360][478]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.01:376][479]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.01:393][480]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.01:410][481]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.01:427][482]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.01:443][483]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.01:460][484]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.01:476][485]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.01:493][486]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.01:510][487]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.01:527][488]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.01:543][489]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.01:560][490]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.01:576][491]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.01:594][492]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.01:610][493]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.01:627][494]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.01:643][495]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.01:660][496]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.01:676][497]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.01:693][498]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.01:710][499]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.01:726][500]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.01:743][501]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.01:759][502]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.01:776][503]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.01:793][504]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.01:809][505]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.01:826][506]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.01:843][507]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.01:859][508]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.01:876][509]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.01:893][510]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.01:909][511]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.01:926][512]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.01:943][513]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.01:960][514]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.01:976][515]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.01:993][516]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.02:009][517]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.02:026][518]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.02:043][519]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.02:060][520]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.02:076][521]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.02:093][522]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.02:110][523]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.02:126][524]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.02:143][525]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.02:159][526]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.02:177][527]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.02:193][528]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.02:209][529]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.02:226][530]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.02:243][531]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.02:260][532]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.02:276][533]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.02:293][534]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.02:309][535]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.02:326][536]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.02:343][537]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.02:359][538]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.02:376][539]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.02:393][540]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.02:409][541]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.02:426][542]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.02:443][543]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.02:460][544]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.02:477][545]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.02:493][546]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.02:510][547]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.02:526][548]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.02:543][549]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.02:559][550]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.02:577][551]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.02:593][552]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.02:609][553]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.02:626][554]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.02:643][555]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.02:660][556]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.02:676][557]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.02:693][558]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.02:709][559]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.02:726][560]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.02:743][561]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.02:760][562]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.02:776][563]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.02:793][564]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.02:810][565]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.02:826][566]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.02:843][567]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.02:859][568]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.02:877][569]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.02:893][570]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.02:910][571]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.02:926][572]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.02:943][573]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.02:962][574]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.02:976][575]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.02:993][576]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.03:009][577]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.03:026][578]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.03:043][579]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.03:060][580]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.03:076][581]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.03:093][582]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.03:110][583]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.03:126][584]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.03:143][585]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.03:160][586]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.03:176][587]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.03:193][588]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.03:209][589]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.03:226][590]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.03:243][591]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.03:260][592]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.03:277][593]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.03:293][594]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.03:309][595]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.03:326][596]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.03:343][597]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.03:360][598]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.03:376][599]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.03:393][600]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.03:410][601]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.03:426][602]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.03:443][603]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.03:460][604]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.03:476][605]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.03:493][606]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.03:509][607]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.03:526][608]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.03:543][609]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.03:560][610]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.03:577][611]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.03:593][612]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.03:610][613]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.03:626][614]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.03:643][615]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.03:660][616]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.03:676][617]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.03:693][618]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.03:709][619]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.03:726][620]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.03:743][621]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.03:759][622]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.03:776][623]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.03:793][624]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.03:810][625]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.03:827][626]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.03:843][627]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.03:860][628]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.03:877][629]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.03:893][630]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.03:910][631]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.03:927][632]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.03:943][633]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.03:960][634]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.03:976][635]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.03:993][636]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.04:010][637]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.04:026][638]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.04:043][639]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.04:060][640]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.04:076][641]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.04:093][642]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.04:110][643]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.04:127][644]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.04:143][645]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.04:160][646]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.04:176][647]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.04:193][648]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.04:211][649]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.04:226][650]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.04:243][651]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.04:260][652]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.04:277][653]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.04:294][654]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.04:310][655]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.04:327][656]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.04:344][657]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.04:359][658]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.04:377][659]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.04:393][660]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.04:410][661]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.04:411][661]LogViewport: Display: Viewport MouseCaptureMode Changed, CapturePermanently_IncludingInitialMouseDown -> CapturePermanently
+[2024.02.21-13.37.04:427][662]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.04:443][663]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.04:461][664]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.04:477][665]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.04:493][666]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.04:510][667]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.04:527][668]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.04:544][669]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.04:559][670]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.04:576][671]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.04:594][672]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.04:610][673]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.04:627][674]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.04:643][675]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.04:660][676]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.04:677][677]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.04:693][678]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.04:711][679]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.04:726][680]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.04:743][681]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.04:760][682]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.04:777][683]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.04:793][684]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.04:811][685]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.04:827][686]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.04:844][687]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.04:861][688]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.04:877][689]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.04:894][690]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.04:910][691]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.04:927][692]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.04:944][693]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.04:960][694]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.04:977][695]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.04:993][696]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.05:010][697]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.05:027][698]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.05:043][699]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.05:060][700]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.05:076][701]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.05:093][702]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.05:110][703]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.05:128][704]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.05:144][705]LogTemp: Warning: RequestPullObject called
+[2024.02.21-13.37.05:144][705]LogTemp: Warning: Character Requesting Pull
+[2024.02.21-13.37.05:144][705]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.05:160][706]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.05:177][707]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.05:193][708]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.05:210][709]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.05:227][710]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.05:243][711]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.05:260][712]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.05:277][713]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.05:293][714]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.05:310][715]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.05:327][716]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.05:343][717]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.05:360][718]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.05:376][719]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.05:393][720]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.05:410][721]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.05:427][722]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.05:443][723]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.05:460][724]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.05:478][725]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.05:493][726]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.05:510][727]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.05:527][728]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.05:543][729]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.05:561][730]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.05:577][731]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.05:594][732]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.05:611][733]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.05:627][734]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.05:644][735]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.05:661][736]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.05:677][737]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.05:694][738]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.05:710][739]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.05:727][740]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.05:744][741]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.05:760][742]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.05:777][743]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.05:793][744]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.05:810][745]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.05:827][746]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.05:843][747]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.05:860][748]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.05:877][749]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.05:894][750]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.05:910][751]LogTemp: Warning: RequestPullObject called
+[2024.02.21-13.37.05:911][751]LogTemp: Warning: Character Requesting Pull
+[2024.02.21-13.37.05:911][751]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.05:926][752]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.05:943][753]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.05:960][754]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.05:977][755]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.05:994][756]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.06:010][757]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.06:027][758]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.06:043][759]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.06:059][760]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.06:076][761]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.06:093][762]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.06:110][763]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.06:127][764]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.06:144][765]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.06:160][766]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.06:177][767]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.06:193][768]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.06:210][769]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.06:227][770]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.06:243][771]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.06:260][772]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.06:277][773]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.06:293][774]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.06:310][775]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.06:327][776]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.06:343][777]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.06:360][778]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.06:376][779]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.06:393][780]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.06:409][781]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.06:426][782]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.06:443][783]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.06:459][784]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.06:477][785]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.06:493][786]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.06:510][787]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.06:527][788]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.06:544][789]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.06:560][790]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.06:577][791]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.06:593][792]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.06:610][793]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.06:627][794]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.06:643][795]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.06:660][796]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.06:677][797]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.06:693][798]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.06:710][799]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.06:727][800]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.06:743][801]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.06:760][802]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.06:777][803]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.06:793][804]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.06:810][805]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.06:826][806]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.06:843][807]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.06:860][808]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.06:877][809]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.06:893][810]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.06:910][811]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.06:927][812]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.06:943][813]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.06:960][814]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.06:977][815]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.06:993][816]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.07:010][817]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.07:026][818]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.07:043][819]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.07:060][820]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.07:076][821]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.07:094][822]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.07:111][823]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.07:127][824]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.07:144][825]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.07:160][826]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.07:177][827]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.07:193][828]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.07:210][829]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.07:226][830]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.07:243][831]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.07:260][832]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.07:276][833]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.07:293][834]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.07:310][835]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.07:327][836]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.07:343][837]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.07:359][838]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.07:377][839]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.07:393][840]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.07:410][841]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.07:426][842]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.07:444][843]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.07:460][844]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.07:477][845]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.07:493][846]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.07:510][847]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.07:527][848]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.07:544][849]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.07:561][850]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.07:577][851]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.07:593][852]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.07:610][853]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.07:627][854]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.07:644][855]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.07:661][856]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.07:677][857]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.07:694][858]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.07:710][859]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.07:727][860]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.07:743][861]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.07:760][862]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.07:777][863]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.07:794][864]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.07:811][865]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.07:827][866]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.07:844][867]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.07:860][868]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.07:877][869]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.07:894][870]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.07:910][871]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.07:927][872]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.07:944][873]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.07:960][874]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.07:977][875]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.07:994][876]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.08:010][877]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.08:027][878]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.08:043][879]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.08:060][880]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.08:077][881]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.08:093][882]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.08:110][883]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.08:126][884]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.08:143][885]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.08:161][886]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.08:177][887]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.08:194][888]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.08:211][889]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.08:227][890]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.08:244][891]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.08:261][892]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.08:276][893]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.08:294][894]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.08:311][895]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.08:327][896]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.08:344][897]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.08:361][898]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.08:377][899]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.08:394][900]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.08:410][901]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.08:427][902]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.08:444][903]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.08:460][904]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.08:477][905]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.08:494][906]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.08:510][907]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.08:527][908]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.08:544][909]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.08:561][910]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.08:578][911]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.08:594][912]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.08:610][913]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.08:628][914]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.08:644][915]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.08:661][916]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.08:677][917]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.08:694][918]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.08:711][919]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.08:727][920]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.08:744][921]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.08:760][922]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.08:777][923]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.08:794][924]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.08:810][925]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.08:827][926]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.08:844][927]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.08:860][928]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.08:877][929]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.08:894][930]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.08:911][931]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.08:927][932]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.08:944][933]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.08:960][934]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.08:977][935]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.08:994][936]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.09:010][937]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.09:027][938]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.09:043][939]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.09:060][940]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.09:077][941]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.09:094][942]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.09:110][943]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.09:127][944]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.09:144][945]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.09:161][946]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.09:177][947]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.09:193][948]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.09:210][949]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.09:227][950]LogTemp: Warning: RequestPullObject called
+[2024.02.21-13.37.09:227][950]LogTemp: Warning: Character Requesting Pull
+[2024.02.21-13.37.09:227][950]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.09:244][951]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.09:260][952]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.09:277][953]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.09:294][954]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.09:310][955]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.09:327][956]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.09:344][957]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.09:360][958]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.09:377][959]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.09:394][960]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.09:411][961]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.09:427][962]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.09:444][963]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.09:460][964]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.09:477][965]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.09:494][966]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.09:511][967]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.09:527][968]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.09:544][969]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.09:560][970]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.09:577][971]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.09:594][972]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.09:611][973]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.09:627][974]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.09:643][975]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.09:661][976]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.09:677][977]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.09:693][978]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.09:710][979]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.09:727][980]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.09:747][981]LogTemp: Warning: SphereCastPlayerView: Detected and assigned ThrowableObject: BP_ThrowableObject_2
+[2024.02.21-13.37.09:747][981]LogTemp: Warning: IsIdle: Object State is 0
+[2024.02.21-13.37.09:747][981]LogTemp: Warning: ProcessTraceResult: Attempting to pull object: BP_ThrowableObject_2
+[2024.02.21-13.37.09:747][981]LogTemp: Warning: Pull method called in ThrowableObject
+[2024.02.21-13.37.09:747][981]LogTemp: Warning: Pull Successful
+[2024.02.21-13.37.09:747][981]LogTemp: Warning: ProcessTraceResult: Pull action initiated on object.
+[2024.02.21-13.37.11:761][102]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.11:778][103]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.11:794][104]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.11:810][105]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.11:828][106]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.
+[2024.02.21-13.37.11:844][107]LogTemp: Warning: SphereCastPlayerView: No ThrowableObject detected or hit object is not a ThrowableObject.

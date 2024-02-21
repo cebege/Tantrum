@@ -84,6 +84,8 @@ protected:
 	void RequestStopPullObject();
 	void RequestThrowObject();
 
+	void RequestUseObject();
+
 	//Bind Actions
 
 	//Jump

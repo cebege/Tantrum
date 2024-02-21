@@ -22,6 +22,7 @@ void EmptyLinkFunctionForGeneratedCodeThrowableObject() {}
 	ENGINE_API UScriptStruct* Z_Construct_UScriptStruct_FHitResult();
 	ENGINE_API UClass* Z_Construct_UClass_UStaticMeshComponent_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_UProjectileMovementComponent_NoRegister();
+	TANTRUM_API UEnum* Z_Construct_UEnum_Tantrum_EEffectType();
 // End Cross Module References
 	DEFINE_FUNCTION(AThrowableObject::execSetHomingTarget)
 	{
@@ -380,6 +381,11 @@ void EmptyLinkFunctionForGeneratedCodeThrowableObject() {}
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_PullActor_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_PullActor;
+		static const UE4CodeGen_Private::FBytePropertyParams NewProp_EffectType_Underlying;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_EffectType_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FEnumPropertyParams NewProp_EffectType;
 		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UE4CodeGen_Private::FClassParams ClassParams;
@@ -425,10 +431,20 @@ void EmptyLinkFunctionForGeneratedCodeThrowableObject() {}
 	};
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AThrowableObject_Statics::NewProp_PullActor = { "PullActor", nullptr, (EPropertyFlags)0x0020080000000000, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AThrowableObject, PullActor), Z_Construct_UClass_AActor_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AThrowableObject_Statics::NewProp_PullActor_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AThrowableObject_Statics::NewProp_PullActor_MetaData)) };
+	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UClass_AThrowableObject_Statics::NewProp_EffectType_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, nullptr, METADATA_PARAMS(nullptr, 0) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AThrowableObject_Statics::NewProp_EffectType_MetaData[] = {
+		{ "Category", "Effect" },
+		{ "ModuleRelativePath", "ThrowableObject.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FEnumPropertyParams Z_Construct_UClass_AThrowableObject_Statics::NewProp_EffectType = { "EffectType", nullptr, (EPropertyFlags)0x0020080000000001, UE4CodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AThrowableObject, EffectType), Z_Construct_UEnum_Tantrum_EEffectType, METADATA_PARAMS(Z_Construct_UClass_AThrowableObject_Statics::NewProp_EffectType_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AThrowableObject_Statics::NewProp_EffectType_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AThrowableObject_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AThrowableObject_Statics::NewProp_StaticMeshComponent,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AThrowableObject_Statics::NewProp_ProjectileMovementComponent,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AThrowableObject_Statics::NewProp_PullActor,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AThrowableObject_Statics::NewProp_EffectType_Underlying,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AThrowableObject_Statics::NewProp_EffectType,
 	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_AThrowableObject_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<AThrowableObject>::IsAbstract,
@@ -457,7 +473,7 @@ void EmptyLinkFunctionForGeneratedCodeThrowableObject() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AThrowableObject, 2131520603);
+	IMPLEMENT_CLASS(AThrowableObject, 2901683694);
 	template<> TANTRUM_API UClass* StaticClass<AThrowableObject>()
 	{
 		return AThrowableObject::StaticClass();

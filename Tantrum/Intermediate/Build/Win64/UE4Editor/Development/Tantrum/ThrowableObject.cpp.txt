@@ -1,5 +1,7 @@
 C:\CG Spectrum\GameProgramming\Tantrum\Tantrum\Intermediate\Build\Win64\UE4Editor\Development\Tantrum\Definitions.Tantrum.h
 C:\CG Spectrum\GameProgramming\Tantrum\Tantrum\Source\Tantrum\ThrowableObject.h
+C:\CG Spectrum\GameProgramming\Tantrum\Tantrum\Source\Tantrum\InteractInterface.h
+C:\CG Spectrum\GameProgramming\Tantrum\Tantrum\Intermediate\Build\Win64\UE4Editor\Inc\Tantrum\InteractInterface.generated.h
 C:\CG Spectrum\GameProgramming\Tantrum\Tantrum\Intermediate\Build\Win64\UE4Editor\Inc\Tantrum\ThrowableObject.generated.h
 C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\Engine\Classes\GameFramework/Character.h
 C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\Engine\Classes\GameFramework/CharacterMovementReplication.h

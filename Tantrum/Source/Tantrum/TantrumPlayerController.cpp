@@ -156,7 +156,14 @@ void ATantrumPlayerController::RequestThrowObject()
 	{
 		if (TantrumCharacterBase->CanThrowObject())
 		{
+			UE_LOG(LogTemp, Warning, TEXT("RequestThrow"));
 			TantrumCharacterBase->RequestThrowObject();
+
+		}
+		else
+		{
+			return;
+			//TantrumCharacterBase->RequestUseObject();
 		}
 	}
 }
