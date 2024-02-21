@@ -1,12 +1,13 @@
 ﻿  Using 'git status' to determine working set for adaptive non-unity build (C:\CG Spectrum\GameProgramming\Tantrum).
   Building TantrumEditor...
   Using Visual Studio 2019 14.37.32822 toolchain (C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822) and Windows 10.0.22621.0 SDK (C:\Program Files (x86)\Windows Kits\10).
-  Building 4 actions with 16 processes...
-    [1/4] TantrumCharacterBase.cpp
-    [2/4] UE4Editor-Tantrum-0003.lib
-       Creating library C:\CG Spectrum\GameProgramming\Tantrum\Tantrum\Intermediate\Build\Win64\UE4Editor\Development\Tantrum\UE4Editor-Tantrum-0003.lib and object C:\CG Spectrum\GameProgramming\Tantrum\Tantrum\Intermediate\Build\Win64\UE4Editor\Development\Tantrum\UE4Editor-Tantrum-0003.exp
-    [3/4] UE4Editor-Tantrum-0003.dll
-       Creating library C:\CG Spectrum\GameProgramming\Tantrum\Tantrum\Intermediate\Build\Win64\UE4Editor\Development\Tantrum\UE4Editor-Tantrum-0003.suppressed.lib and object C:\CG Spectrum\GameProgramming\Tantrum\Tantrum\Intermediate\Build\Win64\UE4Editor\Development\Tantrum\UE4Editor-Tantrum-0003.suppressed.exp
-    [4/4] TantrumEditor.target
-  Total time in Parallel executor: 2.31 seconds
-  Total execution time: 3.12 seconds
+  Building 5 actions with 16 processes...
+    [1/5] TantrumCharacterBase.cpp
+    [2/5] TantrumPlayerController.cpp
+    [3/5] UE4Editor-Tantrum-0004.lib
+       Creating library C:\CG Spectrum\GameProgramming\Tantrum\Tantrum\Intermediate\Build\Win64\UE4Editor\Development\Tantrum\UE4Editor-Tantrum-0004.lib and object C:\CG Spectrum\GameProgramming\Tantrum\Tantrum\Intermediate\Build\Win64\UE4Editor\Development\Tantrum\UE4Editor-Tantrum-0004.exp
+    [4/5] UE4Editor-Tantrum-0004.dll
+       Creating library C:\CG Spectrum\GameProgramming\Tantrum\Tantrum\Intermediate\Build\Win64\UE4Editor\Development\Tantrum\UE4Editor-Tantrum-0004.suppressed.lib and object C:\CG Spectrum\GameProgramming\Tantrum\Tantrum\Intermediate\Build\Win64\UE4Editor\Development\Tantrum\UE4Editor-Tantrum-0004.suppressed.exp
+    [5/5] TantrumEditor.target
+  Total time in Parallel executor: 10.36 seconds
+  Total execution time: 11.18 seconds

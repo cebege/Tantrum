@@ -452,9 +452,11 @@ void ATantrumCharacterBase::ProcessTraceResult(const FHitResult& HitResult)
 bool ATantrumCharacterBase::PlayThrowMontage()
 {
 	const float PlayRate = 1.0f;
+	UE_LOG(LogTemp, Warning, TEXT("PlayMontageReached"));
 	bool bPlayedSuccessfully = PlayAnimMontage(ThrowMontage, PlayRate) > 0.f;
 	if (bPlayedSuccessfully)
 	{
+		UE_LOG(LogTemp, Warning, TEXT("PlayMontageSuccessful"));
 		UAnimInstance* AnimInstance = GetMesh()->GetAnimInstance();
 
 		if (!BlendingOutDelegate.IsBound())
@@ -471,9 +473,7 @@ bool ATantrumCharacterBase::PlayThrowMontage()
 
 		AnimInstance->OnPlayMontageNotifyBegin.AddDynamic(this, &ATantrumCharacterBase::OnNotifyBeginReceived);
 		AnimInstance->OnPlayMontageNotifyEnd.AddDynamic(this, &ATantrumCharacterBase::OnNotifyEndReceived);
-
 	}
-
 	return bPlayedSuccessfully;
 }
 
